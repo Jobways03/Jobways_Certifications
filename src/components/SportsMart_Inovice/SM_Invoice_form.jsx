@@ -80,7 +80,16 @@ const SM_Invoiceform = () => {
           />
         </div>
         <div className="form-group">
-          <label>Name</label>
+          <label>Due Date (If needed)</label>
+          <input
+            type="text"
+            name="duedate"
+            value={Global.SM_FormData.duedate}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label>Customer Name</label>
           <input
             type="text"
             name="name"
@@ -89,7 +98,7 @@ const SM_Invoiceform = () => {
           />
         </div>
         <div className="form-group">
-          <label>Email</label>
+          <label>Customer Email</label>
           <input
             type="email"
             name="email"
@@ -98,7 +107,7 @@ const SM_Invoiceform = () => {
           />
         </div>
         <div className="form-group">
-          <label>Phone</label>
+          <label>Customer Phone</label>
           <input
             type="tel"
             name="phone"
@@ -107,7 +116,7 @@ const SM_Invoiceform = () => {
           />
         </div>
         <div className="form-group">
-          <label>Address</label>
+          <label>Customer Address</label>
           <input
             type="text"
             name="address"

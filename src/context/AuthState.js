@@ -87,6 +87,7 @@ const AuthState = ({ children }) => {
 const [SM_FormData, setSM_FormData] = useState({
   date: "",
   invoiceNumber: "",
+  duedate:"",
   name: "",
   email: "",
   phone: "",

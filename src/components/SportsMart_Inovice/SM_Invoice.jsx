@@ -39,12 +39,15 @@ console.log(Global.SM_FormData.paymentType);
         <p className="SM_datej"> {Global.SM_FormData.date}</p>
         <p className="SM_ini">INVOICE&nbsp;#</p>
         <p className="SM_inj">SM-{Global.SM_FormData.invoiceNumber}</p>
-        <p className="SM_servicei">Service ID</p>
-        <p className="SM_servicej"> {Global.SM_FormData.invoiceNumber}</p>
-        <p className="SM_due">DUE DATE</p>
-        <p className="SM_duej">~</p>
+        <p className="SM_servicei">DUE DATE</p>
+        <p className="SM_servicej">{Global.SM_FormData.duedate}</p>
+        <div className="SM_due"></div>
+        <div className="SM_duem"></div>
+        <div className="SM_duem1"></div>
+        
+        {/* <p className="SM_duej">~</p> */}
         <p className="SM_des">DESCRIPTION</p>
-        <div className="SM_lie2"></div>
+     
         <p className="SM_houri">Quantity</p>
         <p className="SM_ratei">Price</p>
         <p className="SM_amti">AMOUNT</p>
@@ -129,7 +132,11 @@ console.log(Global.SM_FormData.paymentType);
         <p className="SM_taxi">TOTAL</p>
 
         <div className="SM_sta">{Global.SM_FormData.subTotal} INR</div>
-        {Global.SM_FormData.gstamount ?  <div className="SM_tria">{Global.SM_FormData.gstamount} INR</div> : ""}
+        {Global.SM_FormData.gstamount ? (
+          <div className="SM_tria">{Global.SM_FormData.gstamount} INR</div>
+        ) : (
+          ""
+        )}
         {/* <div className="SM_tria">{Global.SM_FormData.gstamount} INR</div> */}
         <div className="SM_taxia">{Global.SM_FormData.Total} INR</div>
 
