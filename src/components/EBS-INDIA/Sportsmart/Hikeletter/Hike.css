@@ -1,0 +1,126 @@
+.bold {
+  font-weight: bolder;
+}
+
+.hiker1c {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.hiker2c {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.hiker3c {
+  position: absolute;
+  top: 24%;
+  left: 25%;
+  font-size: 14px;
+  width: 620px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hiker4c {
+  position: absolute;
+  top: 25.6%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hikers5c {
+  position: absolute;
+  top: 29%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hikers6c {
+  position: absolute;
+  top: 34.2%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hikers7c {
+  position: absolute;
+  top: 41%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hiker8c {
+  position: absolute;
+  top: 43.5%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hikers9c {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hikers10c {
+  position: absolute;
+  top: 62%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hikers11c {
+  position: absolute;
+  top: 64.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hikers12c {
+  position: absolute;
+  top: 67%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hikers13c {
+  position: absolute;
+  top: 69.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.heakss {
+  position: absolute;
+  top: 15%;
+  left: 43%;
+  color: rgb(72, 147, 217);
+}

@@ -1,0 +1,437 @@
+.genie1 {
+  position: absolute;
+  font-weight: bolder;
+  top: 12%;
+  font-size: 10px;
+  left: 15.4%;
+  width: 470px;
+  text-align: center;
+}
+
+.genie2 {
+  position: absolute;
+  font-weight: bolder;
+  top: 13%;
+  left: 15.4%;
+  font-size: 12px;
+  width: 470px;
+  text-align: center;
+}
+
+.genie3 {
+  position: absolute;
+  top: 15.45%;
+  left: 9.72%;
+  font-size: 10px;
+  letter-spacing: -0.2px;
+}
+
+.genie4 {
+  position: absolute;
+  top: 15.45%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.genie5 {
+  position: absolute;
+  top: 15.45%;
+  left: 52.4%;
+  font-size: 10px;
+}
+
+.genie6 {
+  position: absolute;
+  top: 15.45%;
+  left: 75%;
+  font-size: 10px;
+}
+
+.genie7 {
+  position: absolute;
+  top: 17%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.genie8 {
+  position: absolute;
+  top: 17%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.genie9 {
+  position: absolute;
+  top: 18.6%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.genie10 {
+  position: absolute;
+  top: 18.6%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.genie11 {
+  position: absolute;
+  top: 20.2%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.genie12 {
+  position: absolute;
+  top: 20.2%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.genie13 {
+  position: absolute;
+  top: 21.8%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.genie14 {
+  position: absolute;
+  top: 21.8%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.genie15 {
+  position: absolute;
+  top: 23.15%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.genie16 {
+  position: absolute;
+  top: 24.5%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.genie17 {
+  position: absolute;
+  top: 26%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.genie18 {
+  position: absolute;
+  top: 26%;
+  left: 22.2%;
+  font-size: 10px;
+}
+
+.genie19 {
+  position: absolute;
+  top: 27.45%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.genie20 {
+  position: absolute;
+  top: 27.45%;
+  left: 22.2%;
+  font-size: 10px;
+}
+
+.genie21 {
+  position: absolute;
+  top: 33.6%;
+  left: 10.25%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.genie22 {
+  position: absolute;
+  top: 33.6%;
+  left: 47.2%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.genie23 {
+  position: absolute;
+  top: 35.2%;
+  left: 10.25%;
+  font-size: 10px;
+}
+
+.genie24 {
+  position: absolute;
+  top: 35.2%;
+  left: 48.2%;
+  font-size: 10px;
+}
+
+.genie25 {
+  position: absolute;
+  top: 36.6%;
+  left: 10.25%;
+  font-size: 10px;
+}
+
+.genie26 {
+  position: absolute;
+  top: 36.6%;
+  left: 48.5%;
+  font-size: 10px;
+}
+
+.genie27 {
+  position: absolute;
+  top: 37.9%;
+  left: 10.25%;
+  font-size: 10px;
+}
+
+.genie28 {
+  position: absolute;
+  top: 37.9%;
+  left: 48.2%;
+  font-size: 10px;
+}
+
+.genie29 {
+  position: absolute;
+  top: 39.28%;
+  left: 10.2%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.genie30 {
+  position: absolute;
+  top: 40.85%;
+  left: 10.2%;
+  font-size: 10px;
+}
+
+.genie31 {
+  position: absolute;
+  top: 42.3%;
+  left: 10.2%;
+  font-size: 10px;
+}
+
+.genie32 {
+  position: absolute;
+  top: 43.7%;
+  left: 10.2%;
+  font-size: 10px;
+}
+
+.genie33 {
+  position: absolute;
+  top: 45.15%;
+  left: 10.2%;
+  font-size: 10px;
+}
+
+.genie34 {
+  position: absolute;
+  top: 46.64%;
+  left: 10.2%;
+  font-size: 10px;
+}
+
+.genie35 {
+  position: absolute;
+  top: 48.2%;
+  left: 10.2%;
+  font-size: 10px;
+}
+
+.genie36 {
+  position: absolute;
+  top: 50%;
+  left: 10.2%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.genie37 {
+  position: absolute;
+  top: 39.28%;
+  left: 46.4%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.genie38 {
+  position: absolute;
+  top: 40.85%;
+  right: 46.65%;
+  font-size: 10px;
+}
+
+.genie39 {
+  position: absolute;
+  top: 42.3%;
+  right: 46.65%;
+  font-size: 10px;
+}
+
+.genie40 {
+  position: absolute;
+  top: 43.7%;
+  right: 46.65%;
+  font-size: 10px;
+}
+
+.genie41 {
+  position: absolute;
+  top: 45.15%;
+  right: 46.65%;
+  font-size: 10px;
+}
+
+.genie42 {
+  position: absolute;
+  top: 46.64%;
+  right: 46.65%;
+  font-size: 10px;
+}
+
+.genie43 {
+  position: absolute;
+  top: 48.2%;
+  right: 46.65%;
+  font-size: 10px;
+}
+
+.genie44 {
+  position: absolute;
+  top: 50%;
+  right: 46.65%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.genie45 {
+  position: absolute;
+  top: 39.28%;
+  left: 55%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.genie46 {
+  position: absolute;
+  top: 39.28%;
+  left: 82%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.genie47 {
+  position: absolute;
+  top: 40.85%;
+  left: 55%;
+  font-size: 10px;
+}
+
+.genie48 {
+  position: absolute;
+  top: 40.85%;
+  font-size: 10px;
+  right: 11.7%;
+}
+
+.genie49 {
+  position: absolute;
+  top: 50%;
+  font-size: 10px;
+  left: 55%;
+  font-weight: bolder;
+}
+
+.genie50 {
+  position: absolute;
+  top: 50%;
+  font-size: 10px;
+  right: 11.7%;
+  font-weight: bolder;
+}
+
+.genie51 {
+  position: absolute;
+  top: 52%;
+  font-size: 10px;
+  left: 55%;
+  font-weight: bolder;
+}
+
+.genie52 {
+  position: absolute;
+  top: 52%;
+  font-size: 10px;
+  right: 11.7%;
+  font-weight: bolder;
+}
+
+.genie53 {
+  position: absolute;
+  top: 54.6%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.genie54 {
+  position: absolute;
+  top: 56.5%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.genie55 {
+  position: absolute;
+  top: 40.01%;
+  height: 1px;
+  width: 555px;
+  background-color: rgb(12, 12, 12);
+  left: 9.5%;
+}
+
+.genie56 {
+  position: absolute;
+  top: 3%;
+  font-size: 23px;
+  left: 32%;
+  font-weight: bolder;
+}
+
+.genie57 {
+  position: absolute;
+  top: 6.8%;
+  font-size: 12.3px;
+  left: 36%;
+  font-weight: bolder;
+}
+
+.genie58 {
+  position: absolute;
+  top: 8.3%;
+  font-size: 12.3px;
+  left: 41%;
+  font-weight: bolder;
+}
+
+.genie59 {
+  position: absolute;
+  top: 10.3%;
+  font-size: 12.3px;
+  left: 45.4%;
+  font-weight: bolder;
+}

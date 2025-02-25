@@ -1,0 +1,148 @@
+.bold {
+  font-weight: bolder;
+}
+
+.hiker1a {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.hiker2a {
+  position: absolute;
+  top: 16%;
+  right: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.hiker3ea {
+  position: absolute;
+  top: 23.4%;
+  left: 25%;
+  font-size: 14px;
+  width: 620px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hiker4ea {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hikers5ea {
+  position: absolute;
+  top: 28.5%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hikers6ea {
+  position: absolute;
+  top: 33.8%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hikers7a {
+  position: absolute;
+  top: 37%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hiker8a {
+  position: absolute;
+  top: 39.5%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hikers9a {
+  position: absolute;
+  top: 37.2%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hikers10a {
+  position: absolute;
+  top: 54%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hikers11a {
+  position: absolute;
+  top: 56.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hikers12a {
+  position: absolute;
+  top: 59%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hikers13a {
+  position: absolute;
+  top: 61.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sds {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.nuea {
+  position: absolute;
+  top: 92.35%;
+  left: 4.9%;
+  width: 105px;
+}
+
+.heak {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  color: rgb(72, 147, 217);
+}
+
+.jstamp {
+  position: absolute;
+  top: 41.5%;
+  height: 130px;
+  left: 12%;
+}

@@ -1,0 +1,405 @@
+.gen1 {
+  position: absolute;
+  font-weight: bolder;
+  top: 8.5%;
+  font-size: 10px;
+  left: 38%;
+  width: 200px;
+  text-align: center;
+}
+
+.gen2 {
+  position: absolute;
+  font-weight: bolder;
+  top: 9.5%;
+  font-size: 13px;
+  left: 38%;
+  width: 200px;
+  text-align: center;
+}
+
+.gen3 {
+  position: absolute;
+  top: 11.65%;
+  left: 9.72%;
+  font-size: 9.5px;
+  letter-spacing: -0.2px;
+}
+
+.gen4 {
+  position: absolute;
+  top: 11.65%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.gen5 {
+  position: absolute;
+  top: 11.65%;
+  left: 52.4%;
+  font-size: 10px;
+}
+
+.gen6 {
+  position: absolute;
+  top: 11.65%;
+  left: 68%;
+  font-size: 10px;
+}
+
+.gen7 {
+  position: absolute;
+  top: 13.2%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen8 {
+  position: absolute;
+  top: 13.2%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.gen9 {
+  position: absolute;
+  top: 14.8%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen10 {
+  position: absolute;
+  top: 14.8%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.gen11 {
+  position: absolute;
+  top: 16.4%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen12 {
+  position: absolute;
+  top: 16.4%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.gen13 {
+  position: absolute;
+  top: 18%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen14 {
+  position: absolute;
+  top: 18%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.gen15 {
+  position: absolute;
+  top: 19.35%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.gen16 {
+  position: absolute;
+  top: 20.7%;
+  left: 22%;
+  font-size: 10px;
+}
+
+.gen17 {
+  position: absolute;
+  top: 22.2%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen18 {
+  position: absolute;
+  top: 22.2%;
+  left: 22.2%;
+  font-size: 10px;
+}
+
+.gen19 {
+  position: absolute;
+  top: 23.95%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen20 {
+  position: absolute;
+  top: 23.95%;
+  left: 22.2%;
+  font-size: 10px;
+}
+
+.gen21 {
+  position: absolute;
+  top: 27%;
+  left: 9.72%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.gen22 {
+  position: absolute;
+  top: 27%;
+  left: 45%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.gen23 {
+  position: absolute;
+  top: 28.6%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen24 {
+  position: absolute;
+  top: 28.6%;
+  left: 46.2%;
+  font-size: 10px;
+}
+
+.gen25 {
+  position: absolute;
+  top: 30%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen26 {
+  position: absolute;
+  top: 30%;
+  left: 46.5%;
+  font-size: 10px;
+}
+
+.gen27 {
+  position: absolute;
+  top: 31.4%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen28 {
+  position: absolute;
+  top: 31.4%;
+  left: 46.2%;
+  font-size: 10px;
+}
+
+.gen29 {
+  position: absolute;
+  top: 34.76%;
+  left: 9.72%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.gen30 {
+  position: absolute;
+  top: 36.4%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen31 {
+  position: absolute;
+  top: 37.9%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen32 {
+  position: absolute;
+  top: 39.45%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen33 {
+  position: absolute;
+  top: 41.1%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen34 {
+  position: absolute;
+  top: 42.6%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen35 {
+  position: absolute;
+  top: 44.2%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen36 {
+  position: absolute;
+  top: 45.7%;
+  left: 9.72%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.gen37 {
+  position: absolute;
+  top: 34.76%;
+  left: 44.2%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.gen38 {
+  position: absolute;
+  top: 36.4%;
+  right: 48.5%;
+  font-size: 10px;
+}
+
+.gen39 {
+  position: absolute;
+  top: 37.9%;
+  right: 48.5%;
+  font-size: 10px;
+}
+
+.gen40 {
+  position: absolute;
+  top: 39.45%;
+  right: 48.5%;
+  font-size: 10px;
+}
+
+.gen41 {
+  position: absolute;
+  top: 41.1%;
+  right: 48.5%;
+  font-size: 10px;
+}
+
+.gen42 {
+  position: absolute;
+  top: 42.6%;
+  right: 48.5%;
+  font-size: 10px;
+}
+
+.gen43 {
+  position: absolute;
+  top: 44.2%;
+  right: 48.5%;
+  font-size: 10px;
+}
+
+.gen44 {
+  position: absolute;
+  top: 45.7%;
+  right: 48.5%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.gen45 {
+  position: absolute;
+  top: 34.76%;
+  left: 52.5%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.gen46 {
+  position: absolute;
+  top: 34.76%;
+  left: 85.3%;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.gen47 {
+  position: absolute;
+  top: 36.4%;
+  left: 52.5%;
+  font-size: 10px;
+}
+
+.gen48 {
+  position: absolute;
+  top: 36.4%;
+  font-size: 10px;
+  right: 7.7%;
+}
+
+.gen49 {
+  position: absolute;
+  top: 45.7%;
+  font-size: 10px;
+  left: 52.5%;
+  font-weight: bolder;
+}
+
+.gen50 {
+  position: absolute;
+  top: 45.7%;
+  font-size: 10px;
+  right: 7.7%;
+  font-weight: bolder;
+}
+
+.gen51 {
+  position: absolute;
+  top: 47.45%;
+  font-size: 10px;
+  left: 52.5%;
+  font-weight: bolder;
+}
+
+.gen52 {
+  position: absolute;
+  top: 47.45%;
+  font-size: 10px;
+  right: 7.7%;
+  font-weight: bolder;
+}
+
+.gen53 {
+  position: absolute;
+  top: 49.4%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen54 {
+  position: absolute;
+  top: 51%;
+  left: 9.72%;
+  font-size: 10px;
+}
+
+.gen333 {
+  position: absolute;
+  top: 6.52%;
+  height: 2px;
+  width: 250px;
+  left: 35%;
+  background-color: white;
+}

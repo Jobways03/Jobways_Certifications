@@ -1,0 +1,62 @@
+import React, { useContext, useRef } from "react";
+import { useReactToPrint } from "react-to-print";
+import "./Experience.css";
+import AuthContext from "../../../../context/AuthContext";
+
+const ComponentToPrint = React.forwardRef((props, ref) => {
+  const Global = useContext(AuthContext);
+  return (
+    <div ref={ref}>
+      <div className="pdf-offer">
+        <img src="./images/mart.jpg" alt="ewded" className="i3" />
+        <h3 className="eded">EXPERIENCE LETTER</h3>
+        <p className="expge1c">{Global.Experience.name}</p>
+        <p className="expge2c">Date: {Global.Experience.date}</p>
+        <p className="wwfx">Subject: Experience letter</p>
+        <p className="expge5c">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This
+          letter confirms the employment of{" "}
+          <span className="bold"> {Global.Experience.name}</span> as a{" "}
+          <span className="bold">{Global.Experience.designation}</span> with{" "}
+          <span className="bold">BCL Sports LLP</span> from{" "}
+          <span className="bold">{Global.Experience.startDate}</span> to the{" "}
+          <span className="bold">{Global.Experience.endDate}</span>.
+        </p>
+        <p className="expge6c">
+          During his tenure,{" "}
+          <span className="bold"> {Global.Experience.name}</span> has shown
+          himself to be a dedicated and hardworking employee.
+        </p>
+        <img
+          src="./images/sportsstamp.png"
+          alt="ewded"
+          className="gesstampss"
+        />
+        <p className="expge9c">Sincerely,</p>
+        <p className="expge10c">Ashwini Chinta </p>
+        <p className="expge11c">HR Manager</p>
+        <p className="expge12c">HR@geshurinfra.com</p>
+        <p className="expge13c">+91 – 93989 73635</p>
+        <div className="ds1"></div>
+      </div>
+    </div>
+  );
+});
+
+const SportsExperience = () => {
+  const componentRef = useRef();
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+  });
+
+  return (
+    <div>
+      <ComponentToPrint ref={componentRef} />
+      <button onClick={handlePrint} className="print-button">
+        Print this out!
+      </button>
+    </div>
+  );
+};
+
+export default SportsExperience;

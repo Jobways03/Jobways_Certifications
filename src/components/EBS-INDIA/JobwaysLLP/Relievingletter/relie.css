@@ -1,0 +1,127 @@
+.bold {
+  font-weight: bolder;
+}
+
+.rel1a {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.rel2a {
+  position: absolute;
+  top: 16%;
+  right: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.rel3ea {
+  position: absolute;
+  top: 19.8%;
+  left: 25%;
+  font-size: 14px;
+  width: 620px;
+  text-align: justify;
+}
+
+.rel4ea {
+  position: absolute;
+  top: 23.5%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.rel5ea {
+  position: absolute;
+  top: 28.6%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.rel6ea {
+  position: absolute;
+  top: 34%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.rel9a {
+  position: absolute;
+  top: 38%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rel10a {
+  position: absolute;
+  top: 54%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rel11a {
+  position: absolute;
+  top: 56.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rel12a {
+  position: absolute;
+  top: 59%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rel13a {
+  position: absolute;
+  top: 61.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sd {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.nue {
+  position: absolute;
+  top: 91%;
+  left: 4.7%;
+  width: 100px;
+}
+
+.heak {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  color: rgb(72, 147, 217);
+}
+
+.jstampss {
+  position: absolute;
+  top: 42%;
+  height: 130px;
+  left: 12%;
+}

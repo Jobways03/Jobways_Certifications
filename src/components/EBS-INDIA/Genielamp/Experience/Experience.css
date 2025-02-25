@@ -1,0 +1,115 @@
+.expg1b {
+  position: absolute;
+  top: 21%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.expg2b {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.expg3b {
+  position: absolute;
+  top: 24%;
+  left: 25%;
+  font-size: 14px;
+  width: 620px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.expg4b {
+  position: absolute;
+  top: 25.6%;
+  left: 10%;
+  font-size: 14px;
+  width: 660px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.expg5b {
+  position: absolute;
+  top: 28.3%;
+  left: 10%;
+  font-size: 14px;
+  width: 660px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.expg99b {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.expg9b {
+  position: absolute;
+  top: 38.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.expg10b {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.expg11b {
+  position: absolute;
+  top: 57.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.expg12b {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.expg13b {
+  position: absolute;
+  top: 62.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rrrr {
+  position: absolute;
+  top: 24.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.genstampss {
+  position: absolute;
+  top: 41.2%;
+  height: 160px;
+  left: 10%;
+}
+
+.nunaf{
+  position: absolute;
+  top: 101.7%;
+  left: 67%;
+  width: 100px;
+}

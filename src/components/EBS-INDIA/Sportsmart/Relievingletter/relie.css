@@ -1,0 +1,134 @@
+.bold {
+  font-weight: bolder;
+}
+
+.wwf {
+  position: absolute;
+  top: 23.5%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.rel1c {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.rel2c {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.rel3c {
+  position: absolute;
+  top: 27%;
+  left: 33%;
+  font-size: 14px;
+  width: 620px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.rel4c {
+  position: absolute;
+  top: 28.6%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.rel5c {
+  position: absolute;
+  top: 32%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.rel6c {
+  position: absolute;
+  top: 37.2%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.rel7c {
+  position: absolute;
+  top: 43%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.rel8c {
+  position: absolute;
+  top: 46.5%;
+  left: 10%;
+  font-size: 14px;
+  width: 638px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.rel9c {
+  position: absolute;
+  top: 48%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rel10c {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rel11c {
+  position: absolute;
+  top: 67.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rel12c {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rel13c {
+  position: absolute;
+  top: 72.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.heakss {
+  position: absolute;
+  top: 15%;
+  left: 43%;
+  color: rgb(72, 147, 217);
+}

@@ -1,0 +1,91 @@
+.gexp1 {
+  position: absolute;
+  top: 21%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.gexp2 {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.gexp4 {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-size: 14px;
+  text-align: justify;
+  width: 638px;
+}
+
+.gexp5 {
+  position: absolute;
+  top: 30.7%;
+  left: 10%;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 638px;
+}
+
+.gexp6 {
+  position: absolute;
+  top: 38%;
+  left: 10%;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 638px;
+}
+
+.gexp9 {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.gexp10 {
+  position: absolute;
+  top: 51%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.gexp11 {
+  position: absolute;
+  top: 53.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.gexp12 {
+  position: absolute;
+  top: 56%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.gexp13 {
+  position: absolute;
+  top: 58.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.gestampss {
+  position: absolute;
+  top: 39.3%;
+  left: 9%;
+  height: 130px;
+}

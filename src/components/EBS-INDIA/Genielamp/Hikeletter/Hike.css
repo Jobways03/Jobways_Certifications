@@ -1,0 +1,161 @@
+.bold {
+  font-weight: bolder;
+}
+
+.hiker1b {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.hiker2b {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.hiker3b {
+  position: absolute;
+  top: 24%;
+  left: 25%;
+  font-size: 14px;
+  width: 640px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hiker4b {
+  position: absolute;
+  top: 25.6%;
+  left: 10%;
+  font-size: 14px;
+  width: 660px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hiker5b {
+  position: absolute;
+  top: 30.3%;
+  left: 10%;
+  font-size: 14px;
+  width: 660px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hiker6b {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  font-size: 14px;
+  width: 660px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hiker7b {
+  position: absolute;
+  top: 38.3%;
+  left: 10%;
+  font-size: 14px;
+  width: 660px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hiker8b {
+  position: absolute;
+  top: 43.5%;
+  left: 10%;
+  font-size: 14px;
+  width: 660px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hike9b {
+  position: absolute;
+  top: 50.7%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hike10b {
+  position: absolute;
+  top: 66%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hike11b {
+  position: absolute;
+  top: 68.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hike12b {
+  position: absolute;
+  top: 71%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hike13b {
+  position: absolute;
+  top: 73.5%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nuna {
+  position: absolute;
+  top: 98.7%;
+  left: 67%;
+  width: 100px;
+}
+
+.nunac {
+  position: absolute;
+  top: 103.2%;
+  left: 67%;
+  width: 100px;
+}
+
+.heaks {
+  position: absolute;
+  top: 15%;
+  left: 43%;
+  color: rgb(72, 147, 217);
+}
+
+.pdf-offerd {
+  width: 830px;
+  background: white;
+  position: relative;
+  margin: auto;
+}
+
+.pdf-offerds {
+  width: 840px;
+  background: white;
+  position: relative;
+  margin: auto;
+}
+
+.genstamps {
+  position: absolute;
+  top: 53.5%;
+  height: 140px;
+  left: 10%;
+}

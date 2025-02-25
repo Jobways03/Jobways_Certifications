@@ -1,0 +1,49 @@
+.containerws {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  min-height: 89.5vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(246, 244, 244);
+}
+
+.boxj {
+  flex: 1 0 150px;
+  height: 150px;
+  background: linear-gradient(
+    145deg,
+    #a5def2,
+    #f4f3f2
+  ); /* Warm gradient for boxes */
+  color: #060606; /* Dark color for text for better contrast */
+  font-family: "Arial", sans-serif; /* Modern, readable font */
+  font-size: 20px; /* Readable text size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bolder;
+  transition: transform 0.5s, opacity 0.3s;
+}
+
+.boxj:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .containerw {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 90%;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,612 @@
+.pdf-invo {
+  width: 700px;
+  height: 1000px;
+  background: white;
+  position: relative;
+  margin: auto;
+}
+
+.inog {
+  position: absolute;
+  top: 14.4%;
+  font-size: 10.7px;
+  font-weight: bolder;
+  color: black;
+  left: 47%;
+}
+.froog {
+  position: absolute;
+  top: 16.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 4%;
+  font-weight: bolder;
+}
+.jplg {
+  position: absolute;
+  top: 17.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 12%;
+  font-weight: bolder;
+}
+.uniig {
+  position: absolute;
+  top: 19.25%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.e5g {
+  position: absolute;
+  top: 20.85%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.e6g {
+  position: absolute;
+  top: 22.55%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.e7g {
+  position: absolute;
+  top: 24.25%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.e8g {
+  position: absolute;
+  top: 25.95%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.to1g {
+  position: absolute;
+  top: 28.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 4%;
+  font-weight: bolder;
+}
+.to2g {
+  position: absolute;
+  top: 30.1%;
+  font-size: 10.7px;
+  color: black;
+  left: 17%;
+  font-weight: bolder;
+}
+.to3g {
+  position: absolute;
+  top: 31.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.to4g {
+  position: absolute;
+  top: 33.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.to5g {
+  position: absolute;
+  top: 35.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.to6g {
+  position: absolute;
+  top: 37.1%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.to7g {
+  position: absolute;
+  top: 16.2%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+}
+.to8g {
+  position: absolute;
+  top: 17.75%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+  font-weight: bolder;
+}
+.to9g {
+  position: absolute;
+  top: 19.25%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+}
+.to10g {
+  position: absolute;
+  top: 20.75%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+}
+.to11g {
+  position: absolute;
+  top: 16.2%;
+  font-size: 10.7px;
+  color: black;
+  left: 78.8%;
+}
+.to12g {
+  position: absolute;
+  top: 17.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 75.8%;
+}
+.to13g {
+  position: absolute;
+  top: 19.25%;
+  font-size: 10.7px;
+  color: black;
+  left: 77.4%;
+}
+.to14g {
+  position: absolute;
+  top: 20.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 82.5%;
+}
+.to15g {
+  position: absolute;
+  top: 25.35%;
+  font-size: 10.7px;
+  color: black;
+  left: 64.5%;
+  font-weight: bolder;
+}
+.to16g {
+  position: absolute;
+  top: 26.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+}
+.to17g {
+  position: absolute;
+  top: 28.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+}
+.to18g {
+  position: absolute;
+  top: 29.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+}
+
+.to19g {
+  position: absolute;
+  top: 34.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+}
+.to20g {
+  position: absolute;
+  top: 36.05%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+}
+.to21g {
+  position: absolute;
+  top: 37.6%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+}
+.to22g {
+  position: absolute;
+  top: 39.1%;
+  font-size: 10.7px;
+  color: black;
+  left: 42.3%;
+}
+.qq1g {
+  position: absolute;
+  top: 26.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 68.4%;
+}
+.qq2g {
+  position: absolute;
+  top: 28.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 68.4%;
+}
+.qq3g {
+  position: absolute;
+  top: 29.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 68.4%;
+}
+.qq4g {
+  position: absolute;
+  top: 31.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 68.4%;
+}
+.qq5g {
+  position: absolute;
+  top: 32.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 68.4%;
+}
+.qq6g {
+  position: absolute;
+  top: 34.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 68.4%;
+}
+.qq7g {
+  position: absolute;
+  top: 36.05%;
+  font-size: 10.7px;
+  color: black;
+  left: 68.4%;
+}
+.qq8g {
+  position: absolute;
+  top: 37.6%;
+  font-size: 10.7px;
+  color: black;
+  left: 68.4%;
+}
+.qq9g {
+  position: absolute;
+  top: 39.1%;
+  font-size: 10.7px;
+  color: black;
+  left: 68.4%;
+}
+.sd1g {
+  position: absolute;
+  top: 40.6%;
+  font-size: 10.7px;
+  color: black;
+  left: 48%;
+  font-weight: bolder;
+}
+.sd2g {
+  position: absolute;
+  top: 40.6%;
+  font-size: 10.7px;
+  color: black;
+  left: 70%;
+  font-weight: bolder;
+}
+.rr1g {
+  position: absolute;
+  top: 42.15%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.8%;
+  font-weight: bolder;
+}
+.rr2g {
+  position: absolute;
+  top: 42.15%;
+  font-size: 10.7px;
+  color: black;
+  left: 20.3%;
+  font-weight: bolder;
+}
+.rr3g {
+  position: absolute;
+  top: 42.15%;
+  font-size: 10.7px;
+  color: black;
+  left: 45.3%;
+  font-weight: bolder;
+}
+.rr4g {
+  position: absolute;
+  top: 42.15%;
+  font-size: 10.7px;
+  color: black;
+  left: 58.3%;
+  font-weight: bolder;
+}
+.rr5g {
+  position: absolute;
+  top: 42.15%;
+  font-size: 10.7px;
+  color: black;
+  left: 70.8%;
+  font-weight: bolder;
+}
+.rr6g {
+  position: absolute;
+  top: 42.15%;
+  font-size: 10.7px;
+  color: black;
+  left: 83.6%;
+  font-weight: bolder;
+}
+.vv1g {
+  position: absolute;
+  top: 43.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 11.5%;
+}
+.vv2g {
+  position: absolute;
+  top: 43.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 20.4%;
+}
+.vv3g {
+  position: absolute;
+  top: 43.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 46.4%;
+}
+.vv4g {
+  position: absolute;
+  top: 43.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 57%;
+}
+.vv5g {
+  position: absolute;
+  top: 43.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 69.8%;
+}
+
+.vv6g {
+  position: absolute;
+  top: 43.7%;
+  font-size: 10.7px;
+  color: black;
+  left: 83.2%;
+}
+.vv7g {
+  position: absolute;
+  top: 51.35%;
+  font-size: 10.7px;
+  color: black;
+  left: 83.2%;
+}
+.vv8g {
+  position: absolute;
+  top: 51.35%;
+  font-size: 10.7px;
+  color: black;
+  left: 55%;
+}
+.vv9g {
+  position: absolute;
+  top: 52.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 84.82%;
+}
+.vv10g {
+  position: absolute;
+  top: 54.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 83.2%;
+  font-weight: bolder;
+}
+.cc1g {
+  position: absolute;
+  top: 54.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 29%;
+  font-weight: bolder;
+}
+.cc2g {
+  position: absolute;
+  top: 55.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.cc3g {
+  position: absolute;
+  top: 55.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 76.2%;
+}
+.cc4g {
+  position: absolute;
+  top: 57.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 4.5%;
+}
+.cc5g {
+  position: absolute;
+  top: 60.6%;
+  font-size: 10.7px;
+  color: black;
+  left: 19%;
+  font-weight: bolder;
+}
+.cc6g {
+  position: absolute;
+  top: 60.6%;
+  font-size: 10.7px;
+  color: black;
+  left: 45%;
+  font-weight: bolder;
+}
+.cc7g {
+  position: absolute;
+  top: 60.6%;
+  font-size: 10.7px;
+  color: black;
+  left: 58.5%;
+  font-weight: bolder;
+}
+.cc8g {
+  position: absolute;
+  top: 60.6%;
+  font-size: 10.7px;
+  color: black;
+  left: 69%;
+  font-weight: bolder;
+}
+.cc9g {
+  position: absolute;
+  top: 60.6%;
+  font-size: 10.7px;
+  color: black;
+  left: 77.5%;
+  font-weight: bolder;
+}
+.qa1g {
+  position: absolute;
+  top: 62.1%;
+  font-size: 10.7px;
+  color: black;
+  left: 20%;
+}
+.qa2g {
+  position: absolute;
+  top: 62.1%;
+  font-size: 10.7px;
+  color: black;
+  left: 59.5%;
+}
+.qa3g {
+  position: absolute;
+  top: 62.1%;
+  font-size: 10.7px;
+  color: black;
+  left: 77.5%;
+}
+.qa4g {
+  position: absolute;
+  top: 63.65%;
+  font-size: 10.7px;
+  color: black;
+  left: 20.5%;
+  font-weight: bolder;
+}
+.qa5g {
+  position: absolute;
+  top: 63.65%;
+  font-size: 10.7px;
+  color: black;
+  left: 77.5%;
+}
+.qa6g {
+  position: absolute;
+  top: 65.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 5%;
+}
+.qa7g {
+  position: absolute;
+  top: 66.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 5%;
+}
+.qa8g {
+  position: absolute;
+  top: 68.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 5%;
+}
+.jb1g {
+  position: absolute;
+  top: 65.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 53%;
+  font-weight: bolder;
+}
+.jb2g {
+  position: absolute;
+  top: 67.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 53%;
+  font-weight: bolder;
+}
+.jb3g {
+  position: absolute;
+  top: 69.2%;
+  font-size: 10.7px;
+  color: black;
+  left: 53%;
+  font-weight: bolder;
+}
+.jb4g {
+  position: absolute;
+  top: 71.4%;
+  font-size: 10.7px;
+  color: black;
+  left: 53%;
+}
+.jb5g {
+  position: absolute;
+  top: 72.9%;
+  font-size: 10.7px;
+  color: black;
+  left: 53%;
+}
+
+.lo {
+  position: absolute;
+  top: 75.8%;
+  background-color: black;
+  height: 0.8px;
+  width: 640px;
+  left: 4%;
+}
+
+.color {
+  position: absolute;
+  top: 98.7%;
+  background-color: rgb(53, 194, 250);
+  height: 7px;
+  width: 698.4px;
+  left: 0.1%;
+}
+
+.nunn {
+  position: absolute;
+  top: 95.6%;
+}

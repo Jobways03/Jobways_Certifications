@@ -1,0 +1,480 @@
+.er1 {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  color: rgb(2, 2, 2);
+  text-decoration: underline;
+}
+
+.er1d {
+  position: absolute;
+  top: 10%;
+  left: 33%;
+  color: rgb(2, 2, 2);
+  text-decoration: underline;
+}
+
+.er1a {
+  position: absolute;
+  top: 17%;
+  left: 10%;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.er2 {
+  position: absolute;
+  top: 17%;
+  right: 10%;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.er3 {
+  position: absolute;
+  top: 22.5%;
+  left: 10%;
+  font-size: 15px;
+  width: 638px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.er4 {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+  font-size: 15px;
+  width: 638px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.er5 {
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.er7 {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.er8 {
+  position: absolute;
+  top: 57%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.er9 {
+  position: absolute;
+  top: 59%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.er10 {
+  position: absolute;
+  top: 61%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.bb {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.bbn {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.us1 {
+  position: absolute;
+  top: 1.7%;
+  left: 35.5%;
+  font-weight: bold;
+}
+
+.cm {
+  position: absolute;
+  width: 620px;
+  text-align: left;
+  font-size: 14.9px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.us2 {
+  top: 2.5%;
+  left: 11.5%;
+}
+
+.us3 {
+  top: 4.35%;
+  left: 11.5%;
+}
+
+.us4 {
+  top: 5.45%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us5 {
+  top: 6.22%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us6 {
+  top: 6.5%;
+  left: 11.5%;
+}
+
+.us7 {
+  top: 7.3%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us8 {
+  top: 7.6%;
+  left: 11.5%;
+}
+
+.us9 {
+  top: 9.1%;
+  left: 11.5%;
+}
+
+.us10 {
+  top: 10.45%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us11 {
+  top: 10.76%;
+  left: 11.5%;
+}
+
+.us12 {
+  top: 18%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us13 {
+  top: 18.34%;
+  left: 11.5%;
+}
+
+.us14 {
+  top: 21.2%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us15 {
+  top: 21.52%;
+  left: 11.5%;
+}
+
+.us16 {
+  top: 23.12%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us17 {
+  top: 23.45%;
+  left: 11.5%;
+}
+
+.us18 {
+  top: 25.7%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us19 {
+  top: 26.34%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us20 {
+  top: 26.67%;
+  left: 11.5%;
+}
+
+.us21 {
+  top: 28.3%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us22 {
+  top: 28.65%;
+  left: 11.5%;
+}
+
+.us23 {
+  top: 34.73%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us24 {
+  top: 35.05%;
+  left: 11.5%;
+}
+
+.us25 {
+  top: 36.43%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us26 {
+  top: 37.1%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us27 {
+  top: 37.45%;
+  left: 11.5%;
+}
+
+.us28 {
+  top: 39.7%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us29 {
+  top: 40.05%;
+  left: 11.5%;
+}
+
+.us30 {
+  top: 43.8%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us31 {
+  top: 44.12%;
+  left: 11.5%;
+}
+
+.us32 {
+  top: 51.45%;
+  left: 11.5%;
+}
+
+.us33 {
+  top: 52.5%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us34 {
+  top: 53.15%;
+  left: 11.5%;
+  font-weight: 700;
+  position: absolute;
+  max-width: 620px;
+  text-align: left;
+  font-size: 14.6px;
+  text-align: justify;
+  white-space: nowrap;
+}
+
+.us35 {
+  top: 53.45%;
+  left: 11.5%;
+}
+
+.us36 {
+  top: 56.5%;
+  left: 11.5%;
+}
+
+.us37 {
+  top: 57.62%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us38 {
+  top: 57.99%;
+  left: 11.5%;
+}
+
+.us39 {
+  top: 61%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us40 {
+  top: 61.4%;
+  left: 11.5%;
+}
+
+.us41 {
+  top: 68.2%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us42 {
+  top: 68.58%;
+  left: 11.5%;
+}
+
+.us43 {
+  top: 70.1%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us44 {
+  top: 70.77%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us45 {
+  top: 71.12%;
+  left: 11.5%;
+}
+
+.us46 {
+  top: 72.5%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us47 {
+  top: 72.85%;
+  left: 11.5%;
+}
+
+.us48 {
+  top: 75.2%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us49 {
+  top: 75.56%;
+  left: 11.5%;
+}
+
+.us50 {
+  top: 77.2%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us51 {
+  top: 77.8%;
+  left: 11.5%;
+}
+
+.us52 {
+  top: 84.9%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us53 {
+  top: 85.54%;
+  left: 11.5%;
+}
+
+.us54 {
+  top: 87.25%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us55 {
+  top: 87.95%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us56 {
+  top: 88.33%;
+  left: 11.5%;
+}
+
+.us57a{
+   top: 90%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us57 {
+  top: 92.5%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us58 {
+  top: 92.85%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us59 {
+  top: 93.2%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us60 {
+  top: 93.55%;
+  left: 11.5%;
+  font-weight: 700;
+}
+
+.us61 {
+  top: 94.45%;
+  left: 11.5%;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.us62 {
+  top: 95%;
+  left: 11.5%;
+}
+
+.us63 {
+  top: 95.9%;
+  left: 11.5%;
+  font-weight: bold;
+}
+
+.us64 {
+  top: 96.5%;
+  font-weight: bold;
+  left: 11.5%;
+}

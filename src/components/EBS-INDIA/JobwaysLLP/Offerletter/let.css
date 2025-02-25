@@ -1,0 +1,119 @@
+.bol {
+  font-weight: 501;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.com {
+  background-color: white;
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: rgb(82, 81, 81);
+  font-size: 12px;
+  left: 4.75%;
+}
+
+.numb {
+  top: 22.715%;
+  width: 100px;
+}
+
+.title {
+  top: 22.17%;
+}
+
+.email {
+  top: 23.2%;
+}
+
+.web {
+  top: 23.64%;
+}
+
+.add {
+  top: 24.2%;
+}
+
+.title2 {
+  top: 47.2%;
+}
+
+.numb2 {
+  top: 47.7%;
+  width: 100px;
+}
+
+.email2 {
+  top: 48.2%;
+}
+
+.web2 {
+  top: 48.64%;
+}
+
+.add2 {
+  top: 49.2%;
+}
+
+.title3 {
+  top: 72.2%;
+}
+
+.numb3 {
+  top: 72.7%;
+  width: 100px;
+}
+
+.email3 {
+  top: 73.2%;
+}
+
+.web3 {
+  top: 73.63%;
+}
+
+.add3 {
+  top: 74.2%;
+}
+
+.title4 {
+  top: 97.17%;
+}
+
+.numb4 {
+  top: 97.7%;
+  width: 100px;
+}
+
+.email4 {
+  top: 98.2%;
+}
+
+.web4 {
+  top: 98.64%;
+}
+
+.add4 {
+  top: 99.2%;
+}
+
+.lett38 {
+  top: 86.3%;
+  position: absolute;
+  height: 130px;
+  left: 8%;
+}
+
+.i4 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.ds11 {
+  height: 1124.5px;
+  width: 100%;
+  background-color: white;
+}

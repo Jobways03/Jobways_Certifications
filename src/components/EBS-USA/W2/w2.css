@@ -1,0 +1,1409 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200&display=swap");
+
+.pdf-pag {
+  width: 700px;
+  height: 1000px;
+  margin: 25px auto;
+  background: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#box1 {
+  height: 27%;
+  width: 94%;
+  border: 1px solid black;
+  position: relative;
+}
+
+#box2 {
+  height: 27%;
+  width: 94%;
+  border: 1px solid black;
+  margin-top: 10px;
+  position: relative;
+}
+
+#box3 {
+  height: 27%;
+  width: 94%;
+  border: 1px solid black;
+  margin-top: 10px;
+  position: relative;
+}
+
+.span {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+#p11,
+#p12 {
+  font-size: 8px;
+  margin: 0;
+}
+
+.line {
+  margin: 25px 0;
+  color: rgb(150, 147, 147);
+}
+
+.line1 {
+  position: absolute;
+  top: 6%;
+  background-color: black;
+  height: 1px;
+  width: 659px;
+}
+
+.line2 {
+  position: absolute;
+  top: 40%;
+  background-color: black;
+  height: 1px;
+  width: 560px;
+}
+
+.line3 {
+  position: absolute;
+  top: 50%;
+  background-color: black;
+  height: 1px;
+  width: 560px;
+}
+
+.line4 {
+  position: absolute;
+  top: 80%;
+  background-color: black;
+  height: 1px;
+  width: 659px;
+}
+
+.line5 {
+  color: rgb(150, 147, 147);
+  position: absolute;
+  top: 80%;
+  margin-left: 0.5%;
+}
+
+.line6 {
+  position: absolute;
+  background-color: black;
+  height: 216px;
+  width: 1px;
+  left: 85%;
+}
+
+.line7 {
+  position: absolute;
+  background-color: black;
+  height: 200px;
+  width: 1px;
+  left: 70%;
+  top: 6%;
+}
+
+.line8 {
+  position: absolute;
+  background-color: black;
+  height: 200px;
+  width: 1px;
+  left: 55%;
+  top: 6%;
+}
+
+.line9 {
+  position: absolute;
+  background-color: black;
+  height: 216px;
+  width: 1px;
+  left: 40%;
+}
+
+.line10 {
+  position: absolute;
+  background-color: black;
+  height: 53px;
+  width: 1px;
+  left: 86%;
+  bottom: 0%;
+}
+
+.line11 {
+  position: absolute;
+  background-color: black;
+  height: 53px;
+  width: 1px;
+  left: 72%;
+  bottom: 0%;
+}
+
+.line12 {
+  position: absolute;
+  background-color: black;
+  height: 53px;
+  width: 1px;
+  left: 55%;
+  bottom: 0%;
+}
+
+.line13 {
+  position: absolute;
+  background-color: black;
+  height: 53px;
+  width: 1px;
+  left: 39%;
+  bottom: 0%;
+}
+
+.line14 {
+  position: absolute;
+  background-color: black;
+  height: 53px;
+  width: 1px;
+  left: 23%;
+  bottom: 0%;
+}
+
+.line15 {
+  position: absolute;
+  background-color: black;
+  height: 40px;
+  width: 1px;
+  left: 7%;
+  bottom: 0%;
+}
+
+.line16 {
+  position: absolute;
+  top: 18%;
+  background-color: black;
+  height: 1px;
+  width: 296px;
+  right: 15%;
+}
+
+.line17 {
+  position: absolute;
+  top: 29%;
+  background-color: black;
+  height: 1px;
+  width: 296px;
+  right: 15%;
+}
+
+.line18 {
+  position: absolute;
+  top: 32%;
+  background-color: black;
+  height: 1px;
+  width: 296px;
+  right: 15%;
+}
+
+.line19 {
+  position: absolute;
+  top: 60%;
+  background-color: black;
+  height: 1px;
+  width: 98px;
+  right: 15%;
+}
+
+.line20 {
+  position: absolute;
+  top: 70%;
+  background-color: black;
+  height: 1px;
+  width: 98px;
+  right: 15%;
+}
+
+.boxa {
+  position: absolute;
+  top: 65%;
+  border: 1px solid black;
+  height: 10px;
+  width: 10px;
+  right: 45.5%;
+}
+
+.boxb {
+  position: absolute;
+  top: 56%;
+  border: 1px solid black;
+  height: 10px;
+  width: 10px;
+  right: 45.5%;
+}
+
+.boxc {
+  position: absolute;
+  top: 74%;
+  border: 1px solid black;
+  height: 10px;
+  width: 10px;
+  right: 45.5%;
+}
+
+.a1 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 2.85%;
+  left: 41%;
+}
+
+.a2 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 2.85%;
+  left: 56%;
+}
+
+.a3 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 2.85%;
+  left: 71%;
+}
+
+.a4 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 15%;
+  left: 41%;
+}
+
+.a5 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 15%;
+  left: 56%;
+}
+
+.a6 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 15%;
+  left: 71%;
+}
+
+.a7 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 26%;
+  left: 41%;
+}
+
+.a8 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 26%;
+  left: 56%;
+}
+
+.a9 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 26%;
+  left: 71%;
+}
+
+.a10 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 37%;
+  left: 40.5%;
+}
+
+.a11 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 37%;
+  left: 55.5%;
+}
+
+.a12a {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 37%;
+  left: 70.5%;
+}
+
+.a12b {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 47%;
+  left: 70.5%;
+}
+
+.a12c {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 57%;
+  left: 70.5%;
+}
+
+.a12d {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 67%;
+  left: 70.5%;
+}
+
+.a13 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 47%;
+  left: 40.5%;
+}
+
+.a14 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 47%;
+  left: 55.5%;
+}
+
+.a15 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 77%;
+  left: 0.5%;
+}
+
+.a16 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 77%;
+  left: 23.5%;
+}
+
+.a17 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 77%;
+  left: 39.5%;
+}
+
+.a18 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 77%;
+  left: 55.5%;
+}
+
+.a19 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 77%;
+  left: 72.5%;
+}
+
+.a20 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 77%;
+  left: 86.5%;
+}
+
+.a {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  top: 0%;
+  left: 0.75%;
+  margin: 0;
+}
+
+.b {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  top: 0%;
+  left: 40.85%;
+  margin: 0;
+}
+
+.c {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  top: 6.25%;
+  left: 0.75%;
+  margin: 0;
+}
+
+.d {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  top: 40.5%;
+  left: 0.75%;
+  margin: 0;
+}
+
+.e {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  top: 50%;
+  left: 0.75%;
+  margin: 0;
+}
+
+.r11 {
+  position: absolute;
+  font-size: 7px;
+  margin: 0;
+  top: 1.3%;
+  left: 3%;
+  font-weight: 500;
+}
+
+.r12 {
+  position: absolute;
+  font-size: 7px;
+  margin: 0;
+  top: 1.4%;
+  left: 43%;
+  font-weight: 500;
+}
+
+.r13 {
+  position: absolute;
+  font-size: 7px;
+  margin: 0;
+  top: 1.4%;
+  left: 86%;
+  font-weight: 500;
+}
+
+.r21 {
+  position: absolute;
+  font-size: 7px;
+  margin: 0;
+  top: 7.75%;
+  left: 3%;
+  font-weight: 500;
+}
+
+.r22 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 7.5%;
+  left: 42.5%;
+  font-weight: 500;
+}
+
+.r23 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 7.5%;
+  left: 57.5%;
+  font-weight: 500;
+}
+
+.r24 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 7.5%;
+  left: 72.5%;
+  font-weight: 500;
+}
+
+.r31 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 19.5%;
+  left: 42.5%;
+  font-weight: 500;
+}
+
+.r32 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 19.5%;
+  left: 57.5%;
+  font-weight: 500;
+}
+
+.r33 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 19.5%;
+  left: 72.5%;
+  font-weight: 500;
+}
+
+.r41 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 30.25%;
+  left: 42.5%;
+  font-weight: 500;
+}
+
+.r42 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 30.25%;
+  left: 57.5%;
+  font-weight: 500;
+}
+
+.r51 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 41.5%;
+  left: 3%;
+  font-weight: 500;
+}
+
+.r52 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 41.5%;
+  left: 42.75%;
+  font-weight: 500;
+}
+
+.r53 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 41.5%;
+  left: 57.75%;
+  font-weight: 500;
+}
+
+.r61 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 51.5%;
+  left: 3%;
+  font-weight: 500;
+}
+
+.r62 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 51.5%;
+  left: 37%;
+  font-weight: 500;
+}
+
+.r63 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 51.5%;
+  left: 57.75%;
+  font-weight: 500;
+}
+
+.r71 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 81.25%;
+  left: 3%;
+  font-weight: 500;
+}
+
+.r72 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 81.25%;
+  left: 8%;
+  font-weight: 500;
+}
+
+.r73 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 81.25%;
+  left: 26%;
+  font-weight: 500;
+}
+
+.r74 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 81.25%;
+  left: 42%;
+  font-weight: 500;
+}
+
+.r75 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 81.25%;
+  left: 58%;
+  font-weight: 500;
+}
+
+.r76 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 81.25%;
+  left: 75%;
+  font-weight: 500;
+}
+
+.r77 {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 81.25%;
+  left: 89%;
+  font-weight: 500;
+}
+
+.SE {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 57.5%;
+  left: 40.5%;
+  font-weight: 500;
+}
+
+.RP {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 66.25%;
+  left: 40.5%;
+  font-weight: 500;
+}
+
+.TP {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 74.75%;
+  left: 40.5%;
+  font-weight: 500;
+}
+
+.form {
+  position: absolute;
+  font-size: 10px;
+  margin: 0;
+  top: 10%;
+  left: 87%;
+  font-weight: 500;
+}
+
+.w {
+  position: absolute;
+  font-size: 22px;
+  margin: 0;
+  top: 6%;
+  left: 91.6%;
+  font-weight: 800;
+}
+
+.wage {
+  position: absolute;
+  font-size: 14px;
+  margin: 0;
+  top: 15.75%;
+  left: 87.6%;
+  font-weight: 700;
+}
+
+.tax {
+  position: absolute;
+  font-size: 14px;
+  margin: 0;
+  top: 23.5%;
+  left: 91%;
+  font-weight: 700;
+}
+
+.sas {
+  position: absolute;
+  font-size: 14px;
+  margin: 0;
+  top: 31%;
+  left: 87%;
+  font-weight: 700;
+}
+
+.year {
+  position: absolute;
+  font-size: 22px;
+  margin: 0;
+  top: 37.5%;
+  left: 88.75%;
+  font-weight: 800;
+}
+
+.d1 {
+  position: absolute;
+  font-size: 7.5px;
+  margin: 0;
+  top: 58%;
+  left: 85.5%;
+  font-weight: 800;
+}
+
+.d6 {
+  position: absolute;
+  font-size: 7px;
+  margin: 0;
+  top: 75.75%;
+  left: 88.5%;
+  font-weight: 500;
+}
+
+.d5 {
+  position: absolute;
+  font-size: 7px;
+  margin: 0;
+  top: 72.75%;
+  left: 86.75%;
+  font-weight: 500;
+}
+
+.d4 {
+  position: absolute;
+  font-size: 7px;
+  margin: 0;
+  top: 69.75%;
+  left: 86.7%;
+  font-weight: 500;
+}
+
+.d3 {
+  position: absolute;
+  font-size: 7.5px;
+  margin: 0;
+  top: 66.25%;
+  left: 85.5%;
+  font-weight: 800;
+}
+
+.t1 {
+  position: absolute;
+  font-size: 9px;
+  margin: 0;
+  top: 62.5%;
+  left: 85.5%;
+  font-weight: 800;
+}
+
+.t2 {
+  position: absolute;
+  font-size: 9px;
+  margin: 0;
+  top: 62%;
+  left: 85.5%;
+  font-weight: 800;
+}
+
+.font1 {
+  font-family: "Noto Serif", serif;
+  font-size: 8px;
+  position: absolute;
+  left: 12.5%;
+  top: 0.8%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font2 {
+  font-family: "Noto Serif", serif;
+  font-size: 8px;
+  position: absolute;
+  left: 61%;
+  top: 0.8%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font3 {
+  font-family: "Noto Serif", serif;
+  position: absolute;
+  left: 1%;
+  top: 12.5%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 10.5px;
+}
+
+.font4 {
+  font-family: "Noto Serif", serif;
+  position: absolute;
+  left: 1%;
+  top: 22%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 10.5px;
+}
+
+.font5 {
+  font-family: "Noto Serif", serif;
+  position: absolute;
+  left: 1%;
+  top: 32%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 10.5px;
+}
+
+.font6 {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  top: 12%;
+  margin: 0;
+  font-weight: 600;
+  right: 45.5%;
+}
+
+.font7 {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  top: 12%;
+  margin: 0;
+  font-weight: 600;
+  right: 30.5%;
+}
+
+.font8 {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  top: 12%;
+  margin: 0;
+  font-weight: 600;
+  right: 15.5%;
+}
+
+.font9 {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 45.5%;
+  top: 23%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font10 {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 30.5%;
+  top: 23%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font11 {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 15.5%;
+  top: 23%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.TX {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  left: 2.8%;
+  top: 84%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font12 {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  left: 11%;
+  top: 84%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font13 {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  top: 84%;
+  margin: 0;
+  font-weight: 600;
+  right: 61.5%;
+}
+
+.font14 {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  top: 84%;
+  margin: 0;
+  font-weight: 600;
+  right: 45.5%;
+}
+
+.font15 {
+  font-family: "Noto Serif", serif;
+  position: absolute;
+  left: 1%;
+  top: 56%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 10.5px;
+}
+
+.font13-l {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  top: 84%;
+  margin: 0;
+  font-weight: 600;
+  right: 28.5%;
+}
+
+
+.font14-l {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  top: 84%;
+  margin: 0;
+  font-weight: 600;
+  right: 14.5%;
+}
+
+.font15-l {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  top: 80%;
+  margin: 0;
+  font-weight: 600;
+  right: 0.5%;
+  margin: 0;
+  width: 85px;
+}
+
+.font16 {
+  font-family: "Noto Serif", serif;
+  position: absolute;
+  left: 1%;
+  top: 64%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 10.5px;
+}
+
+.font17 {
+  font-family: "Noto Serif", serif;
+  position: absolute;
+  left: 1%;
+  top: 72%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 10.5px;
+}
+
+.v1 {
+  position: absolute;
+  background-color: black;
+  height: 16px;
+  width: 1px;
+  left: 73%;
+  top: 74%;
+}
+
+.v2 {
+  position: absolute;
+  background-color: black;
+  height: 16px;
+  width: 1px;
+  left: 73%;
+  top: 64%;
+}
+
+.v3 {
+  position: absolute;
+  background-color: black;
+  height: 16px;
+  width: 1px;
+  left: 73%;
+  top: 54%;
+}
+
+.v4 {
+  position: absolute;
+  background-color: black;
+  height: 16px;
+  width: 1px;
+  left: 73%;
+  top: 44%;
+}
+
+.line2n {
+  position: absolute;
+  top: 40%;
+  background-color: black;
+  height: 1px;
+  width: 263px;
+}
+
+.line22n {
+  position: absolute;
+  top: 40.5%;
+  background-color: black;
+  height: 1px;
+  width: 297px;
+  left: 263px;
+}
+
+.line17n {
+  position: absolute;
+  top: 32%;
+  background-color: black;
+  height: 1px;
+  width: 296px;
+  right: 15%;
+}
+
+.line16n {
+  position: absolute;
+  top: 22.5%;
+  background-color: black;
+  height: 1px;
+  width: 296px;
+  right: 15%;
+}
+
+.line1n {
+  position: absolute;
+  top: 13%;
+  left: 263px;
+  background-color: black;
+  height: 1px;
+  width: 395px;
+}
+
+.nn {
+  position: absolute;
+  font-size: 7px;
+  margin: 0;
+  top: 6.5%;
+  left: 40.8%;
+  font-weight: 500;
+}
+
+.nn1 {
+  position: absolute;
+  font-size: 7px;
+  margin: 0;
+  top: 9.3%;
+  left: 41%;
+  font-weight: 500;
+}
+
+.line8n {
+  position: absolute;
+  background-color: black;
+  height: 200px;
+  width: 1px;
+  left: 55%;
+  top: 13%;
+}
+
+.line7n {
+  position: absolute;
+  background-color: black;
+  height: 182px;
+  width: 1px;
+  left: 70%;
+  top: 13%;
+}
+
+.a1n {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 9.3%;
+  left: 41%;
+}
+
+.a2n {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 9.3%;
+  left: 56%;
+}
+
+.a3n {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 9.3%;
+  left: 71%;
+}
+
+.r22n {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 14%;
+  left: 42.5%;
+  font-weight: 500;
+}
+
+.r23n {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 14%;
+  left: 57.5%;
+  font-weight: 500;
+}
+
+.r24n {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 14%;
+  left: 72.5%;
+  font-weight: 500;
+}
+
+.a4n {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 19%;
+  left: 41%;
+}
+
+.a5n {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 19%;
+  left: 56%;
+}
+
+.a6n {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 19%;
+  left: 71%;
+}
+
+.r31n {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 23.5%;
+  left: 42.5%;
+  font-weight: 500;
+}
+
+.r32n {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 23.5%;
+  left: 57.5%;
+  font-weight: 500;
+}
+
+.r33n {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 23.5%;
+  left: 72.5%;
+  font-weight: 500;
+}
+
+.a7n {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 28.7%;
+  left: 41%;
+}
+
+.a8n {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 28.7%;
+  left: 56%;
+}
+
+.a9n {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  top: 28.7%;
+  left: 71%;
+}
+
+.r41n {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 33.25%;
+  left: 42.5%;
+  font-weight: 500;
+}
+
+.r42n {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 33.25%;
+  left: 57.5%;
+  font-weight: 500;
+}
+
+.font6n {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 45.5%;
+  top: 17%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font7n {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 30.5%;
+  top: 17%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font8n {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 15.5%;
+  top: 17%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font9n {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 45.5%;
+  top: 26.5%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font10n {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 30.5%;
+  top: 26.5%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font11n {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 15.5%;
+  top: 26.5%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.line6n {
+  position: absolute;
+  background-color: black;
+  height: 181.5px;
+  width: 1px;
+  left: 85%;
+  top: 12.9%;
+}
+
+.line6nn {
+  position: absolute;
+  background-color: black;
+  height: 17px;
+  width: 1px;
+  left: 85%;
+}
+
+.yearn {
+  position: absolute;
+  font-size: 22px;
+  margin: 0;
+  top: 45.5%;
+  left: 88.75%;
+  font-weight: 800;
+}

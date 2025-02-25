@@ -1,0 +1,850 @@
+.pdf-page {
+  width: 700px;
+  height: 1000px;
+  margin: 0px auto;
+  background: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  background-image: url("./voided.png");
+  background-size: cover;
+}
+
+.pdf-page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.pdf-page p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#date {
+  position: absolute;
+  top: 4%;
+  right: 5%;
+  font-size: 80%;
+}
+
+#amt1 {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  font-size: 80%;
+  
+}
+
+#fullname {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  font-size: 80%;
+  
+  color: black;
+}
+
+#amt2 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  width: 90%;
+}
+
+#void {
+  position: absolute;
+  color: rgba(200, 200, 196, 0.656);
+  font-weight: bold;
+  font-size: 170px;
+  transform: rotate(315deg);
+  min-height: 400px;
+  left: 10%;
+  top: 10%;
+}
+
+#name1 {
+  position: absolute;
+  top: 13%;
+  left: 5%;
+  font-size: 80%;
+  
+}
+
+#add {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  font-size: 80%;
+  
+}
+
+#period {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  font-size: 80%;
+  
+}
+
+#emp {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#ssn {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#status {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#allow {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#line1 {
+  position: absolute;
+  top: 27.5%;
+  left: 5%;
+  background-color: black;
+  height: 1px;
+  width: 625px;
+}
+
+#name2 {
+  position: absolute;
+  top: 27%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#ssn2 {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#status2 {
+  position: absolute;
+  top: 27%;
+  left: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#allow2 {
+  position: absolute;
+  top: 27%;
+  left: 81.3%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#pay2 {
+  position: absolute;
+  top: 28.5%;
+  left: 50%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#pay3 {
+  position: absolute;
+  top: 28.5%;
+  left: 81.3%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#earn {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#hour {
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#rate {
+  position: absolute;
+  top: 30%;
+  left: 29%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#current {
+  position: absolute;
+  top: 30%;
+  left: 36%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#gross {
+  position: absolute;
+  top: 30%;
+  left: 43.5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#line2 {
+  position: absolute;
+  top: 32.15%;
+  left: 5%;
+  background-color: black;
+  height: 1px;
+  width: 310px;
+}
+
+#hour2 {
+  position: absolute;
+  top: 31.7%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#hour3 {
+  position: absolute;
+  top: 31.7%;
+  font-size: 50%;
+  font-weight: 500;
+  right: 75%;
+}
+#rate2 {
+  position: absolute;
+  top: 31.7%;
+  right: 68.5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+#current2 {
+  position: absolute;
+  top: 31.7%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#gross2 {
+  position: absolute;
+  top: 31.7%;
+  font-size: 50%;
+  font-weight: 500;
+  right: 51%;
+}
+
+#tax {
+  position: absolute;
+  top: 34.5%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#current3 {
+  position: absolute;
+  top: 34.5%;
+  left: 36%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#gross3 {
+  position: absolute;
+  top: 34.5%;
+  left: 42.65%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#line3 {
+  position: absolute;
+  top: 36.8%;
+  left: 5%;
+  background-color: black;
+  height: 1px;
+  width: 310px;
+}
+
+#tax1 {
+  position: absolute;
+  top: 36.5%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax1-1 {
+  position: absolute;
+  top: 36.5%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax1-2 {
+  position: absolute;
+  top: 36.5%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax2 {
+  position: absolute;
+  top: 38%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax2-1 {
+  position: absolute;
+  top: 38%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax2-2 {
+  position: absolute;
+  top: 38%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax3 {
+  position: absolute;
+  top: 39.5%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax3-1 {
+  position: absolute;
+  top: 39.5%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax3-2 {
+  position: absolute;
+  top: 39.5%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax4 {
+  position: absolute;
+  top: 41%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax4-1 {
+  position: absolute;
+  top: 41%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax4-2 {
+  position: absolute;
+  top: 41%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#line4 {
+  position: absolute;
+  top: 43.3%;
+  left: 29%;
+  background-color: black;
+  height: 1px;
+  width: 142px;
+}
+
+#tax5-1 {
+  position: absolute;
+  top: 43%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax5-2 {
+  position: absolute;
+  top: 43%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax6 {
+  position: absolute;
+  top: 45.5%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax6-1 {
+  position: absolute;
+  top: 45.5%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax6-2 {
+  position: absolute;
+  top: 45.5%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#p {
+  position: absolute;
+  top: 51%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+/* -------------------- */
+
+#emps {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#ssns {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#statuss {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#allows {
+  position: absolute;
+  top: 65%;
+  right: 10%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#line1s {
+  position: absolute;
+  top: 67.5%;
+  left: 5%;
+  background-color: black;
+  height: 1px;
+  width: 625px;
+}
+
+#name2s {
+  position: absolute;
+  top: 67%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#ssn2s {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#status2s {
+  position: absolute;
+  top: 67%;
+  left: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#allow2s {
+  position: absolute;
+  top: 67%;
+  left: 81.3%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#pay2s {
+  position: absolute;
+  top: 68.5%;
+  left: 50%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#pay3s {
+  position: absolute;
+  top: 68.5%;
+  left: 81.3%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#earns {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#hours {
+  position: absolute;
+  top: 70%;
+  left: 22%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#rates {
+  position: absolute;
+  top: 70%;
+  left: 29%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#currents {
+  position: absolute;
+  top: 70%;
+  left: 36%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#grosss {
+  position: absolute;
+  top: 70%;
+  left: 43.5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#line2s {
+  position: absolute;
+  top: 72.15%;
+  left: 5%;
+  background-color: black;
+  height: 1px;
+  width: 310px;
+}
+
+#hour2s {
+  position: absolute;
+  top: 71.7%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#hour3s {
+  position: absolute;
+  top: 71.7%;
+  right: 75%;
+  font-size: 50%;
+  font-weight: 500;
+}
+#rate2s {
+  position: absolute;
+  top: 71.7%;
+  right: 68.5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+#current2s {
+  position: absolute;
+  top: 71.7%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#gross2s {
+  position: absolute;
+  top: 71.7%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#taxs {
+  position: absolute;
+  top: 74.5%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#current3s {
+  position: absolute;
+  top: 74.5%;
+  left: 35.8%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#gross3s {
+  position: absolute;
+  top: 74.5%;
+  left: 42.65%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#line3s {
+  position: absolute;
+  top: 76.85%;
+  left: 5%;
+  background-color: black;
+  height: 1px;
+  width: 310px;
+}
+
+#tax1s {
+  position: absolute;
+  top: 76.5%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax1-1s {
+  position: absolute;
+  top: 76.5%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax1-2s {
+  position: absolute;
+  top: 76.5%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax2s {
+  position: absolute;
+  top: 78%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax2-1s {
+  position: absolute;
+  top: 78%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax2-2s {
+  position: absolute;
+  top: 78%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax3s {
+  position: absolute;
+  top: 79.5%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax3-1s {
+  position: absolute;
+  top: 79.5%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax3-2s {
+  position: absolute;
+  top: 79.5%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax4s {
+  position: absolute;
+  top: 81%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax4-1s {
+  position: absolute;
+  top: 81%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax4-2s {
+  position: absolute;
+  top: 81%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#line4s {
+  position: absolute;
+  top: 83.4%;
+  left: 29%;
+  background-color: black;
+  height: 1px;
+  width: 142px;
+}
+
+#tax5-1s {
+  position: absolute;
+  top: 83%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax5-2s {
+  position: absolute;
+  top: 83%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax6s {
+  position: absolute;
+  top: 85.5%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax6-1s {
+  position: absolute;
+  top: 85.5%;
+  right: 60%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#tax6-2s {
+  position: absolute;
+  top: 85.5%;
+  right: 51%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#ps {
+  position: absolute;
+  top: 91%;
+  left: 5%;
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#imga {
+  width: 670px;
+  position: absolute;
+  top: 95%;
+  left: 0.1px;
+}
+
+.print-button {
+  background-color: #4caf50; /* Green background */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 100px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.print-button:hover {
+  background-color: #45a049; /* Darker shade of green on hover */
+}
+
+/* Media query to adjust the button style for print */
+@media print {
+  .print-button {
+    display: none; /* Hide the button when printing */
+  }
+}

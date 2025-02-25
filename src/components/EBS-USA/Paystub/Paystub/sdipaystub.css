@@ -1,0 +1,815 @@
+.sdi-pdf-page {
+    width: 700px;
+    height: 1000px;
+    margin: 0px auto;
+    background: white;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url("./voided.png");
+    background-size: cover;
+  }
+ 
+  .sdi-pdf-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+ 
+  .sdi-pdf-page p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+  }
+ 
+  #sdi-date {
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    font-size: 80%;
+  }
+ 
+  #sdi-amt1 {
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    font-size: 80%;
+  }
+ 
+  #sdi-fullname {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    font-size: 80%;
+    color: black;
+  }
+ 
+  #sdi-amt2 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 90%;
+  }
+ 
+  #sdi-void {
+    position: absolute;
+    color: rgba(200, 200, 196, 0.656);
+    font-weight: bold;
+    font-size: 170px;
+    transform: rotate(315deg);
+    min-height: 400px;
+    left: 10%;
+    top: 10%;
+  }
+ 
+  #sdi-name1 {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    font-size: 80%;
+  }
+ 
+  #sdi-add {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 80%;
+  }
+ 
+  #sdi-period {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    font-size: 80%;
+  }
+ 
+  #sdi-emp {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-ssn {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    font-size: 50%;
+  }
+ 
+  #sdi-status {
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-allow {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    font-size: 50%;
+  }
+ 
+  #sdi-line1 {
+    position: absolute;
+    top: 27.5%;
+    left: 5%;
+    background-color: black;
+    height: 0.1px;
+    width: 625px;
+  }
+ 
+  #sdi-name2 {
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-ssn2 {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    font-size: 50%;
+  }
+ 
+  #sdi-status2 {
+    position: absolute;
+    top: 27%;
+    left: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-allow2 {
+    position: absolute;
+    top: 27%;
+    left: 81.3%;
+    font-size: 50%;
+  }
+ 
+  #sdi-pay2 {
+    position: absolute;
+    top: 28.5%;
+    left: 50%;
+    font-size: 50%;
+  }
+ 
+  #sdi-pay3 {
+    position: absolute;
+    top: 28.5%;
+    left: 81.3%;
+    font-size: 50%;
+  }
+ 
+  #sdi-earn {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-hour {
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    font-size: 50%;
+  }
+ 
+  #sdi-rate {
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    font-size: 50%;
+  }
+ 
+  #sdi-current {
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    font-size: 50%;
+  }
+ 
+  #sdi-gross {
+    position: absolute;
+    top: 30%;
+    left: 43.5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-line2 {
+    position: absolute;
+    top: 32.15%;
+    left: 5%;
+    background-color: black;
+    height: 0.1px;
+    width: 310px;
+  }
+ 
+  #sdi-hour2 {
+    position: absolute;
+    top: 31.7%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-hour3 {
+    position: absolute;
+    top: 31.7%;
+    font-size: 50%;
+    right: 75%;
+  }
+ 
+  #sdi-rate2 {
+    position: absolute;
+    top: 31.7%;
+    right: 68.5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-current2 {
+    position: absolute;
+    top: 31.7%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-gross2 {
+    position: absolute;
+    top: 31.7%;
+    font-size: 50%;
+    right: 51%;
+  }
+ 
+  #sdi-tax {
+    position: absolute;
+    top: 34.5%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-current3 {
+    position: absolute;
+    top: 34.5%;
+    left: 36%;
+    font-size: 50%;
+  }
+ 
+  #sdi-gross3 {
+    position: absolute;
+    top: 34.5%;
+    left: 42.65%;
+    font-size: 50%;
+  }
+ 
+  #sdi-line3 {
+    position: absolute;
+    top: 36.8%;
+    left: 5%;
+    background-color: black;
+    height: 0.1px;
+    width: 310px;
+  }
+ 
+  #sdi-tax1 {
+    position: absolute;
+    top: 36.5%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax1-1 {
+    position: absolute;
+    top: 36.5%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax1-2 {
+    position: absolute;
+    top: 36.5%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax2 {
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax2-1 {
+    position: absolute;
+    top: 38%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax2-2 {
+    position: absolute;
+    top: 38%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax3 {
+    position: absolute;
+    top: 39.5%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax3-1 {
+    position: absolute;
+    top: 39.5%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax3-2 {
+    position: absolute;
+    top: 39.5%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4 {
+    position: absolute;
+    top: 41%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-1 {
+    position: absolute;
+    top: 41%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-2 {
+    position: absolute;
+    top: 41%;
+    right: 51%;
+    font-size: 50%;
+  }
+
+
+  #sdi-tax4-s {
+    position: absolute;
+    top: 42.5%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-1-s {
+    position: absolute;
+    top: 42.5%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-2-s {
+    position: absolute;
+    top: 42.5%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-line4 {
+    position: absolute;
+    top: 45.3%;
+    left: 29%;
+    background-color: black;
+    height: 0.1px;
+    width: 142px;
+  }
+ 
+  #sdi-tax5-1 {
+    position: absolute;
+    top: 45%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax5-2 {
+    position: absolute;
+    top: 45%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6 {
+    position: absolute;
+    top: 47.5%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6-1 {
+    position: absolute;
+    top: 47.5%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6-2 {
+    position: absolute;
+    top: 47.5%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-p {
+    position: absolute;
+    top: 53%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  /* Employee section starts here */
+ 
+  #sdi-emps {
+    position: absolute;
+    top: 62%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-ssns {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    font-size: 50%;
+  }
+ 
+  #sdi-statuss {
+    position: absolute;
+    top: 62%;
+    left: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-allows {
+    position: absolute;
+    top: 62%;
+    right: 10%;
+    font-size: 50%;
+  }
+ 
+  #sdi-line1s {
+    position: absolute;
+    top: 64.5%;
+    left: 5%;
+    background-color: black;
+    height: 0.1px;
+    width: 625px;
+  }
+ 
+  #sdi-name2s {
+    position: absolute;
+    top: 64%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-ssn2s {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    font-size: 50%;
+  }
+ 
+  #sdi-status2s {
+    position: absolute;
+    top: 64%;
+    left: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-allow2s {
+    position: absolute;
+    top: 64%;
+    left: 81.3%;
+    font-size: 50%;
+  }
+ 
+  #sdi-pay2s {
+    position: absolute;
+    top: 65.5%;
+    left: 50%;
+    font-size: 50%;
+  }
+ 
+  #sdi-pay3s {
+    position: absolute;
+    top: 65.5%;
+    left: 81.3%;
+    font-size: 50%;
+  }
+ 
+  #sdi-earns {
+    position: absolute;
+    top: 67%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-hours {
+    position: absolute;
+    top: 67%;
+    left: 22%;
+    font-size: 50%;
+  }
+ 
+  #sdi-rates {
+    position: absolute;
+    top: 67%;
+    left: 29%;
+    font-size: 50%;
+  }
+ 
+  #sdi-currents {
+    position: absolute;
+    top: 67%;
+    left: 36%;
+    font-size: 50%;
+  }
+ 
+  #sdi-grosss {
+    position: absolute;
+    top: 67%;
+    left: 43.5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-line2s {
+    position: absolute;
+    top: 69.15%;
+    left: 5%;
+    background-color: black;
+    height: 0.1px;
+    width: 310px;
+  }
+ 
+  #sdi-hour2s {
+    position: absolute;
+    top: 68.7%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-hour3s {
+    position: absolute;
+    top: 68.7%;
+    right: 75%;
+    font-size: 50%;
+  }
+ 
+  #sdi-rate2s {
+    position: absolute;
+    top: 68.7%;
+    right: 68.5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-current2s {
+    position: absolute;
+    top: 68.7%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-gross2s {
+    position: absolute;
+    top: 68.7%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-taxs {
+    position: absolute;
+    top: 71.5%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-current3s {
+    position: absolute;
+    top: 71.5%;
+    left: 35.8%;
+    font-size: 50%;
+  }
+ 
+  #sdi-gross3s {
+    position: absolute;
+    top: 71.5%;
+    left: 42.65%;
+    font-size: 50%;
+  }
+ 
+  #sdi-line3s {
+    position: absolute;
+    top: 73.85%;
+    left: 5%;
+    background-color: black;
+    height: 0.1px;
+    width: 310px;
+  }
+ 
+  #sdi-tax1s {
+    position: absolute;
+    top: 73.5%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax1-1s {
+    position: absolute;
+    top: 73.5%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax1-2s {
+    position: absolute;
+    top: 73.5%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax2s {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax2-1s {
+    position: absolute;
+    top: 75%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax2-2s {
+    position: absolute;
+    top: 75%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax3s {
+    position: absolute;
+    top: 76.5%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax3-1s {
+    position: absolute;
+    top: 76.5%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax3-2s {
+    position: absolute;
+    top: 76.5%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4s {
+    position: absolute;
+    top: 78%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-1s {
+    position: absolute;
+    top: 78%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-2s {
+    position: absolute;
+    top: 78%;
+    right: 51%;
+    font-size: 50%;
+  }
+
+
+  #sdi-tax4s-s {
+    position: absolute;
+    top: 79.5%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-1s-s {
+    position: absolute;
+    top: 79.5%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-2s-s {
+    position: absolute;
+    top: 79.5%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-line4s {
+    position: absolute;
+    top: 82.4%;
+    left: 29%;
+    background-color: black;
+    height: 0.1px;
+    width: 142px;
+  }
+ 
+  #sdi-tax5-1s {
+    position: absolute;
+    top: 82%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax5-2s {
+    position: absolute;
+    top: 82%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6s {
+    position: absolute;
+    top: 84.5%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6-1s {
+    position: absolute;
+    top: 84.5%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6-2s {
+    position: absolute;
+    top: 84.5%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-ps {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-imga {
+    width: 670px;
+    position: absolute;
+    top: 95%;
+    left: 0.0.1px;
+  }
+ 
+  .sdi-print-button {
+    background-color: #4caf50; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 100px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+ 
+  .sdi-print-button:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+  }
+ 
+  /* Media query to adjust the button style for print */
+  @media print {
+    .sdi-print-button {
+      display: none; /* Hide the button when printing */
+    }
+  }
+ 
+
+

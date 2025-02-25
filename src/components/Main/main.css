@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 10% auto;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 40px;
+  margin: 2% auto;
+}
+
+.services {
+  width: 50%; /* Larger width for the services boxe */
+}
+
+.payrolls-container {
+  margin-top: 50px;
+}
+
+.payroll {
+  flex: 1 1 ; /* Adjust size to maintain consistency in row */
+  margin: 5px auto; /*w Smaller margin for tighter fit */
+  width: 50%;
+  align-self: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .boxe,
+  .services,
+  .payroll {
+    width: 100%; /* Full width on smaller screens */
+  }
+  .payrolls-container {
+    flex-direction: column;
+  }
+}
+
+
+/* .payrolls-container
+card payroll */

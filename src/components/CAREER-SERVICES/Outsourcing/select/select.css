@@ -1,0 +1,47 @@
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.interactive-box {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bolder;
+  font-size: larger;
+  border-radius: 10%;
+}
+
+.jobways-box:hover,
+.genie-lamp-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.jobways-box {
+  background-color: #f6f8fa; /* Light blue background */
+}
+
+.genie-lamp-box {
+  background-color: #fde2e4; /* Light pink background */
+}
+
+@media (max-width: 600px) {
+  .content-container {
+    flex-direction: column;
+  }
+}
+
+.gelly-box {
+  background-color: aquamarine;
+}
