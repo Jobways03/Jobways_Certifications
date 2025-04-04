@@ -6,13 +6,21 @@ const USOfferForm = () => {
   const Global = useContext(AuthContext);
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    Global.setUSOffer((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
+const handleChange = (e) => {
+  const { name, value } = e.target;
+
+  let formattedValue = value;
+
+  // if (name === "date" && value) {
+  //   const [year, month, day] = value.split("-");
+  //   formattedValue = `${month}/${day}/${year}`;
+  // }
+
+  Global.setUSOffer((prevState) => ({
+    ...prevState,
+    [name]: formattedValue,
+  }));
+};
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -43,14 +51,24 @@ const USOfferForm = () => {
             />
           </div>
 
-          <div className="form-group">
+          <div className="paystubLabel">
             <label>Date</label>
             <input
-              type="text"
+              type="date"
               name="date"
-              value={Global.USOffer.date}
-              onChange={handleChange}
-              placeholder=""
+              value={
+                Global.USOffer.date
+                  ? new Date(Global.USOffer.date).toLocaleDateString("en-CA")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${month}/${day}/${year}`; // US format MM/DD/YYYY
+                Global.setUSOffer({
+                  ...Global.USOffer,
+                  [e.target.name]: formattedDate,
+                });
+              }}
             />
           </div>
 
@@ -95,16 +113,37 @@ const USOfferForm = () => {
             />
           </div>
 
-          <div className="form-group">
+          <div className="paystubLabel">
             <label>Start Date</label>
             <input
-              type="text"
+              type="date"
               name="startDate"
-              value={Global.USOffer.startDate}
-              onChange={handleChange}
-              placeholder=""
+              value={
+                Global.USOffer.startDate
+                  ? new Date(Global.USOffer.startDate).toLocaleDateString(
+                      "en-CA"
+                    )
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${month}/${day}/${year}`; // US format MM/DD/YYYY
+                Global.setUSOffer({
+                  ...Global.USOffer,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
+
 
           <button type="submit">Submit</button>
         </form>

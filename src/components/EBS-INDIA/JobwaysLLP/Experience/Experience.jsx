@@ -24,7 +24,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <span className="bold">{Global.Experience.endDate}</span>.
         </p>
         <p className="exp5ea">
-          Throughout his employment,{" "}
+          Throughout the employment,{" "}
           <span className="bold"> {Global.Experience.name}</span> consistently
           displayed hard work and dedication.
         </p>

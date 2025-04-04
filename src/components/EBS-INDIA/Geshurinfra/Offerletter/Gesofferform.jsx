@@ -37,11 +37,29 @@ const GeshurOfferform = () => {
           <div className="form-group">
             <label>Date:</label>
             <input
-              type="text"
+              type="date"
               name="date"
-              value={Global.geshurofferform.date}
-              onChange={handleChange}
-              placeholder="01st January 2000"
+              value={
+                Global.geshurofferform.date
+                  ? Global.geshurofferform.date.split("/").reverse().join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${day}/${month}/${year}`; // Indian format
+                Global.setgeshurofferform({
+                  ...Global.geshurofferform,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
 
@@ -58,11 +76,32 @@ const GeshurOfferform = () => {
           <div className="form-group">
             <label>Joining Date:</label>
             <input
-              type="text"
+              type="date"
               name="joiningDate"
-              value={Global.geshurofferform.joiningDate}
-              onChange={handleChange}
-              placeholder="01st January 2000"
+              value={
+                Global.geshurofferform.joiningDate
+                  ? Global.geshurofferform.joiningDate
+                      .split("/")
+                      .reverse()
+                      .join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${day}/${month}/${year}`; // Indian format
+                Global.setgeshurofferform({
+                  ...Global.geshurofferform,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
 

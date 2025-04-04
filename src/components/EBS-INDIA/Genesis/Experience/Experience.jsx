@@ -22,12 +22,18 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <span className="bold">{Global.Experience.endDate}</span>.
         </p>
         <p className="gexp5">
-          During his tenure,{" "}
+          During the tenure,{" "}
           <span className="bold"> {Global.Experience.name}</span> exhibited
           commendable dedication and professionalism.
         </p>
-
-        <p className="gexp9">Sincerely,</p>
+        <p className="gexp9">
+          Employee ID :
+          <span className="bold" style={{ textTransform: "uppercase" }}>
+            {" "}
+            {Global.Experience.empid}
+          </span>
+        </p>
+        <p className="expge9csr">Sincerely,</p>
         <img
           src="./images/Genesisstamp.jpg"
           alt="stamp"

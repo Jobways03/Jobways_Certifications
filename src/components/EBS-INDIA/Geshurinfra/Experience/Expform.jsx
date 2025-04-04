@@ -2,41 +2,66 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../../../../context/AuthContext";
 
+const formatForInput = (dateStr, company) => {
+  if (!dateStr) return "";
+
+  let day, month, year;
+
+  if (dateStr.includes("/")) {
+    const parts = dateStr.split("/");
+    if (["JOBLLC", "KACEE", "RAPID"].includes(company)) {
+      [month, day, year] = parts; // US format
+    } else {
+      [day, month, year] = parts; // Indian format
+    }
+    return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+  }
+
+  // Already in correct YYYY-MM-DD format
+  return dateStr;
+};
+
 const Experienceform = () => {
   const Global = useContext(AuthContext);
   const navigate = useNavigate();
+  const company = localStorage.getItem("company");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    let formattedValue = value;
+
+    if (["date", "startDate", "endDate"].includes(name) && value) {
+      const [year, month, day] = value.split("-");
+
+      if (["JOBLLC", "KACEE", "RAPID"].includes(company)) {
+        formattedValue = `${month}/${day}/${year}`; // US Format
+      } else {
+        formattedValue = `${day}/${month}/${year}`; // Indian Format
+      }
+    }
+
     Global.setExperience((prevState) => ({
       ...prevState,
-      [name]: value,
+      [name]: formattedValue,
     }));
   };
-
-  // Genesis , Genielamp , Geshur , Jobways
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let company = localStorage.getItem("company");
-    if (company === "Genesis") {
-      navigate("/genesisExperience");
-    } else if (company === "Genielamp") {
-      navigate("/genielampExperience");
-    } else if (company === "Geshur") {
-      navigate("/geshurExperience");
-    } else if (company === "Jobways") {
-      navigate("/jobwaysExperience");
-    } else if (company === "sports") {
-      navigate("/sportsExperience");
-    } else if (company === "JOBLLC") {
-      navigate("/JobwaysLLCExperience");
-    } else if (company === "KACEE") {
-      navigate("/KaceeExperience");
-    } else if (company === "RAPID") {
-      navigate("/RapidExperience");
-    }
+    const companyRoutes = {
+      Genesis: "/genesisExperience",
+      Genielamp: "/genielampExperience",
+      Geshur: "/geshurExperience",
+      Jobways: "/jobwaysExperience",
+      sports: "/sportsExperience",
+      JOBLLC: "/JobwaysLLCExperience",
+      KACEE: "/KaceeExperience",
+      RAPID: "/RapidExperience",
+    };
+
+    navigate(companyRoutes[company] || "/");
   };
 
   return (
@@ -50,7 +75,7 @@ const Experienceform = () => {
             <input
               type="text"
               name="name"
-              value={Global.Experience.name}
+              value={Global.Experience.name || ""}
               onChange={handleChange}
             />
           </div>
@@ -60,7 +85,7 @@ const Experienceform = () => {
             <select
               name="gender"
               onChange={handleChange}
-              value={Global.Experience.gender}
+              value={Global.Experience.gender || ""}
             >
               <option value="">Select</option>
               <option value="He">He</option>
@@ -68,46 +93,34 @@ const Experienceform = () => {
             </select>
           </div>
 
-          <div className="form-group">
-            <label>Date</label>
-            <input
-              type="text"
-              name="date"
-              value={Global.Experience.date}
-              onChange={handleChange}
-              placeholder="01st January 2000"
-            />
-          </div>
+          {["date", "startDate", "endDate"].map((fieldLabel) => (
+            <div className="form-group" key={fieldLabel}>
+              <label>
+                {fieldLabel.charAt(0).toUpperCase() + fieldLabel.slice(1)}
+              </label>
+              <input
+                type="date"
+                name={fieldLabel}
+                value={formatForInput(Global.Experience[fieldLabel], company)}
+                onChange={handleChange}
+                style={{
+                  width: "100%",
+                  padding: "8px",
+                  borderRadius: "6px",
+                  border: "1px solid #ddd",
+                  boxSizing: "border-box",
+                }}
+              />
+            </div>
+          ))}
 
           <div className="form-group">
             <label>Designation</label>
             <input
               type="text"
               name="designation"
-              value={Global.Experience.designation}
+              value={Global.Experience.designation || ""}
               onChange={handleChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Start Date</label>
-            <input
-              type="text"
-              name="startDate"
-              value={Global.Experience.startDate}
-              onChange={handleChange}
-              placeholder="01st January 2000"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>End Date</label>
-            <input
-              type="text"
-              name="endDate"
-              value={Global.Experience.endDate}
-              onChange={handleChange}
-              placeholder="01st January 2000"
             />
           </div>
 
@@ -116,9 +129,8 @@ const Experienceform = () => {
             <input
               type="text"
               name="empid"
-              value={Global.Experience.empid}
+              value={Global.Experience.empid || ""}
               onChange={handleChange}
-              placeholder=""
             />
           </div>
 

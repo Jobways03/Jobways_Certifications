@@ -66,10 +66,21 @@ function Stubform() {
           <label className="paystubLabel">
             Date:
             <input
-              type="text"
+              type="date"
               name="date"
-              value={Global.form.date}
-              onChange={handleChange}
+              value={
+                Global.form.date
+                  ? new Date(Global.form.date).toLocaleDateString("en-CA")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${month}/${day}/${year}`; // MM/DD/YYYY
+                Global.setForm({
+                  ...Global.form,
+                  [e.target.name]: formattedDate,
+                });
+              }}
               required
             />
           </label>
@@ -106,20 +117,45 @@ function Stubform() {
           <label className="paystubLabel">
             Pay Period From:
             <input
-              type="text"
+              type="date"
               name="payPeriodFrom"
-              value={Global.form.payPeriodFrom}
-              onChange={handleChange}
+              value={
+                Global.form.payPeriodFrom
+                  ? new Date(Global.form.payPeriodFrom).toLocaleDateString(
+                      "en-CA"
+                    )
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                Global.setForm({
+                  ...Global.form,
+                  [e.target.name]: `${month}/${day}/${year}`,
+                });
+              }}
               required
             />
           </label>
+
           <label className="paystubLabel">
             Pay Period To:
             <input
-              type="text"
+              type="date"
               name="payPeriodTo"
-              value={Global.form.payPeriodTo}
-              onChange={handleChange}
+              value={
+                Global.form.payPeriodTo
+                  ? new Date(Global.form.payPeriodTo).toLocaleDateString(
+                      "en-CA"
+                    )
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                Global.setForm({
+                  ...Global.form,
+                  [e.target.name]: `${month}/${day}/${year}`,
+                });
+              }}
               required
             />
           </label>
@@ -184,7 +220,6 @@ function Stubform() {
             <input
               type="text"
               name="currentAmount"
-             
               value={Global.form.currentAmount}
               onChange={handleChange}
               required
@@ -195,7 +230,6 @@ function Stubform() {
             <input
               type="text"
               name="ytdGrossAmount"
-            
               value={Global.form.ytdGrossAmount}
               onChange={handleChange}
               required

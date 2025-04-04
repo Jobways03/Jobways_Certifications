@@ -76,6 +76,13 @@
   text-justify: inter-word;
 }
 
+.rel7cr{
+   position: absolute;
+  top: 47%;
+  left: 10%;
+  font-size: 14px;
+}
+
 .rel8c {
   position: absolute;
   top: 46.5%;
@@ -88,7 +95,7 @@
 
 .rel9c {
   position: absolute;
-  top: 48%;
+  top: 51%;
   left: 10%;
   font-weight: bold;
   font-size: 14px;
@@ -96,7 +103,7 @@
 
 .rel10c {
   position: absolute;
-  top: 65%;
+  top: 69%;
   left: 10%;
   font-weight: bold;
   font-size: 14px;
@@ -104,7 +111,7 @@
 
 .rel11c {
   position: absolute;
-  top: 67.5%;
+  top: 71.5%;
   left: 10%;
   font-weight: bold;
   font-size: 14px;
@@ -112,7 +119,7 @@
 
 .rel12c {
   position: absolute;
-  top: 70%;
+  top: 74%;
   left: 10%;
   font-weight: bold;
   font-size: 14px;
@@ -120,7 +127,7 @@
 
 .rel13c {
   position: absolute;
-  top: 72.5%;
+  top: 76.5%;
   left: 10%;
   font-weight: bold;
   font-size: 14px;
@@ -135,7 +142,7 @@
 
 .gesstampsss {
   position: absolute;
-  top: 52.8%;
+  top: 56.8%;
   height: 120px;
   left: 12%;
 }

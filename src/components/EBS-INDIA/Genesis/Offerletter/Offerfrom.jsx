@@ -24,7 +24,6 @@ const GenesisOfferform = () => {
         <form onSubmit={handleSubmit} className="invoice-form">
           <h1>Offer Letter Form</h1>
 
-
           <div className="form-group">
             <label>Name</label>
             <input
@@ -36,13 +35,31 @@ const GenesisOfferform = () => {
           </div>
 
           <div className="form-group">
-            <label>Date </label>
+            <label>Date</label>
             <input
-              type="text"
+              type="date"
               name="date"
-              value={Global.Offerform.date}
-              onChange={handleChange}
-              placeholder="01st January 2000"
+              value={
+                Global.Offerform.date
+                  ? Global.Offerform.date.split("/").reverse().join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${day}/${month}/${year}`; // Indian format
+                Global.setOfferform({
+                  ...Global.Offerform,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
 
@@ -57,13 +74,31 @@ const GenesisOfferform = () => {
           </div>
 
           <div className="form-group">
-            <label>Start Date </label>
+            <label>Start Date</label>
             <input
-              type="text"
+              type="date"
               name="startDate"
-              value={Global.Offerform.startDate}
-              onChange={handleChange}
-              placeholder="01st January 2000"
+              value={
+                Global.Offerform.startDate
+                  ? Global.Offerform.startDate.split("/").reverse().join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${day}/${month}/${year}`; // Indian format
+                Global.setOfferform({
+                  ...Global.Offerform,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
 

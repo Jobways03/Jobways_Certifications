@@ -37,11 +37,29 @@ const JobwaysOfferform = () => {
           <div className="form-group">
             <label>Date</label>
             <input
-              type="text"
+              type="date"
               name="date"
-              value={Global.Offerform.date}
-              onChange={handleChange}
-              placeholder="01st January 2000"
+              value={
+                Global.Offerform.date
+                  ? Global.Offerform.date.split("/").reverse().join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${day}/${month}/${year}`; // DD/MM/YYYY
+                Global.setOfferform({
+                  ...Global.Offerform,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
 
@@ -58,11 +76,29 @@ const JobwaysOfferform = () => {
           <div className="form-group">
             <label>Start Date</label>
             <input
-              type="text"
+              type="date"
               name="startDate"
-              value={Global.Offerform.startDate}
-              onChange={handleChange}
-              placeholder="01st January 2000"
+              value={
+                Global.Offerform.startDate
+                  ? Global.Offerform.startDate.split("/").reverse().join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${day}/${month}/${year}`; // DD/MM/YYYY
+                Global.setOfferform({
+                  ...Global.Offerform,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
 

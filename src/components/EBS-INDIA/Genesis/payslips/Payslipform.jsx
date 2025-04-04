@@ -102,10 +102,32 @@ const GenesisPayslipform = () => {
           <div className="form-group">
             <label>Date of Joining:</label>
             <input
-              type="text"
+              type="date"
               name="dateOfJoining"
-              value={Global.genesisPayslip.dateOfJoining}
-              onChange={handleChange}
+              value={
+                Global.genesisPayslip.dateOfJoining
+                  ? Global.genesisPayslip.dateOfJoining
+                      .split("/")
+                      .reverse()
+                      .join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${day}/${month}/${year}`; // DD/MM/YYYY
+                Global.setgenesisPayslip({
+                  ...Global.genesisPayslip,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
               required
             />
           </div>

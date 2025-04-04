@@ -37,10 +37,29 @@ const SportsOfferform = () => {
           <div className="form-group">
             <label>Date:</label>
             <input
-              type="text"
+              type="date"
               name="date"
-              value={Global.geshurofferform.date}
-              onChange={handleChange}
+              value={
+                Global.geshurofferform.date
+                  ? Global.geshurofferform.date.split("/").reverse().join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${day}/${month}/${year}`; // Indian format
+                Global.setGeshurofferform({
+                  ...Global.geshurofferform,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
 
@@ -57,10 +76,32 @@ const SportsOfferform = () => {
           <div className="form-group">
             <label>Joining Date:</label>
             <input
-              type="text"
+              type="date"
               name="joiningDate"
-              value={Global.geshurofferform.joiningDate}
-              onChange={handleChange}
+              value={
+                Global.geshurofferform.joiningDate
+                  ? Global.geshurofferform.joiningDate
+                      .split("/")
+                      .reverse()
+                      .join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${day}/${month}/${year}`; // Indian format
+                Global.setGeshurofferform({
+                  ...Global.geshurofferform,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
 

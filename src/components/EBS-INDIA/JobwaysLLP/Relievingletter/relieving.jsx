@@ -34,6 +34,13 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           We extend our best wishes to you for success and fulfillment in your
           future endeavors.
         </p>
+        <p className="rel6ear">
+          Employee ID :
+          <span className="bold" style={{ textTransform: "uppercase" }}>
+            {" "}
+            {Global.Relieve.empid}
+          </span>
+        </p>
         <img src="./images/jobwaysstamp.png" alt="stamp" className="jstampss" />
         <p className="rel9a">Sincerely,</p>
         <p className="rel10a"> Ashwini Chintapally </p>

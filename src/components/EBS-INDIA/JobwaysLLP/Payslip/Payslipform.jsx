@@ -102,10 +102,32 @@ const JobwaysPayslipform = () => {
           <div className="form-group">
             <label>Date of Joining:</label>
             <input
-              type="text"
+              type="date"
               name="dateOfJoining"
-              value={Global.jobwaysPayslip.dateOfJoining}
-              onChange={handleChange}
+              value={
+                Global.jobwaysPayslip.dateOfJoining
+                  ? Global.jobwaysPayslip.dateOfJoining
+                      .split("/")
+                      .reverse()
+                      .join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                const formattedDate = `${day}/${month}/${year}`; // Indian format
+                Global.setjobwaysPayslip({
+                  ...Global.jobwaysPayslip,
+                  [e.target.name]: formattedDate,
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
               required
             />
           </div>
@@ -290,7 +312,6 @@ const JobwaysPayslipform = () => {
             />
           </div>
 
-         
           <div className="form-group">
             <label>Amount in Words:</label>
             <input

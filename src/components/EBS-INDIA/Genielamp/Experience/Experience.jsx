@@ -21,9 +21,11 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <span className="bold">{Global.Experience.designation}</span> from{" "}
           <span className="bold">{Global.Experience.startDate}</span> to the{" "}
           <span className="bold">{Global.Experience.endDate}</span>. Throughout
-          his tenure, he has demonstrated himself as a hardworking, honest, and
-          dedicated employee.
+          the tenure, <span>{Global.Experience.gender}</span> has demonstrated{" "}
+          {Global.Experience.gender == "He" ? <> himself</> : <> herself</>} as
+          a hardworking, honest, and dedicated employee.
         </p>
+
         <p className="expg99b">
           Employee ID :
           <span className="bold" style={{ textTransform: "uppercase" }}>
@@ -37,7 +39,6 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         <p className="expg11b">HR Manager</p>
         <p className="expg12b"> hr@agenielamp.com</p>
         <p className="expg13b"> +91- 63004 02669</p>
-       
         <div className="ds1"></div>
       </div>
     </div>

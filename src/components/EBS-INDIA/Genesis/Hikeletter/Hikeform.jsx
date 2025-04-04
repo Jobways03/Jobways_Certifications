@@ -52,11 +52,28 @@ const GenesisHikeform = () => {
           <div className="form-group">
             <label>Date</label>
             <input
-              type="text"
+              type="date"
               name="date"
-              value={Global.Hike.date}
-              onChange={handleChange}
-              placeholder="01st January 2000"
+              value={
+                Global.Hike.date
+                  ? Global.Hike.date.split("/").reverse().join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                Global.setHike({
+                  ...Global.Hike,
+                  [e.target.name]: `${day}/${month}/${year}`, // Indian format
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
 
@@ -85,11 +102,28 @@ const GenesisHikeform = () => {
           <div className="form-group">
             <label>Effective Date</label>
             <input
-              type="text"
+              type="date"
               name="effectiveDate"
-              value={Global.Hike.effectiveDate}
-              onChange={handleChange}
-              placeholder="01st January 2000"
+              value={
+                Global.Hike.effectiveDate
+                  ? Global.Hike.effectiveDate.split("/").reverse().join("-")
+                  : ""
+              }
+              onChange={(e) => {
+                const [year, month, day] = e.target.value.split("-");
+                Global.setHike({
+                  ...Global.Hike,
+                  [e.target.name]: `${day}/${month}/${year}`, // Indian format
+                });
+              }}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
             />
           </div>
           <button type="submit">Submit</button>

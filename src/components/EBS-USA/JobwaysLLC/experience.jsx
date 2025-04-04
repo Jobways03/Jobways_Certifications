@@ -28,6 +28,14 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <span className="bold">Jobways LLC </span>
           and we wish you all the best in your future endeavors.
         </p>
+        {Global.Experience.empid.length !== 0 ? ( <p className="er4emp">
+          Employee ID :
+          <span className="bold" style={{ textTransform: "uppercase" }}>
+            {" "}
+            {Global.Experience.empid}
+          </span>
+        </p>) : ""}
+       
         <p className="er5">Sincerely,</p>
         <p className="er7"> Sudheer Panyam </p>
         <p className="er8">HR Manager</p>

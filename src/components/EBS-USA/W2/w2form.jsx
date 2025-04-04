@@ -43,14 +43,24 @@ const W2Form = () => {
           />
         </div>
 
-        <div className="form-group">
+        <div className="paystubLabel">
           <label htmlFor="date">Date</label>
           <input
             id="dates"
-            type="text"
+            type="date"
             name="date"
-            value={Global.w2form.date}
-            onChange={handleChange}
+            value={
+              Global.w2form.date
+                ? new Date(Global.w2form.date).toLocaleDateString("en-CA")
+                : ""
+            }
+            onChange={(e) => {
+              const [year, month, day] = e.target.value.split("-");
+              Global.setw2form({
+                ...Global.w2form,
+                [e.target.name]: `${month}/${day}/${year}`,
+              });
+            }}
             required
           />
         </div>

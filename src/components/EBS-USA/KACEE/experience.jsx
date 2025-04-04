@@ -18,14 +18,24 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           from <span className="bold">{Global.Experience.startDate}</span>, to{" "}
           <span className="bold">{Global.Experience.endDate}</span>, in the role
           of <span className="bold">{Global.Experience.designation}</span>.
-          During the employment,{" "}
-          <span> {Global.Experience.gender}</span> exhibited a
-          strong work-ethic, reliability, and dedication.
+          During the employment, <span> {Global.Experience.gender}</span>{" "}
+          exhibited a strong work-ethic, reliability, and dedication.
         </p>
         <p className="er4">
           We appreciate the efforts and commitment during the tenure and wish
           success in all future undertakings.
         </p>
+        {Global.Experience.empid.length !== 0 ? (
+          <p className="er4emp">
+            Employee ID :
+            <span className="bold" style={{ textTransform: "uppercase" }}>
+              {" "}
+              {Global.Experience.empid}
+            </span>
+          </p>
+        ) : (
+          ""
+        )}
         <p className="er5">Sincerely,</p>
         <p className="er7"> Akbar Khan </p>
         <p className="er8">HR Manager</p>

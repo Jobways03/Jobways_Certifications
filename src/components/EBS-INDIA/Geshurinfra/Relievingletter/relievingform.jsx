@@ -2,41 +2,68 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../../../../context/AuthContext";
 
+const formatForInput = (dateStr, company) => {
+  if (!dateStr) return "";
+
+  let day, month, year;
+
+  if (dateStr.includes("/")) {
+    const parts = dateStr.split("/");
+    if (["JOBLLC", "KACEE", "RAPID"].includes(company)) {
+      [month, day, year] = parts; // US format
+    } else {
+      [day, month, year] = parts; // Indian format
+    }
+    return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+  }
+
+  return dateStr;
+};
+
 const Relievingform = () => {
   const Global = useContext(AuthContext);
   const navigate = useNavigate();
+  const company = localStorage.getItem("company");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    let formattedValue = value;
+
+    if (
+      ["date", "startDate", "endDate", "ResignationDate"].includes(name) &&
+      value
+    ) {
+      const [year, month, day] = value.split("-");
+
+      if (["JOBLLC", "KACEE", "RAPID"].includes(company)) {
+        formattedValue = `${month}/${day}/${year}`; // US Format
+      } else {
+        formattedValue = `${day}/${month}/${year}`; // Indian Format
+      }
+    }
+
     Global.setRelieve((prevState) => ({
       ...prevState,
-      [name]: value,
+      [name]: formattedValue,
     }));
   };
-
-  // Genesis , Genielamp , Geshur , Jobways
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let company = localStorage.getItem("company");
-    if (company === "Genesis") {
-      navigate("/genesisRelieving");
-    } else if (company === "Genielamp") {
-      navigate("/genielampRelieving");
-    } else if (company === "Geshur") {
-      navigate("/geshurRelieving");
-    } else if (company === "Jobways") {
-      navigate("/jobwaysRelieving");
-    } else if (company === "sports") {
-      navigate("/sportsRelieving");
-    } else if (company === "JOBLLC") {
-      navigate("/JobllcRelieving");
-    } else if (company === "KACEE") {
-      navigate("/KaceeRelieving");
-    } else if (company === "RAPID") {
-      navigate("/RapidRelieving");
-    }
+    const companyRoutes = {
+      Genesis: "/genesisRelieving",
+      Genielamp: "/genielampRelieving",
+      Geshur: "/geshurRelieving",
+      Jobways: "/jobwaysRelieving",
+      sports: "/sportsRelieving",
+      JOBLLC: "/JobllcRelieving",
+      KACEE: "/KaceeRelieving",
+      RAPID: "/RapidRelieving",
+    };
+
+    navigate(companyRoutes[company] || "/");
   };
 
   return (
@@ -50,51 +77,37 @@ const Relievingform = () => {
             <input
               type="text"
               name="name"
-              value={Global.Relieve.name}
+              value={Global.Relieve.name || ""}
               onChange={handleChange}
             />
           </div>
 
-          <div className="form-group">
-            <label>Date</label>
-            <input
-              type="text"
-              name="date"
-              value={Global.Relieve.date}
-              onChange={handleChange}
-              placeholder="01st January 2000"
-            />
-          </div>
+          {["date", "startDate", "endDate"].map((field) => (
+            <div className="form-group" key={field}>
+              <label>{field.charAt(0).toUpperCase() + field.slice(1)}</label>
+              <input
+                type="date"
+                name={field}
+                value={formatForInput(Global.Relieve[field], company)}
+                onChange={handleChange}
+                style={{
+                  width: "100%",
+                  padding: "8px",
+                  borderRadius: "6px",
+                  border: "1px solid #ddd",
+                  boxSizing: "border-box",
+                }}
+              />
+            </div>
+          ))}
 
           <div className="form-group">
             <label>Designation</label>
             <input
               type="text"
               name="designation"
-              value={Global.Relieve.designation}
+              value={Global.Relieve.designation || ""}
               onChange={handleChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Start Date</label>
-            <input
-              type="text"
-              name="startDate"
-              value={Global.Relieve.startDate}
-              onChange={handleChange}
-              placeholder="01st January 2000"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>End Date</label>
-            <input
-              type="text"
-              name="endDate"
-              value={Global.Relieve.endDate}
-              onChange={handleChange}
-              placeholder="01st January 2000"
             />
           </div>
 
@@ -103,27 +116,28 @@ const Relievingform = () => {
             <input
               type="text"
               name="empid"
-              value={Global.Relieve.empid}
+              value={Global.Relieve.empid || ""}
               onChange={handleChange}
-              placeholder=""
             />
           </div>
 
-          {localStorage.getItem("company") === "Genesis" ? (
-            <>
-              <div className="form-group">
-                <label>Resignation letter Dated</label>
-                <input
-                  type="text"
-                  name="ResignationDate"
-                  value={Global.Relieve.ResignationDate}
-                  onChange={handleChange}
-                  placeholder="01st January 2000"
-                />
-              </div>
-            </>
-          ) : (
-            <></>
+          {company === "Genesis" && (
+            <div className="form-group">
+              <label>Resignation letter Dated</label>
+              <input
+                type="date"
+                name="ResignationDate"
+                value={formatForInput(Global.Relieve.ResignationDate, company)}
+                onChange={handleChange}
+                style={{
+                  width: "100%",
+                  padding: "8px",
+                  borderRadius: "6px",
+                  border: "1px solid #ddd",
+                  boxSizing: "border-box",
+                }}
+              />
+            </div>
           )}
 
           <button type="submit">Submit</button>
