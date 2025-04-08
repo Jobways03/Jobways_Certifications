@@ -76,20 +76,7 @@ const SM_Invoiceform = () => {
       price: "Price8",
       amount: "amount8",
     },
-    {
-      product: "9",
-      description: "Description9",
-      quantity: "Quantity9",
-      price: "Price9",
-      amount: "amount9",
-    },
-    {
-      product: "10",
-      description: "Description10",
-      quantity: "Quantity10",
-      price: "Price10",
-      amount: "amount10",
-    },
+
   ];
 
 
