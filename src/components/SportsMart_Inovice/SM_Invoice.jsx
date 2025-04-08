@@ -44,15 +44,15 @@ console.log(Global.SM_FormData.paymentType);
         <div className="SM_due"></div>
         <div className="SM_duem"></div>
         <div className="SM_duem1"></div>
-        
+
         {/* <p className="SM_duej">~</p> */}
         <p className="SM_des">DESCRIPTION</p>
-     
+
         <p className="SM_houri">Quantity</p>
         <p className="SM_ratei">Price</p>
         <p className="SM_amti">AMOUNT</p>
 
-        <p className="SM_learn p1">{Global.SM_FormData.Description1}</p>
+        {/* <p className="SM_learn p1">{Global.SM_FormData.Description1}</p>
         <p className="SM_hoursj p1">{Global.SM_FormData.Quantity1}</p>
         <p className="SM_middev1 p1">{Global.SM_FormData.Price1}</p>
         {Global.SM_FormData.amount1 ? (
@@ -95,7 +95,30 @@ console.log(Global.SM_FormData.paymentType);
           <p className="SM_middev p5">{Global.SM_FormData.amount5} INR</p>
         ) : (
           ""
-        )}
+        )} */}
+        {[...Array(10)].map((_, index) => {
+          const i = index + 1;
+          return (
+            <React.Fragment key={i}>
+              <p className={`SM_learn p${i}`}>
+                {Global.SM_FormData[`Description${i}`]}
+              </p>
+              <p className={`SM_hoursj p${i}`}>
+                {Global.SM_FormData[`Quantity${i}`]}
+              </p>
+              <p className={`SM_middev1 p${i}`}>
+                {Global.SM_FormData[`Price${i}`]}
+              </p>
+              {Global.SM_FormData[`amount${i}`] ? (
+                <p className={`SM_middev p${i}`}>
+                  {Global.SM_FormData[`amount${i}`]} INR
+                </p>
+              ) : (
+                ""
+              )}
+            </React.Fragment>
+          );
+        })}
 
         {Global.SM_FormData.paymentType === "advance" ? (
           <p className="bold1">Advance Paid</p>

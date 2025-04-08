@@ -19,43 +19,79 @@ const SM_Invoiceform = () => {
     navigate("/SM_Invoice");
   };
 
-   const productFields = [
-     {
-       product: "1",
-       description: "Description1",
-       quantity: "Quantity1",
-       price: "Price1",
-       amount: "amount1",
-     },
-     {
-       product: "2",
-       description: "Description2",
-       quantity: "Quantity2",
-       price: "Price2",
-       amount: "amount2",
-     },
-     {
-       product: "3",
-       description: "Description3",
-       quantity: "Quantity3",
-       price: "Price3",
-       amount: "amount3",
-     },
-     {
-       product: "4",
-       description: "Description4",
-       quantity: "Quantity4",
-       price: "Price4",
-       amount: "amount4",
-     },
-     {
-       product: "5",
-       description: "Description5",
-       quantity: "Quantity5",
-       price: "Price5",
-       amount: "amount5",
-     },
-   ];
+  const productFields = [
+    {
+      product: "1",
+      description: "Description1",
+      quantity: "Quantity1",
+      price: "Price1",
+      amount: "amount1",
+    },
+    {
+      product: "2",
+      description: "Description2",
+      quantity: "Quantity2",
+      price: "Price2",
+      amount: "amount2",
+    },
+    {
+      product: "3",
+      description: "Description3",
+      quantity: "Quantity3",
+      price: "Price3",
+      amount: "amount3",
+    },
+    {
+      product: "4",
+      description: "Description4",
+      quantity: "Quantity4",
+      price: "Price4",
+      amount: "amount4",
+    },
+    {
+      product: "5",
+      description: "Description5",
+      quantity: "Quantity5",
+      price: "Price5",
+      amount: "amount5",
+    },
+    {
+      product: "6",
+      description: "Description6",
+      quantity: "Quantity6",
+      price: "Price6",
+      amount: "amount6",
+    },
+    {
+      product: "7",
+      description: "Description7",
+      quantity: "Quantity7",
+      price: "Price7",
+      amount: "amount7",
+    },
+    {
+      product: "8",
+      description: "Description8",
+      quantity: "Quantity8",
+      price: "Price8",
+      amount: "amount8",
+    },
+    {
+      product: "9",
+      description: "Description9",
+      quantity: "Quantity9",
+      price: "Price9",
+      amount: "amount9",
+    },
+    {
+      product: "10",
+      description: "Description10",
+      quantity: "Quantity10",
+      price: "Price10",
+      amount: "amount10",
+    },
+  ];
+
 
   return (
     <div className="employee-form-container">
