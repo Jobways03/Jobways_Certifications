@@ -47,7 +47,7 @@ import GeshurExperience from "./components/EBS-INDIA/Geshurinfra/Experience/Expe
 import GenesisExperience from "./components/EBS-INDIA/Genesis/Experience/Experience";
 import Experienceform from "./components/EBS-INDIA/Geshurinfra/Experience/Expform";
 import SportsmartBoxes from "./components/EBS-INDIA/Sportsmart/Boxes/Boxes";
-import SportsOfferform from "./components/EBS-INDIA/Sportsmart/Offerletter/Gesofferform";
+import SportsOfferform from "./components/EBS-INDIA/Sportsmart/Offerletter/offerform";
 import Sportsoffer from "./components/EBS-INDIA/Sportsmart/Offerletter/Offer";
 import SportsPayslipform from "./components/EBS-INDIA/Sportsmart/payslips/Payslipform";
 import Sportspayslip from "./components/EBS-INDIA/Sportsmart/payslips/Payslip";
@@ -93,6 +93,7 @@ import Canada_Main from "./components/EBS-CANADA/Main/Canada_Main";
 import IndianMain from "./components/EBS-INDIA/Main/IndiaMain";
 import SM_Invoice from "./components/SportsMart_Inovice/SM_Invoice";
 import SM_Invoiceform from "./components/SportsMart_Inovice/SM_Invoice_form";
+import SportsmartLLPEdit from "./components/EBS-INDIA/Sportsmart/Editable/SportsEdit";
 
 function App() {
   return (
@@ -213,7 +214,8 @@ function App() {
             <Route path="/t4form" element={<T4form />} />
             <Route path="/canada_Main" element={<Canada_Main />} />
             <Route path="/SM_Invoice" element={<SM_Invoice />} />
-            <Route path="SM_Invoiceform" element={<SM_Invoiceform />} />
+            <Route path="/SM_Invoiceform" element={<SM_Invoiceform />} />
+            <Route path="/SportsmartLLPEdit" element={<SportsmartLLPEdit />} />
           </Routes>
         </AuthState>
       </BrowserRouter>

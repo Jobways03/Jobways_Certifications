@@ -16,111 +16,111 @@
 .SM_namei {
   position: absolute;
   font-size: 10.7px;
-  top: 30%;
+  top: 25.7%;  /* 25.5% + 0.2% */
   left: 3.5%;
 }
 
 .SM_maili {
   position: absolute;
   font-size: 10.7px;
-  top: 31.7%;
+  top: 27.4%;  /* 27.2% + 0.2% */
   left: 3.5%;
 }
 
 .SM_phonei {
   position: absolute;
   font-size: 10.7px;
-  top: 33.4%;
+  top: 29.1%;  /* 28.9% + 0.2% */
   left: 3.5%;
 }
 
 .SM_addi {
   position: absolute;
   font-size: 10.7px;
-  top: 35.1%;
+  top: 30.8%;  /* 30.6% + 0.2% */
   left: 3.5%;
 }
 
 .SM_eadd1 {
   position: absolute;
   font-size: 10.7px;
-  top: 15.3%;
+  top: 11.0%;  /* 10.8% + 0.2% */
   left: 3.5%;
 }
 
 .SM_eadd2 {
   position: absolute;
   font-size: 10.7px;
-  top: 17.1%;
+  top: 12.8%;  /* 12.6% + 0.2% */
   left: 3.5%;
 }
 
 .SM_eadd3 {
   position: absolute;
   font-size: 10.7px;
-  top: 18.9%;
+  top: 14.6%;  /* 14.4% + 0.2% */
   left: 3.5%;
 }
 
 .SM_eadd4 {
   position: absolute;
   font-size: 10.7px;
-  top: 20.7%;
+  top: 16.4%;  /* 16.2% + 0.2% */
   left: 3.5%;
 }
 
 .SM_eadd5 {
   position: absolute;
   font-size: 10.7px;
-  top: 22.5%;
+  top: 18.2%;  /* 18.0% + 0.2% */
   left: 3.5%;
 }
 
 .SM_datei {
   position: absolute;
   font-size: 10.7px;
-  top: 17.8%;
+  top: 13.5%;  /* 13.3% + 0.2% */
   right: 28.2%;
 }
 
 .SM_datej {
   position: absolute;
   font-size: 10.7px;
-  top: 17.8%;
-  right: 14.2%;
+  top: 13.5%;  /* 13.3% + 0.2% */
+  left: 74.5%;
 }
 
 .SM_ini {
   position: absolute;
   font-size: 10.7px;
-  top: 19.5%;
+  top: 15.2%;  /* 15.0% + 0.2% */
   right: 28.2%;
 }
 
 .SM_inj {
   position: absolute;
   font-size: 10.7px;
-  top: 19.5%;
+  top: 15.2%;  /* 15.0% + 0.2% */
   left: 74.5%;
 }
 
 .SM_servicei {
   position: absolute;
   font-size: 10.7px;
-  top: 21.25%;
+  top: 16.95%;  /* 16.75% + 0.2% */
   right: 28.2%;
 }
 
 .SM_servicej {
   position: absolute;
   font-size: 10.7px;
-  top: 21.1%;
+  top: 16.8%;  /* 16.6% + 0.2% */
   left: 74.5%;
 }
 
 .SM_due {
   position: absolute;
-  top: 23.6%;
+  top: 19.3%;  /* 19.1% + 0.2% */
   right: 1.2%;
   height: 18px;
   width: 200px;
@@ -129,7 +129,7 @@
 
 .SM_duem {
   position: absolute;
-  top: 85.6%;
+  top: 81.3%;  /* 81.1% + 0.2% */
   right: 0%;
   height: 10px;
   width: 10px;
@@ -138,7 +138,7 @@
 
 .SM_duem1 {
   position: absolute;
-  top: 28.6%;
+  top: 24.3%;  /* 24.1% + 0.2% */
   left: 2.98%;
   height: 18px;
   width: 3px;
@@ -148,14 +148,14 @@
 .SM_duej {
   position: absolute;
   font-size: 10.7px;
-  top: 22.7%;
+  top: 18.4%;  /* 18.2% + 0.2% */
   right: 14.2%;
 }
 
 .SM_bill {
   position: absolute;
   font-size: 10.7px;
-  top: 27.9%;
+  top: 23.6%;  /* 23.4% + 0.2% */
   left: 3.34%;
   color: white;
   font-weight: bolder;
@@ -164,7 +164,7 @@
 .SM_lie {
   border: 0.5px solid rgb(81, 117, 163);
   position: absolute;
-  top: 28.8%;
+  top: 24.5%;  /* 24.3% + 0.2% */
   left: 3.2%;
   height: 13px;
 }
@@ -172,7 +172,7 @@
 .SM_ii {
   position: absolute;
   right: 3%;
-  top: 14.5%;
+  top: 10.2%;  /* 10.0% + 0.2% */
   font-size: 10.7px;
   font-weight: bolder;
   color: rgb(54, 79, 155);
@@ -180,7 +180,7 @@
 
 .SM_des {
   position: absolute;
-  top: 39.6%;
+  top: 35.3%;  /* 35.1% + 0.2% */
   font-size: 10.7px;
   font-weight: bolder;
   color: rgb(249, 248, 248);
@@ -190,14 +190,14 @@
 .SM_lie2 {
   border: 0.5px solid rgb(81, 117, 163);
   position: absolute;
-  top: 40.6%;
+  top: 36.3%;  /* 36.1% + 0.2% */
   left: 3.2%;
   height: 13px;
 }
 
 .SM_houri, .SM_ratei, .SM_amti {
   position: absolute;
-  top: 39.7%;
+  top: 35.4%;  /* 35.2% + 0.2% */
   font-size: 10.1px;
   font-weight: bold;
   color: rgb(249, 248, 248);
@@ -214,43 +214,43 @@
 }
 
 .p1{
-    top:41.7%;
+  top:37.4%;  /* 37.2% + 0.2% */
 }
 
 .p2{
-    top: 43.7%;
+  top: 39.4%;  /* 39.2% + 0.2% */
 }
 
 .p3{
-    top: 45.7%;
+  top: 41.4%;  /* 41.2% + 0.2% */
 }
 
 .p4{
-    top: 47.7%;
+  top: 43.4%;  /* 43.2% + 0.2% */
 }
 
 .p5{
-    top: 49.7%;
+  top: 45.4%;  /* 45.2% + 0.2% */
 }
 
 .p6{
-  top: 51.7%;
+  top: 47.4%;  /* 47.2% + 0.2% */
 }
 
 .p7{
-  top: 53.7%;
+  top: 49.4%;  /* 49.2% + 0.2% */
 }
 
 .p8{
-  top: 55.7%;
+  top: 51.4%;  /* 51.2% + 0.2% */
 }
 
 .p9{
-  top: 57.7%;
+  top: 53.4%;  /* 53.2% + 0.2% */
 }
 
 .p10{
-  top: 59.7%;
+  top: 55.4%;  /* 55.2% + 0.2% */
 }
 
 .SM_hoursj {
@@ -284,11 +284,11 @@
   right: 28.2%;
 }
 
-.SM_sti { top: 61.2%; font-weight: bolder; }
-.SM_tri { top: 63%; }
-.SM_taxi { top: 65.3%; font-weight: bolder; }
-.SM_ifi { top: 66%; }
-.SM_sfi { top: 67.7%; }
+.SM_sti { top: 56.9%; font-weight: bolder; }  /* 56.7% + 0.2% */
+.SM_tri { top: 58.7%; }  /* 58.5% + 0.2% */
+.SM_taxi { top: 61.0%; font-weight: bolder; }  /* 60.8% + 0.2% */
+.SM_ifi { top: 61.7%; }  /* 61.5% + 0.2% */
+.SM_sfi { top: 63.4%; }  /* 63.2% + 0.2% */
 
 .SM_sta, .SM_tria, .SM_taxia, .SM_ifia, .SM_sfia, .SM_toti {
   position: absolute;
@@ -299,18 +299,18 @@
   text-align: center;
 }
 
-.SM_sta { top: 62.2%; font-weight: bolder; }
-.SM_tria { top: 64%; }
-.SM_taxia { top: 66.24%; font-weight: bolder; }
-.SM_ifia { top: 67.05%; }
-.SM_sfia { top: 68.7%; }
-.SM_toti { top: 70.7%; font-weight: bolder; }
+.SM_sta { top: 57.9%; font-weight: bolder; }  /* 57.7% + 0.2% */
+.SM_tria { top: 59.7%; }  /* 59.5% + 0.2% */
+.SM_taxia { top: 61.94%; font-weight: bolder; }  /* 61.74% + 0.2% */
+.SM_ifia { top: 62.75%; }  /* 62.55% + 0.2% */
+.SM_sfia { top: 64.4%; }  /* 64.2% + 0.2% */
+.SM_toti { top: 66.4%; font-weight: bolder; }  /* 66.2% + 0.2% */
 
 /* Footer */
 .SM_totii {
   position: absolute;
   font-size: 10.7px;
-  top: 69.7%;
+  top: 65.4%;  /* 65.2% + 0.2% */
   right: 33%;
   font-weight: bolder;
 }
@@ -318,7 +318,7 @@
 .SM_oc {
   position: absolute;
   font-size: 10.7px;
-  top: 62.45%;
+  top: 58.25%;  /* 57.95% + 0.2% */
   left: 20.5%;
 }
 
@@ -328,21 +328,21 @@
   left: 3.5%;
 }
 
-.SM_oc1 { top: 64.4%; }
-.SM_oc2 { top: 65.94%; }
-.SM_oc3 { top: 67.4%; left: 5.2%; }
+.SM_oc1 { top: 60.1%; }  /* 59.9% + 0.2% */
+.SM_oc2 { top: 61.64%; }  /* 61.44% + 0.2% */
+.SM_oc3 { top: 63.1%; left: 5.2%; }  /* 62.9% + 0.2% */
 
 .SM_mac {
   position: absolute;
   font-size: 10.7px;
-  top: 72.4%;
+  top: 68.1%;  /* 67.9% + 0.2% */
   left: 70.5%;
 }
 
 .SM_mac1 {
   position: absolute;
   font-size: 10.7px;
-  top: 74%;
+  top: 69.7%;  /* 69.5% + 0.2% */
   left: 67%;
   font-weight: bolder;
   text-transform: uppercase;
@@ -351,7 +351,7 @@
 .SM_tyf {
   position: absolute;
   font-size: 10.7px;
-  top: 81%;
+  top: 84.7%;  /* 76.5% + 0.2% */
   left: 39.5%;
   font-weight: bolder;
   font-family: sans-serif;
@@ -360,20 +360,20 @@
 
 .SM_last1, .SM_last2, .SM_last3, .SM_last4, .SM_last5 {
   position: absolute;
-  font-size: 12.8px;
-  left: 12.5%;
+  font-size: 13.5px;
+  left: 13.5%;
   font-weight: 500;
 }
 
-.SM_last1 { top: 87.1%; }
-.SM_last2 { top: 89.1%; }
-.SM_last3 { top: 91.1%; }
-.SM_last4 { top: 93.1%; height: 20px;width: 340px;text-align: left;}
-.SM_last5 { top: 96%; }
+.SM_last1 { top: 73.2%; }  /* 82.6% + 0.2% */
+.SM_last2 { top: 75.2%; }  /* 84.6% + 0.2% */
+.SM_last3 { top: 77.4%; }  /* 86.6% + 0.2% */
+.SM_last4 { top: 79.5%; height: 20px;width: 400px;text-align: left;}  /* 88.6% + 0.2% */
+.SM_last5 { top: 91.7%; }  /* 91.5% + 0.2% */
 
 .SM_bold3 {
   position: absolute;
-  top: 58.5%;
+  top: 54.2%;  /* 54.0% + 0.2% */
   left: 63%;
   height: 15px;
   width: 70px;
@@ -384,7 +384,7 @@
 
 .SM_bold5 {
   position: absolute;
-  top: 58.5%;
+  top: 54.2%;  /* 54.0% + 0.2% */
   left: 74.7%;
   height: 15px;
   width: 160px;
@@ -395,7 +395,7 @@
 
 .SM_bold9 {
   position: absolute;
-  top: 60.2%;
+  top: 55.9%;  /* 55.7% + 0.2% */
   left: 63%;
   height: 15px;
   width: 70px;
@@ -405,7 +405,7 @@
 
 .SM_bold11 {
   position: absolute;
-  top: 60.2%;
+  top: 55.9%;  /* 55.7% + 0.2% */
   left: 74.7%;
   height: 15px;
   width: 160px;
@@ -415,7 +415,7 @@
 
 .SM_bold6 {
   position: absolute;
-  top: 58.5%;
+  top: 54.2%;  /* 54.0% + 0.2% */
   left: 74.7%;
   height: 15px;
   width: 160px;
@@ -425,7 +425,7 @@
 
 .SM_bold10 {
   position: absolute;
-  top: 60.2%;
+  top: 55.9%;  /* 55.7% + 0.2% */
   left: 63%;
   height: 15px;
   width: 70px;
@@ -436,7 +436,7 @@
 
 .SM_bold4 {
   position: absolute;
-  top: 58.5%;
+  top: 54.2%;  /* 54.0% + 0.2% */
   left: 63%;
   height: 15px;
   width: 70px;
@@ -446,7 +446,7 @@
 
 .SM_bold12 {
   position: absolute;
-  top: 60.2%;
+  top: 55.9%;  /* 55.7% + 0.2% */
   left: 74.7%;
   height: 15px;
   width: 160px;
@@ -456,7 +456,37 @@
 }
 
 .box1s{
-    border: 1px solid black;
-    padding: 20px;
-    margin: 20px 40px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px 40px;
+}
+
+.SM_bold2{
+  position: absolute;
+  font-size: 10.7px;
+  top: 53.25%;
+  left: 3.5%;
+}
+
+.SM_bold1{
+  position: absolute;
+  font-size: 10.7px;
+  top: 53.25%;
+  left: 3.5%;
+  font-weight: bolder;
+}
+
+.SM_bold8{
+  position: absolute;
+  font-size: 10.7px;
+  top: 55%;
+  left: 3.5%;
+  font-weight: bolder;
+}
+
+.SM_bold7{
+  position: absolute;
+  font-size: 10.7px;
+  top: 55%;
+  left: 3.5%;
 }

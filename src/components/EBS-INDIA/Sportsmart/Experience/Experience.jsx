@@ -8,7 +8,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <div className="pdf-offer">
-        <img src="./images/mart.jpg" alt="ewded" className="i3" />
+        <img src="./images/SM_Letterhead.png" alt="ewded" className="i3" />
         <h3 className="eded">EXPERIENCE LETTER</h3>
         <p className="expge1c">{Global.Experience.name}</p>
         <p className="expge2c">Date: {Global.Experience.date}</p>
@@ -18,7 +18,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           letter confirms the employment of{" "}
           <span className="bold"> {Global.Experience.name}</span> as a{" "}
           <span className="bold">{Global.Experience.designation}</span> with{" "}
-          <span className="bold">BCL Sports LLP</span> from{" "}
+          <span className="bold">Protathlitis Sportsmart LLP</span> from{" "}
           <span className="bold">{Global.Experience.startDate}</span> to the{" "}
           <span className="bold">{Global.Experience.endDate}</span>.
         </p>
@@ -28,15 +28,16 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           himself to be a dedicated and hardworking employee.
         </p>
         <img
-          src="./images/sportsstamp.png"
+          src="./images/SM_image.png"
           alt="ewded"
+          style={{top:"45%"}}
           className="gesstampss"
         />
         <p className="expge9c">Sincerely,</p>
-        <p className="expge10c">Ashwini Chinta </p>
+        <p className="expge10c">Fatima Farooqui Firdous </p>
         <p className="expge11c">HR Manager</p>
-        <p className="expge12c">HR@geshurinfra.com</p>
-        <p className="expge13c">+91 – 93989 73635</p>
+        <p className="expge12c">hr@sportsmart.com</p>
+        <p className="expge13c">+91 – 9059445503</p>
         <div className="ds1"></div>
       </div>
     </div>

@@ -52,7 +52,7 @@ const GenieEditform = () => {
       Genielamp: "/GenieEdit",
       Geshur: "/GeshurEdit",
       Jobways: "/JobwaysLLPEdit",
-      sports: "/sportsExperience",
+      sports: "/SportsmartLLPEdit",
       JOBLLC: "/JobwaysLLCEdit",
       KACEE: "/KACEEEdit",
       RAPID: "/RapidEdit",

@@ -8,7 +8,7 @@ const SportsOfferform = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    Global.setgeshurofferform((prevState) => ({
+    Global.setOfferform((prevState) => ({
       ...prevState,
       [name]: value,
     }));
@@ -25,30 +25,30 @@ const SportsOfferform = () => {
           <h1>Offer Letter Form</h1>
 
           <div className="form-group">
-            <label>Name:</label>
+            <label>Name</label>
             <input
               type="text"
               name="name"
-              value={Global.geshurofferform.name}
+              value={Global.Offerform.name}
               onChange={handleChange}
             />
           </div>
 
           <div className="form-group">
-            <label>Date:</label>
+            <label>Date</label>
             <input
               type="date"
               name="date"
               value={
-                Global.geshurofferform.date
-                  ? Global.geshurofferform.date.split("/").reverse().join("-")
+                Global.Offerform.date
+                  ? Global.Offerform.date.split("/").reverse().join("-")
                   : ""
               }
               onChange={(e) => {
                 const [year, month, day] = e.target.value.split("-");
-                const formattedDate = `${day}/${month}/${year}`; // Indian format
-                Global.setGeshurofferform({
-                  ...Global.geshurofferform,
+                const formattedDate = `${day}/${month}/${year}`; // DD/MM/YYYY
+                Global.setOfferform({
+                  ...Global.Offerform,
                   [e.target.name]: formattedDate,
                 });
               }}
@@ -64,33 +64,30 @@ const SportsOfferform = () => {
           </div>
 
           <div className="form-group">
-            <label>Position:</label>
+            <label>Position</label>
             <input
               type="text"
               name="position"
-              value={Global.geshurofferform.position}
+              value={Global.Offerform.position}
               onChange={handleChange}
             />
           </div>
 
           <div className="form-group">
-            <label>Joining Date:</label>
+            <label>Start Date</label>
             <input
               type="date"
-              name="joiningDate"
+              name="startDate"
               value={
-                Global.geshurofferform.joiningDate
-                  ? Global.geshurofferform.joiningDate
-                      .split("/")
-                      .reverse()
-                      .join("-")
+                Global.Offerform.startDate
+                  ? Global.Offerform.startDate.split("/").reverse().join("-")
                   : ""
               }
               onChange={(e) => {
                 const [year, month, day] = e.target.value.split("-");
-                const formattedDate = `${day}/${month}/${year}`; // Indian format
-                Global.setGeshurofferform({
-                  ...Global.geshurofferform,
+                const formattedDate = `${day}/${month}/${year}`; // DD/MM/YYYY
+                Global.setOfferform({
+                  ...Global.Offerform,
                   [e.target.name]: formattedDate,
                 });
               }}
@@ -106,72 +103,24 @@ const SportsOfferform = () => {
           </div>
 
           <div className="form-group">
-            <label>Basic Salary:</label>
+            <label>Salary Package</label>
             <input
               type="text"
-              name="basicSalary"
-              value={Global.geshurofferform.basicSalary}
+              name="salaryPackage"
+              value={Global.Offerform.salaryPackage}
               onChange={handleChange}
+              placeholder="0,00,000"
             />
           </div>
 
           <div className="form-group">
-            <label>HRA:</label>
+            <label>Work Time</label>
             <input
               type="text"
-              name="hra"
-              value={Global.geshurofferform.hra}
+              name="workTime"
+              value={Global.Offerform.workTime}
               onChange={handleChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Conveyance:</label>
-            <input
-              type="text"
-              name="conveyance"
-              value={Global.geshurofferform.conveyance}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Food Allowance:</label>
-            <input
-              type="text"
-              name="foodAllowance"
-              value={Global.geshurofferform.foodAllowance}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Medical Allowance:</label>
-            <input
-              type="text"
-              name="medicalAllowance"
-              value={Global.geshurofferform.medicalAllowance}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Special Allowances:</label>
-            <input
-              type="text"
-              name="specialAllowances"
-              value={Global.geshurofferform.specialAllowances}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Professional Tax:</label>
-            <input
-              type="text"
-              name="professionalTax"
-              value={Global.geshurofferform.professionalTax}
-              onChange={handleChange}
+              placeholder="9 AM - 6 PM"
             />
           </div>
 

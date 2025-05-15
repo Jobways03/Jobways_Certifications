@@ -11,7 +11,7 @@ const SportsmartBoxes = () => {
 
   return (
     <div>
-      <h1>SPORTS MART</h1>
+      <h1>SPORTSMART</h1>
       <div className="containerws">
         <div
           className="boxj"

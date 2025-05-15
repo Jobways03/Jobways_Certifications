@@ -22,7 +22,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <div className="pdf-invoice">
-        <img src="./images/mart.jpg" alt="ewded" className="i3" />
+        <img src="./images/SM_Letterhead.png" alt="ewded" className="i3" />
         <p className="sports0">Pay Slip</p>
         <p className="sports1">
           For {Global.geshurPayslip.month} {Global.geshurPayslip.year}

@@ -8,18 +8,16 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <div className="pdf-offer">
-        <img src="./images/mart.jpg" alt="ewded" className="i3" />
+        <img src="./images/SM_Letterhead.png" alt="ewded" className="i3" />
         <h3 className="heakss">RELIEVING LETTER</h3>
-        <p className="rel1c">
-          {Global.Relieve.name}
-        </p>
+        <p className="rel1c">{Global.Relieve.name}</p>
         <p className="rel2c">Date: {Global.Relieve.date}</p>
         <p className="wwf">Sub: Relieving from Employment</p>
         <p className="rel3c">
           {" "}
           This is to inform you that{" "}
-          <span className="bold">BCL Sports LLP</span> has accepted your
-          resignation as
+          <span className="bold">Protathlitis Sportsmart LLP</span> has accepted
+          your resignation as
         </p>
         <p className="rel4c">
           {" "}
@@ -40,16 +38,12 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         <p className="rel7c">
           Wishing you all the best in your future endeavors.
         </p>
-        <img
-          src="./images/sportsstamp.png"
-          alt="ewded"
-          className="gesstampsss"
-        />
+        <img src="./images/SM_image.png" alt="ewded" className="gesstampsss" />
         <p className="rel9c">Sincerely,</p>
-        <p className="rel10c">Ashwini Chinta </p>
+        <p className="rel10c">Fatima Farooqui Firdous </p>
         <p className="rel11c">HR Manager</p>
-        <p className="rel12c"> HR@geshurinfra.com</p>
-        <p className="rel13c"> +91 – 93989 73635</p>
+        <p className="rel12c">hr@sportsmart.com</p>
+        <p className="rel13c">+91 – 9059445503</p>
         <div className="ds1"></div>
       </div>
     </div>

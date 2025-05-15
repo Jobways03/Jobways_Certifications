@@ -8,11 +8,9 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <div className="pdf-offer">
-        <img src="./images/mart.jpg" alt="ewded" className="i3" />
+        <img src="./images/SM_Letterhead.png" alt="ewded" className="i3" />
         <h3 className="heakss">HIKE LETTER</h3>
-        <p className="hiker1c">
-          {Global.Hike.name}{" "}
-        </p>
+        <p className="hiker1c">{Global.Hike.name} </p>
         <p className="hiker2c">Date: {Global.Hike.date}</p>
         <p className="hiker3c">
           {" "}
@@ -20,8 +18,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           to inform you
         </p>
         <p className="hiker4c">
-          that <span className="bold">BCL Sports LLP</span> will be providing a
-          hike on your current CTC.
+          that <span className="bold">Protathlitis Sportsmart LLP</span> will be
+          providing a hike on your current CTC.
         </p>
         <p className="hikers5c">
           Please note that your current CTC is{" "}
@@ -33,22 +31,26 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="hikers6c">
           You are one of the valued employees of{" "}
-          <span className="bold">BCL Sports LLP</span>, and we hope that this
-          increment will motivate you to work with even greater passion and
-          enthusiasm. Kindly contact the HR department for further details
-          regarding your salary breakup.
+          <span className="bold">Protathlitis Sportsmart LLP</span>, and we hope
+          that this increment will motivate you to work with even greater
+          passion and enthusiasm. Kindly contact the HR department for further
+          details regarding your salary breakup.
         </p>
         <p className="hikers7c">
           We look forward to your valuable contributions to the organization and
           wish you a great career ahead.
         </p>
-        <img src="./images/sportsstamp.png" alt="ewded" className="gesstamps" />
+        <img
+          src="./images/SM_image.png"
+          alt="ewded"
+          className="gesstamps"
+        />
 
         <p className="hikers9c">Sincerely,</p>
-        <p className="hikers10c">Ashwini Chinta </p>
+        <p className="hikers10c">Fatima Farooqui Firdous </p>
         <p className="hikers11c">HR Manager</p>
-        <p className="hikers12c"> HR@geshurinfra.com</p>
-        <p className="hikers13c"> +91 – 93989 73635</p>
+        <p className="hikers12c">hr@sportsmart.com</p>
+        <p className="hikers13c">+91 – 9059445503</p>
         <div className="ds1"></div>
       </div>
     </div>

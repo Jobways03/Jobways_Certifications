@@ -121,9 +121,9 @@ console.log(Global.SM_FormData.paymentType);
         })}
 
         {Global.SM_FormData.paymentType === "advance" ? (
-          <p className="bold1">Advance Paid</p>
+          <p className="SM_bold1">Advance Paid</p>
         ) : (
-          <p className="bold2">Deduction of Advance Paid</p>
+          <p className="SM_bold2">Deduction of Advance Paid</p>
         )}
         {Global.SM_FormData.paymentType === "advance" ? (
           <div className="SM_bold3">{Global.SM_FormData.advanceAmount}</div>
@@ -136,9 +136,9 @@ console.log(Global.SM_FormData.paymentType);
           <div className="SM_bold6">{Global.SM_FormData.advanceAmount} INR</div>
         )}
         {Global.SM_FormData.paymentType === "advance" ? (
-          <p className="bold7">Due</p>
+          <p className="SM_bold7">Due</p>
         ) : (
-          <p className="bold8">Due Paid</p>
+          <p className="SM_bold8">Due Paid</p>
         )}
         {Global.SM_FormData.paymentType === "advance" ? (
           <div className="SM_bold9">{Global.SM_FormData.dueAmount}</div>
