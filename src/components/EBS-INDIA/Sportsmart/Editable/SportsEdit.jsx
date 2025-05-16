@@ -17,7 +17,6 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
     // Create a regular expression pattern to match the words
     const pattern = new RegExp(`\\b(${wordsArray.join("|")})\\b`, "gi");
 
-    // Split the text by the pattern
     const parts = text.split(pattern);
 
     return (
