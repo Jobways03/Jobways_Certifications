@@ -10,9 +10,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
       <div className="pdf-offer">
         <img src="./images/geneis.png" alt="ewded" className="i3" />
         <h3 className="heakss">HIKE LETTER</h3>
-        <p className="hike1">
-         {Global.Hike.name}{" "}
-        </p>
+        <p className="hike1">{Global.Hike.name} </p>
         <p className="hike2">Date: {Global.Hike.date}</p>
         <p className="hike3">
           {" "}
@@ -48,7 +46,14 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <span className="bold">Genesis7 Solutions</span>.
         </p>
         <p className="hike9">Sincerely,</p>
-        <img src="./images/Genesisstamp.jpg" alt="stamp" className="gestamps" />
+        {sessionStorage.getItem("offerStamp") === "with_stamp" && (
+          <img
+            src="./images/Genesisstamp.jpg"
+            alt="stamp"
+            className="gestamps"
+          />
+        )}
+
         <p className="hike10">Sudheer Panyam</p>
         <p className="hike11">HR Manager</p>
         <p className="hike12">hr@genesis7solutions.com</p>

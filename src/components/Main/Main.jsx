@@ -1,61 +1,51 @@
 import React from "react";
-import "./main.css"; // Make sure to create a corresponding CSS file
+import "./main.css";
 import { useNavigate } from "react-router-dom";
-
+import AuthContext from "../../context/AuthContext";
+import { useContext } from "react";
 const Main = () => {
   const navigate = useNavigate();
-  return (
-    <div className="payrolls-container">
-      <div
-        className="card payroll"
-        onClick={() => {
-          navigate("/services");
-        }}
-      >
-        <h2>CAREER SERVICES</h2>
-      </div>
+  const Global = useContext(AuthContext);
+  // define which roles can see which paths
+  const cards = [
+    {
+      label: "CAREER SERVICES",
+      path: "/services",
+      roles: ["ACCOUNTS"],
+    },
+    { label: "EBS - USA", path: "/Uspayroll", roles: ["EBS"] },
+    {
+      label: "EBS - INDIA",
+      path: "/IndianMain",
+      roles: ["HR", "EBS"],
+    },
+    { label: "EBS - CANADA", path: "/canada_Main", roles: ["EBS"] },
+    {
+      label: "CERTIFICATE OF INSURANCE",
+      path: "/COIform",
+      roles: ["EBS"],
+    },
+    {
+      label: "SPORTSMART INVOICE",
+      path: "/SM_Invoiceform",
+      roles: ["ACCOUNTS"],
+    },
+  ];
 
-      <div>
-        <div
-          className="card payroll"
-          onClick={() => {
-            navigate("/Uspayroll");
-          }}
-        >
-          <h2>EBS - USA</h2>
-        </div>
-        <div
-          className="card payroll"
-          onClick={() => {
-            navigate("/IndianMain");
-          }}
-        >
-          <h2>EBS - INDIA</h2>
-        </div>
-        <div
-          className="card payroll"
-          onClick={() => {
-            navigate("/canada_Main");
-          }}
-        >
-          <h2>EBS - CANADA</h2>
-        </div>
-      </div>
-      <div
-        className="card payroll"
-        onClick={() => {
-          navigate("/COIform");
-        }}
-      >
-        <h2>CERTIFICATE OF INSURANCE</h2>
-      </div>
-      <div
-        className="card payroll"
-        onClick={() => {
-          navigate("/SM_Invoiceform");
-        }}
-      >
-        <h2>SPORTSMART INVOICE</h2>
+  return (
+    <div>
+      <div className="payrolls-container" style={{marginTop:"100px"}}>
+        {cards
+          .filter((card) => card.roles.includes(Global.user.role))
+          .map((card) => (
+            <div
+              key={card.path}
+              className="card payroll"
+              onClick={() => navigate(card.path)}
+            >
+              <h2>{card.label}</h2>
+            </div>
+          ))}
       </div>
     </div>
   );

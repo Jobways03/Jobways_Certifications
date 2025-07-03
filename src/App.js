@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import AuthState from "./context/AuthState";
 import Paystub from "./components/EBS-USA/Paystub/Paystub/Paystub";
@@ -94,6 +94,8 @@ import IndianMain from "./components/EBS-INDIA/Main/IndiaMain";
 import SM_Invoice from "./components/SportsMart_Inovice/SM_Invoice";
 import SM_Invoiceform from "./components/SportsMart_Inovice/SM_Invoice_form";
 import SportsmartLLPEdit from "./components/EBS-INDIA/Sportsmart/Editable/SportsEdit";
+import Login from "./Auth/Login/Login";
+import ProtectedRoute from "./Auth/ProtectedRoute/ProtectedRoute";
 
 function App() {
   return (
@@ -101,7 +103,90 @@ function App() {
       <BrowserRouter>
         <AuthState>
           <Routes>
-            <Route path="/IndianMain" element={<IndianMain />} />
+            <Route path="/login" element={<Login />} />
+
+            <Route
+              path="/"
+              element={
+                <ProtectedRoute>
+                  <Main />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/services"
+              element={
+                <ProtectedRoute>
+                  <Services />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/Uspayroll"
+              element={
+                <ProtectedRoute>
+                  <Uspayroll />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/IndianMain"
+              element={
+                <ProtectedRoute>
+                  <IndianMain />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/canada_Main"
+              element={
+                <ProtectedRoute>
+                  <Canada_Main />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/COIform"
+              element={
+                <ProtectedRoute>
+                  <Coiform />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/SM_Invoiceform"
+              element={
+                <ProtectedRoute>
+                  <SM_Invoiceform />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* <Route
+              path="/*"
+              element={
+                <ProtectedRoute>
+                  <Routes>
+                    <Route path="/" element={<Main />} />
+                    <Route path="/services" element={<Services />} />
+                    <Route path="/Uspayroll" element={<Uspayroll />} />
+                    <Route path="/IndianMain" element={<IndianMain />} />
+                    <Route path="/canada_Main" element={<Canada_Main />} />
+                    <Route path="/COIform" element={<Coiform />} />
+                    <Route
+                      path="/SM_Invoiceform"
+                      element={<SM_Invoiceform />}
+                    />
+                  </Routes>
+                </ProtectedRoute>
+              }
+            /> */}
+
+            {/* Fallback: redirect unknown paths back to login or main */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+
+            <Route path="/" element={<Main />} />
+
             <Route path="/paystub" element={<Paystub />} />
             <Route path="/w2" element={<W2 />} />
             <Route path="/paystubform" element={<Stubform />} />
@@ -171,9 +256,7 @@ function App() {
             <Route path="/sportsExperience" element={<SportsExperience />} />
             <Route path="/sportsRelieving" element={<SportsRelieving />} />
             <Route path="/jellygit" element={<Jelly />} />
-            <Route path="/" element={<Main />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/Uspayroll" element={<Uspayroll />} />
+
             <Route path="/invoicebox" element={<Invoicebox />} />
             <Route path="/paystubbox" element={<Paystubbox />} />
             <Route path="/W2box" element={<W2box />} />
@@ -193,7 +276,7 @@ function App() {
             <Route path="/KaceeRelieving" element={<KaceeRelieving />} />
             <Route path="/RapidRelieving" element={<RapidRelieving />} />
             <Route path="/COI" element={<Coi />} />
-            <Route path="/COIform" element={<Coiform />} />
+
             <Route path="/GenieEditform" element={<GenieEditform />} />
             <Route path="/GenieEdit" element={<GenieEdit />} />
             <Route path="/GenesisEdit" element={<GenesisEdit />} />
@@ -212,9 +295,9 @@ function App() {
             <Route path="/Paystubsdi" element={<Paystubsdi />} />
             <Route path="/t4" element={<T4 />} />
             <Route path="/t4form" element={<T4form />} />
-            <Route path="/canada_Main" element={<Canada_Main />} />
+
             <Route path="/SM_Invoice" element={<SM_Invoice />} />
-            <Route path="/SM_Invoiceform" element={<SM_Invoiceform />} />
+
             <Route path="/SportsmartLLPEdit" element={<SportsmartLLPEdit />} />
           </Routes>
         </AuthState>

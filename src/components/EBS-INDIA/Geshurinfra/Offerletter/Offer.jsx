@@ -349,7 +349,9 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           association. For Geshur Infra PVT LTD
         </p>
         <p className="gio104">Sincerely,</p>
+        {sessionStorage.getItem("offerStamp") === "with_stamp" && (
         <img src="./images/bgrem.png" alt="ewded" className="gesstamp" />
+        )}
         <p className="gio105">Ashwini Chinta</p>
         <p className="gio106">HR Manager</p>
         <p className="gio107">HR@geshurinfra.com</p>
@@ -374,8 +376,9 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           </span>
         </p>
         <div className="ds2"></div>
+        
         <img src="./images/table.png" alt="ewded" className="i3" />
-
+        
         <p className="gio115" style={{ fontWeight: "bold" }}>
           ENCLOSURES:
         </p>

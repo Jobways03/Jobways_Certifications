@@ -27,12 +27,15 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <span className="bold"> {Global.Experience.name}</span> has shown
           himself to be a dedicated and hardworking employee.
         </p>
-        <img
-          src="./images/SM_image.png"
-          alt="ewded"
-          style={{top:"45%"}}
-          className="gesstampss"
-        />
+
+        {sessionStorage.getItem("offerStamp") === "with_stamp" && (
+          <img
+            src="./images/SM_image.png"
+            alt="ewded"
+            style={{ top: "45%" }}
+            className="gesstampss"
+          />
+        )}
         <p className="expge9c">Sincerely,</p>
         <p className="expge10c">Fatima Farooqui Firdous </p>
         <p className="expge11c">HR Manager</p>

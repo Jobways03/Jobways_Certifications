@@ -47,7 +47,16 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
             Sincerely,
           </p>
           <div>
-            <img src="./images/Genesisstamp.jpg" alt="stamp" className="ttt2" />
+            {sessionStorage.getItem("offerStamp") === "with_stamp" ? (
+              <img
+                src="./images/Genesisstamp.jpg"
+                alt="stamp"
+                className="ttt2"
+              />
+            ) : (
+              <div style={{ height: "140px" }}></div>
+            )}
+
             <p className="ttt3 mar">Sudheer Panyam</p>
             <p className="ttt3 mar">HR Manager</p>
             <p className="ttt3 mar">hr@genesis7solutions.com</p>

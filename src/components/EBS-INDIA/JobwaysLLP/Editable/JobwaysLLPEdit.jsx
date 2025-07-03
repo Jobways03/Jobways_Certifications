@@ -33,7 +33,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
       <div className="pdf-offerd">
         <img src="./images/JobwaysllpNew.png" alt="ewded" className="i3" />
 
-        <div className="head1j" style={{textAlign:"center"}}>
+        <div className="head1j" style={{ textAlign: "center" }}>
           <h3 className="hhhh">{head}</h3>
         </div>
         <div className="det2j">
@@ -47,7 +47,16 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
             Sincerely,
           </p>
           <div>
-            <img src="./images/jobwaysstamp.png" alt="stamp" className="ttt2" />
+            {sessionStorage.getItem("offerStamp") === "with_stamp" ? (
+              <img
+                src="./images/jobwaysstamp.png"
+                alt="stamp"
+                className="ttt2"
+              />
+            ) : (
+              <div style={{ height: "140px" }}></div>
+            )}
+
             <p className="ttt3 mar">Ashwini Chintapally</p>
             <p className="ttt3 mar">HR Manager</p>
             <p className="ttt3 mar">hr.india@jobways.com</p>

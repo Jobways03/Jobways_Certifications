@@ -34,7 +34,9 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           </span>
         </p>
         <p className="expg9b">Sincerely,</p>
+        {sessionStorage.getItem("offerStamp") === "with_stamp" && (
         <img src="./images/Geniestamp.png" alt="stamp" className="genstampss" />
+      )}
         <p className="expg10b">Shiva Kumar</p>
         <p className="expg11b">HR Manager</p>
         <p className="expg12b"> hr@agenielamp.com</p>

@@ -61,6 +61,11 @@ const GenieEditform = () => {
     navigate(companyRoutes[company] || "/");
   };
 
+  const handleStampChange = (e) => {
+    const value = e.target.value;
+    sessionStorage.setItem("offerStamp", value);
+  };
+
   return (
     <div className="form-container">
       <label htmlFor="head">Heading:</label>
@@ -86,7 +91,6 @@ const GenieEditform = () => {
       <label htmlFor="date">Date:</label>
       <input
         type="date"
-     
         value={date}
         onChange={(e) => setDate(e.target.value)}
         style={{
@@ -115,6 +119,29 @@ const GenieEditform = () => {
         onChange={(e) => setWordsToBold(e.target.value)}
         className="bold-input"
       />
+
+      <div className="form-group">
+        <label>Stamp Requirement</label>
+        <select
+          name="stampRequirement"
+          onChange={handleStampChange}
+          style={{
+            width: "700px",
+            padding: "8px",
+            borderRadius: "6px",
+            border: "1px solid #ddd",
+            boxSizing: "border-box",
+            marginBottom: "15px",
+          }}
+          defaultValue=""
+        >
+          <option value="" disabled>
+            Select an option
+          </option>
+          <option value="with_stamp">With Stamp</option>
+          <option value="without_stamp">Without Stamp</option>
+        </select>
+      </div>
 
       <button onClick={handleSubmit} className="submit-button">
         SUBMIT

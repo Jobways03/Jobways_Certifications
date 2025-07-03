@@ -14,10 +14,26 @@ const GenieOfferform = () => {
     }));
   };
 
+  const handleDateChange = (e) => {
+    const { name, value } = e.target;
+    const [year, month, day] = value.split("-");
+    const formattedDate = `${day}/${month}/${year}`;
+    Global.setOfferform((prevState) => ({
+      ...prevState,
+      [name]: formattedDate,
+    }));
+  };
+
+  const handleStampChange = (e) => {
+    const value = e.target.value;
+    sessionStorage.setItem("offerStamp", value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate("/genielampoffer");
   };
+
   return (
     <div>
       <div className="employee-form-container">
@@ -44,14 +60,7 @@ const GenieOfferform = () => {
                   ? Global.Offerform.date.split("/").reverse().join("-")
                   : ""
               }
-              onChange={(e) => {
-                const [year, month, day] = e.target.value.split("-");
-                const formattedDate = `${day}/${month}/${year}`; // Indian format
-                Global.setOfferform({
-                  ...Global.Offerform,
-                  [e.target.name]: formattedDate,
-                });
-              }}
+              onChange={handleDateChange}
               style={{
                 width: "100%",
                 padding: "8px",
@@ -83,14 +92,7 @@ const GenieOfferform = () => {
                   ? Global.Offerform.startDate.split("/").reverse().join("-")
                   : ""
               }
-              onChange={(e) => {
-                const [year, month, day] = e.target.value.split("-");
-                const formattedDate = `${day}/${month}/${year}`; // Indian format
-                Global.setOfferform({
-                  ...Global.Offerform,
-                  [e.target.name]: formattedDate,
-                });
-              }}
+              onChange={handleDateChange}
               style={{
                 width: "100%",
                 padding: "8px",
@@ -122,6 +124,29 @@ const GenieOfferform = () => {
               onChange={handleChange}
               placeholder="9 AM - 6 PM"
             />
+          </div>
+
+          <div className="form-group">
+            <label>Stamp Requirement</label>
+            <select
+              name="stampRequirement"
+              onChange={handleStampChange}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select an option
+              </option>
+              <option value="with_stamp">With Stamp</option>
+              <option value="without_stamp">Without Stamp</option>
+            </select>
           </div>
 
           <button type="submit">Submit</button>

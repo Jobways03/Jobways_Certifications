@@ -41,7 +41,14 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
             {Global.Relieve.empid}
           </span>
         </p>
-        <img src="./images/jobwaysstamp.png" alt="stamp" className="jstampss" />
+        {sessionStorage.getItem("offerStamp") === "with_stamp" && (
+          <img
+            src="./images/jobwaysstamp.png"
+            alt="stamp"
+            className="jstampss"
+          />
+        )}
+
         <p className="rel9a">Sincerely,</p>
         <p className="rel10a"> Ashwini Chintapally </p>
         <p className="rel11a">HR Manager</p>

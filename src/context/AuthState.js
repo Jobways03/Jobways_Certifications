@@ -1,7 +1,56 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import GlobalData from "./AuthContext";
+import { useNavigate } from "react-router-dom";
+
+const USERS = [
+  { email: "ebs.jobways@gmail.com", password: "Ebs@jobways", role: "EBS" },
+  {
+    email: "accounts.jobways@gmail.com",
+    password: "Accounts@jobways",
+    role: "ACCOUNTS",
+  },
+  {
+    email: "hr.jobways@gmail.com",
+    password: "Hr@jobways",
+    role: "HR",
+  },
+];
 
 const AuthState = ({ children }) => {
+
+  const navigate = useNavigate();
+
+  const [user, setUser] = useState(() => {
+    const stored = sessionStorage.getItem("authUser");
+    return stored ? JSON.parse(stored) : null;
+  });
+
+  // sync to sessionStorage whenever `user` changes
+  useEffect(() => {
+    if (user) {
+      sessionStorage.setItem("authUser", JSON.stringify(user));
+    } else {
+      sessionStorage.removeItem("authUser");
+    }
+  }, [user]);
+
+  const login = (email, password) => {
+    const found = USERS.find(
+      (u) => u.email === email && u.password === password
+    );
+    if (found) {
+      setUser(found);
+      navigate("/");
+      return true;
+    }
+    return false;
+  };
+
+  const logout = () => {
+    setUser(null);
+    navigate("/login");
+  };
+
   const [name, setname] = useState("");
   const [phoneNumber, setphoneNumber] = useState("");
   const [email, setemail] = useState("");
@@ -531,7 +580,10 @@ const [SM_FormData, setSM_FormData] = useState({
         Edit,
         setEdit,
         t4,
-        sett4
+        sett4,
+        user,
+        login,
+        logout,
       }}
     >
       {children}

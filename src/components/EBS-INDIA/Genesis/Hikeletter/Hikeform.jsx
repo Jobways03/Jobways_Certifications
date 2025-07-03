@@ -14,6 +14,11 @@ const GenesisHikeform = () => {
     }));
   };
 
+  const handleStampChange = (e) => {
+    const value = e.target.value;
+    sessionStorage.setItem("offerStamp", value);
+  };
+
   // Genesis , Genielamp , Geshur , Jobways
 
   const handleSubmit = (e) => {
@@ -126,6 +131,29 @@ const GenesisHikeform = () => {
               }}
             />
           </div>
+          <div className="form-group">
+            <label>Stamp Requirement</label>
+            <select
+              name="stampRequirement"
+              onChange={handleStampChange}
+              style={{
+                width: "100%",
+                padding: "8px",
+                borderRadius: "6px",
+                border: "1px solid #ddd",
+                boxSizing: "border-box",
+                marginBottom: "15px",
+              }}
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select an option
+              </option>
+              <option value="with_stamp">With Stamp</option>
+              <option value="without_stamp">Without Stamp</option>
+            </select>
+          </div>
+
           <button type="submit">Submit</button>
         </form>
       </div>

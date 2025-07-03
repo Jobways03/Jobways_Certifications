@@ -28,7 +28,10 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           {Global.Experience.gender == "He" ? <> himself</> : <> herself</>} to
           be a dedicated and hardworking employee.
         </p>
-        <img src="./images/bgrem.png" alt="ewded" className="gesstampss" />
+        {sessionStorage.getItem("offerStamp") === "with_stamp" && (
+          <img src="./images/bgrem.png" alt="ewded" className="gesstampss" />
+        )}
+
         <p className="expge9csr">
           Employee ID :
           <span className="bold" style={{ textTransform: "uppercase" }}>
