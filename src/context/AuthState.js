@@ -3,7 +3,7 @@ import GlobalData from "./AuthContext";
 import { useNavigate } from "react-router-dom";
 
 const USERS = [
-  { email: "helpme.ebs@gamil.com", password: "Ebs@jobways", role: "EBS" },
+  { email: "helpme.ebs@gmail.com", password: "Ebs@jobways", role: "EBS" },
   {
     email: "jobways.ac@gmail.com",
     password: "Accounts@jobways",
