@@ -17,7 +17,12 @@ const Main = () => {
     {
       label: "EBS - INDIA",
       path: "/IndianMain",
-      roles: ["HR", "EBS"],
+      roles: ["EBS"],
+    },
+    {
+      label: "HUMAN RESOURCES",
+      path: "/IndianMain",
+      roles: ["HR"],
     },
     { label: "EBS - CANADA", path: "/canada_Main", roles: ["EBS"] },
     {
