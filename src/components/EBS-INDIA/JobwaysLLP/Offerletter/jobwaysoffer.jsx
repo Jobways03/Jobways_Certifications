@@ -274,7 +274,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
 
         <p className="let39">
           <span className="bol" style={{ fontSize: "15px" }}>
-            Ashwini Chintapally
+            Firdous Fatima Farooqui
           </span>
         </p>
         <p className="let40">
@@ -289,7 +289,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="let42">
           <span className="bol" style={{ fontSize: "15px" }}>
-            +91- 70134 96618
+            +91- 6303170175
           </span>
         </p>
         <p className="let43">
