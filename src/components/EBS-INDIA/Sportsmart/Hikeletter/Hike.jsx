@@ -18,8 +18,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           to inform you
         </p>
         <p className="hiker4c">
-          that <span className="bold">Protathlitis Sportsmart LLP</span> will be
-          providing a hike on your current CTC.
+          that <span className="bold">Nova Sportsmart Private Limited</span>{" "}
+          will be providing a hike on your current CTC.
         </p>
         <p className="hikers5c">
           Please note that your current CTC is{" "}
@@ -31,8 +31,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="hikers6c">
           You are one of the valued employees of{" "}
-          <span className="bold">Protathlitis Sportsmart LLP</span>, and we hope
-          that this increment will motivate you to work with even greater
+          <span className="bold">Nova Sportsmart Private Limited</span>, and we
+          hope that this increment will motivate you to work with even greater
           passion and enthusiasm. Kindly contact the HR department for further
           details regarding your salary breakup.
         </p>

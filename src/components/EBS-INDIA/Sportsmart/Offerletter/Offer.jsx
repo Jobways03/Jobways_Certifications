@@ -27,7 +27,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
             {Global.Offerform.position}
           </span>
           ” at
-          <span className="bol"> PROTATHLITIS SPORTSMART LLP</span> Your
+          <span className="bol"> Nova Sportsmart Private Limited</span> Your
           appointment is governed by the terms and conditions outlined below.
         </p>
         <p className="let5">
@@ -49,10 +49,10 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
             Panyam Sudheer
           </span>{" "}
           – Director. Your place of work will be
-          <span className="bol"> PROTATHLITIS SPORTSMART LLP</span>, situated at{" "}
+          <span className="bol"> Nova Sportsmart Private Limited</span>, situated at{" "}
           <span className="bol" style={{ fontSize: "15px" }}>
-            Plot no: 106, Jana Chaithanya colony, Turkayamjal, Abdullapurmet
-            Mandal, Ranga Reddy District, Telangana – 501510
+            Plot no: 52, Road no:1, BN Reddy, Saheb nagar kalan Sagar Housing
+            Complex 500070 Hyderabad TS India
           </span>
           . With our consulting services growing at a fast pace, we’re confident
           that your journey with us will be both enriching and successful. We
@@ -171,7 +171,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="let21">
           ii) Your posting at present is at{" "}
-          <span className="bol">PROTATHLITIS SPORTSMART LLP</span>. Hyderabad,
+          <span className="bol">Nova Sportsmart Private Limited</span>. Hyderabad,
           India during your employment with this company, you may be posted or
           transferred to the other companies or else if you attached to any
           other Group Company or to any of the offices/ subsidiaries/units/
@@ -207,7 +207,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="let25">
           vi) Information pertaining to operations of{" "}
-          <span className="bol">PROTATHLITIS SPORTSMART LLP</span>. is the
+          <span className="bol">Nova Sportsmart Private Limited</span>. is the
           intellectual property and is confidential, and you will sign a
           non-disclosure agreement. You will not give anyone, by word of mouth,
           writing, facsimile, email any devices or otherwise any particulars or

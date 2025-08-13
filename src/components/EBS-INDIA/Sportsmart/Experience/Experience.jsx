@@ -18,7 +18,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           letter confirms the employment of{" "}
           <span className="bold"> {Global.Experience.name}</span> as a{" "}
           <span className="bold">{Global.Experience.designation}</span> with{" "}
-          <span className="bold">Protathlitis Sportsmart LLP</span> from{" "}
+          <span className="bold">Nova Sportsmart Private Limited</span> from{" "}
           <span className="bold">{Global.Experience.startDate}</span> to the{" "}
           <span className="bold">{Global.Experience.endDate}</span>.
         </p>

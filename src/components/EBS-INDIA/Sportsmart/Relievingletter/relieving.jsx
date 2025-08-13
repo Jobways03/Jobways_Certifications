@@ -16,8 +16,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         <p className="rel3c">
           {" "}
           This is to inform you that{" "}
-          <span className="bold">Protathlitis Sportsmart LLP</span> has accepted
-          your resignation as
+          <span className="bold">Nova Sportsmart Private Limited</span> has
+          accepted your resignation as
         </p>
         <p className="rel4c">
           {" "}
