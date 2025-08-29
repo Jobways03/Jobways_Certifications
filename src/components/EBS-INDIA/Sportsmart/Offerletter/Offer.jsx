@@ -27,8 +27,12 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
             {Global.Offerform.position}
           </span>
           ” at
-          <span className="bol"> Nova Sportsmart Private Limited</span> Your
-          appointment is governed by the terms and conditions outlined below.
+          <span className="bol" style={{ fontSize: "15px" }}>
+            {" "}
+            Nova Sportsmart Private Limited
+          </span>{" "}
+          Your appointment is governed by the terms and conditions outlined
+          below.
         </p>
         <p className="let5">
           <span className="bol">1. JOB OFFER :</span> We are delighted to
@@ -49,10 +53,14 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
             Panyam Sudheer
           </span>{" "}
           – Director. Your place of work will be
-          <span className="bol"> Nova Sportsmart Private Limited</span>, situated at{" "}
           <span className="bol" style={{ fontSize: "15px" }}>
-            Plot no: 52, Road no:1, BN Reddy, Saheb nagar kalan Sagar Housing
-            Complex 500070 Hyderabad TS India
+            {" "}
+            Nova Sportsmart Private Limited
+          </span>
+          , situated at{" "}
+          <span className="bol" style={{ fontSize: "15px" }}>
+            Plot No. 7-140/2, E-5 Nagendra Nagar, Scientist Colony Hyderabad,
+            Telangana 500007 India
           </span>
           . With our consulting services growing at a fast pace, we’re confident
           that your journey with us will be both enriching and successful. We
@@ -171,16 +179,18 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="let21">
           ii) Your posting at present is at{" "}
-          <span className="bol">Nova Sportsmart Private Limited</span>. Hyderabad,
-          India during your employment with this company, you may be posted or
-          transferred to the other companies or else if you attached to any
-          other Group Company or to any of the offices/ subsidiaries/units/
-          associate offices of the company, to any town or city in India or
-          abroad, at the sole discretion of the Management. While working in
-          another company on transferred/ attached, you shall be entitled to
-          emoluments and perks as applicable in transferred/ attached company
-          and for all purposes you shall be deemed to be employed in the company
-          transferred/ attached.
+          <span className="bol" style={{ fontSize: "15px" }}>
+            Nova Sportsmart Private Limited
+          </span>
+          . Hyderabad, India during your employment with this company, you may
+          be posted or transferred to the other companies or else if you
+          attached to any other Group Company or to any of the offices/
+          subsidiaries/units/ associate offices of the company, to any town or
+          city in India or abroad, at the sole discretion of the Management.
+          While working in another company on transferred/ attached, you shall
+          be entitled to emoluments and perks as applicable in transferred/
+          attached company and for all purposes you shall be deemed to be
+          employed in the company transferred/ attached.
         </p>
 
         <div className="ds11"></div>
@@ -207,17 +217,19 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="let25">
           vi) Information pertaining to operations of{" "}
-          <span className="bol">Nova Sportsmart Private Limited</span>. is the
-          intellectual property and is confidential, and you will sign a
-          non-disclosure agreement. You will not give anyone, by word of mouth,
-          writing, facsimile, email any devices or otherwise any particulars or
-          details, which you acquire during your employment of our working
-          systems, technical knowhow, security arrangements, Administrative and
-          or organization matters of our and our clients whether confidential,
-          secret or otherwise, either during your employment with Company or
-          afterwards. If you are bound by a confidentiality agreement with a
-          previous employer, you must notify the Company and indemnify the
-          Company against any breach thereof.
+          <span className="bol" style={{ fontSize: "15px" }}>
+            Nova Sportsmart Private Limited
+          </span>
+          . is the intellectual property and is confidential, and you will sign
+          a non-disclosure agreement. You will not give anyone, by word of
+          mouth, writing, facsimile, email any devices or otherwise any
+          particulars or details, which you acquire during your employment of
+          our working systems, technical knowhow, security arrangements,
+          Administrative and or organization matters of our and our clients
+          whether confidential, secret or otherwise, either during your
+          employment with Company or afterwards. If you are bound by a
+          confidentiality agreement with a previous employer, you must notify
+          the Company and indemnify the Company against any breach thereof.
         </p>
         <p className="let26">
           vii) The Company shall have the right to claim damages from you if you
