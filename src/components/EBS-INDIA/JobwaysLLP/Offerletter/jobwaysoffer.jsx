@@ -46,7 +46,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           and you will report to
           <span className="bol" style={{ fontSize: "15px" }}>
             {" "}
-            Shiva Kumar
+            Nama Nirmal
           </span>{" "}
           – Director. You will be employed at the
           <span className="bol"> JOBWAYS POINT LLP</span> located at{" "}
