@@ -96,6 +96,8 @@ import SM_Invoiceform from "./components/SportsMart_Inovice/SM_Invoice_form";
 import SportsmartLLPEdit from "./components/EBS-INDIA/Sportsmart/Editable/SportsEdit";
 import Login from "./Auth/Login/Login";
 import ProtectedRoute from "./Auth/ProtectedRoute/ProtectedRoute";
+import Invoiceform_Paypal from "./components/CAREER-SERVICES/Invoice/Invoiceform_paypal";
+import Invoice_paypal from "./components/CAREER-SERVICES/Invoice/Invoice_paypal";
 
 function App() {
   return (
@@ -104,7 +106,6 @@ function App() {
         <AuthState>
           <Routes>
             <Route path="/login" element={<Login />} />
-
             <Route
               path="/"
               element={
@@ -161,7 +162,6 @@ function App() {
                 </ProtectedRoute>
               }
             />
-
             {/* <Route
               path="/*"
               element={
@@ -181,18 +181,21 @@ function App() {
                 </ProtectedRoute>
               }
             /> */}
-
             {/* Fallback: redirect unknown paths back to login or main */}
             <Route path="*" element={<Navigate to="/" replace />} />
-
             <Route path="/" element={<Main />} />
-
             <Route path="/paystub" element={<Paystub />} />
             <Route path="/w2" element={<W2 />} />
             <Route path="/paystubform" element={<Stubform />} />
             <Route path="/w2form" element={<W2Form />} />
             <Route path="/invoice" element={<Invoice />} />
             <Route path="/invoiceform" element={<Invoiceform />} />
+            <Route
+              path="/Invoiceform_Paypal"
+              element={<Invoiceform_Paypal />}
+            />
+            <Route path="/Invoice_paypal" element={<Invoice_paypal />} />
+
             <Route path="/outform" element={<Outform />} />
             <Route path="/select" element={<Select />} />
             <Route path="/jobways" element={<Jobways />} />
@@ -256,7 +259,6 @@ function App() {
             <Route path="/sportsExperience" element={<SportsExperience />} />
             <Route path="/sportsRelieving" element={<SportsRelieving />} />
             <Route path="/jellygit" element={<Jelly />} />
-
             <Route path="/invoicebox" element={<Invoicebox />} />
             <Route path="/paystubbox" element={<Paystubbox />} />
             <Route path="/W2box" element={<W2box />} />
@@ -276,7 +278,6 @@ function App() {
             <Route path="/KaceeRelieving" element={<KaceeRelieving />} />
             <Route path="/RapidRelieving" element={<RapidRelieving />} />
             <Route path="/COI" element={<Coi />} />
-
             <Route path="/GenieEditform" element={<GenieEditform />} />
             <Route path="/GenieEdit" element={<GenieEdit />} />
             <Route path="/GenesisEdit" element={<GenesisEdit />} />
@@ -295,9 +296,7 @@ function App() {
             <Route path="/Paystubsdi" element={<Paystubsdi />} />
             <Route path="/t4" element={<T4 />} />
             <Route path="/t4form" element={<T4form />} />
-
             <Route path="/SM_Invoice" element={<SM_Invoice />} />
-
             <Route path="/SportsmartLLPEdit" element={<SportsmartLLPEdit />} />
           </Routes>
         </AuthState>

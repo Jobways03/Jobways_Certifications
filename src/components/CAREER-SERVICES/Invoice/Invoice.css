@@ -41,6 +41,15 @@
   left: 3.5%;
 }
 
+.eadd1-p {
+  position: absolute;
+  font-size: 10.7px;
+  top: 13.5%;
+  left: 3.5%;
+  /* font-weight: 600; */
+  text-transform: uppercase;
+}
+
 .eadd1 {
   position: absolute;
   font-size: 10.7px;
@@ -462,6 +471,25 @@
   font-weight: bolder;
 }
 
+.toti-p {
+  position: absolute;
+  top: 68.85%;
+  left: 73.7%;
+  height: 15px;
+  width: 160px;
+  font-size: 10.7px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.totii-p {
+  position: absolute;
+  font-size: 10.7px;
+  top: 68%;
+  right: 28%;
+  font-weight: bolder;
+}
+
 .oc {
   position: absolute;
   font-size: 10.7px;
@@ -497,11 +525,34 @@
   left: 70.5%;
 }
 
+.mac-p {
+  position: absolute;
+  font-size: 10.7px;
+  top: 72.4%;
+  left: 63%;
+}
+
 .mac1 {
   position: absolute;
   font-size: 10.7px;
   top: 74%;
   left: 74.5%;
+  font-weight: bolder;
+}
+
+.mac1-p1 {
+  position: absolute;
+  font-size: 10.7px;
+  top: 75.5%;
+  left: 74.5%;
+  font-weight: bolder;
+}
+
+.mac1-p2 {
+  position: absolute;
+  font-size: 10.7px;
+  top: 77%;
+  left: 77.5%;
   font-weight: bolder;
 }
 
