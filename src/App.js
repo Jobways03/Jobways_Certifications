@@ -98,6 +98,8 @@ import Login from "./Auth/Login/Login";
 import ProtectedRoute from "./Auth/ProtectedRoute/ProtectedRoute";
 import Invoiceform_Paypal from "./components/CAREER-SERVICES/Invoice/Invoiceform_paypal";
 import Invoice_paypal from "./components/CAREER-SERVICES/Invoice/Invoice_paypal";
+import Invoiceform_Genie_Paypal from "./components/CAREER-SERVICES/Invoice/Invoiceform_genie_paypal";
+import Invoice_Genie_paypal from "./components/CAREER-SERVICES/Invoice/Invoice_genie_paypal";
 
 function App() {
   return (
@@ -195,7 +197,6 @@ function App() {
               element={<Invoiceform_Paypal />}
             />
             <Route path="/Invoice_paypal" element={<Invoice_paypal />} />
-
             <Route path="/outform" element={<Outform />} />
             <Route path="/select" element={<Select />} />
             <Route path="/jobways" element={<Jobways />} />
@@ -298,6 +299,14 @@ function App() {
             <Route path="/t4form" element={<T4form />} />
             <Route path="/SM_Invoice" element={<SM_Invoice />} />
             <Route path="/SportsmartLLPEdit" element={<SportsmartLLPEdit />} />
+            <Route
+              path="/Invoiceform_Genie_Paypal"
+              element={<Invoiceform_Genie_Paypal />}
+            />
+            <Route
+              path="/Invoice_Genie_paypal"
+              element={<Invoice_Genie_paypal />}
+            />
           </Routes>
         </AuthState>
       </BrowserRouter>

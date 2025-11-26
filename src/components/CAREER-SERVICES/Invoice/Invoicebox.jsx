@@ -24,7 +24,15 @@ const Invoicebox = () => {
             navigate("/Invoiceform_Paypal");
           }}
         >
-          <h2>All Services - Paypal</h2>
+          <h2>All Services - Jobways - Paypal</h2>
+        </div>
+        <div
+          className="card payroll"
+          onClick={() => {
+            navigate("/Invoiceform_Genie_Paypal");
+          }}
+        >
+          <h2>All Services - GenieLamp - Paypal</h2>
         </div>
         <div
           className="card payroll"
