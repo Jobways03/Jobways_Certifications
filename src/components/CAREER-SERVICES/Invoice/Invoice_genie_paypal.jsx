@@ -18,7 +18,7 @@ const ComponentToPrint = React.forwardRef(({ showExtras }, ref) => {
         <p className="eadd1">Unit-NO: 7-140/2, E 5</p>
         <p className="eadd2">Nagendra Nagar, Habsiguda</p>
         <p className="eadd3">Phone: +91 78159 03117</p>
-        <p className="eadd4">Email: corpgroup.ac001@gmail.com</p>
+        <p className="eadd4">Email: contactus@genielamp.com</p>
         <p className="eadd5">Website: https://agenielamp.com</p>
         <p className="bill">BILL TO</p>
         {/* <div className="lie"></div> */}
@@ -80,7 +80,7 @@ const ComponentToPrint = React.forwardRef(({ showExtras }, ref) => {
 
         <p className="last1">GENIE LAMP PRIVATE LIMITED</p>
         <p className="last2">+91 78159 03117</p>
-        <p className="last3">corpgroup.ac001@gmail.com</p>
+        <p className="last3">contactus@genielamp.com</p>
         <p className="last4">https://agenielamp.com</p>
         <p className="last5">
           Unit-NO: 7-140/2,E 5, NAGENDRA NAGAR, HABSIGUDA, HYDERABAD- 500 007
