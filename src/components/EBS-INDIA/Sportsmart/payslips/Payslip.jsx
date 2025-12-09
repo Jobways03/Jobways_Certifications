@@ -28,7 +28,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           For {Global.geshurPayslip.month} {Global.geshurPayslip.year}
         </p>
         <p className="sports2">{Global.geshurPayslip.name}</p>
-        <p className="sports3">Employee Number</p>
+        <p className="sports3">Employee ID</p>
         <p className="sports4">{Global.geshurPayslip.employeeId}</p>
         <p className="sports5">PAN Number</p>
         <p className="sports6">{Global.geshurPayslip.pan}</p>
