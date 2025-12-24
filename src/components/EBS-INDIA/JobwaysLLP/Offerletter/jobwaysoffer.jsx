@@ -274,7 +274,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
 
         <p className="let39">
           <span className="bol" style={{ fontSize: "15px" }}>
-            Firdous Fatima Farooqui
+            Laayyee Ganeshwari
           </span>
         </p>
         <p className="let40">
