@@ -100,6 +100,8 @@ import Invoiceform_Paypal from "./components/CAREER-SERVICES/Invoice/Invoiceform
 import Invoice_paypal from "./components/CAREER-SERVICES/Invoice/Invoice_paypal";
 import Invoiceform_Genie_Paypal from "./components/CAREER-SERVICES/Invoice/Invoiceform_genie_paypal";
 import Invoice_Genie_paypal from "./components/CAREER-SERVICES/Invoice/Invoice_genie_paypal";
+import Paystubfli from "./components/EBS-USA/Paystub/Paystub/paystubfli";
+import Paystubsdifli from "./components/EBS-USA/Paystub/Paystub/paystubSDIFLI";
 
 function App() {
   return (
@@ -295,6 +297,8 @@ function App() {
             <Route path="/Paystubsubbox" element={<Paystubsubbox />} />
             <Route path="/SdiStubform" element={<SdiStubform />} />
             <Route path="/Paystubsdi" element={<Paystubsdi />} />
+            <Route path="/Paystubfli" element={<Paystubfli />} />
+            <Route path="/Paystubsdifli" element={<Paystubsdifli />} />
             <Route path="/t4" element={<T4 />} />
             <Route path="/t4form" element={<T4form />} />
             <Route path="/SM_Invoice" element={<SM_Invoice />} />

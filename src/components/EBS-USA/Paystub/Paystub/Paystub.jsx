@@ -23,6 +23,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
     Global.form.stateTaxYTD,
   ];
 
+  const isFLI = localStorage.getItem("FLI_TYPE") === "FLI";
 
   const lineLength = 50;
   const currenttotaltaxe =

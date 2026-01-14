@@ -37,6 +37,9 @@ function Stubform() {
     Global.setForm({ ...Global.form, [e.target.name]: e.target.value });
   };
 
+  const isFLI = localStorage.getItem("FLI_TYPE") === "FLI";
+  const isSDI = localStorage.getItem("PAYSTUB_TYPE") === "SDI";
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const lineLength = 150;
@@ -45,7 +48,11 @@ function Stubform() {
       "*".repeat(lineLength - Global.form.amountInWords.length);
     Global.setForm({ ...Global.form, amountInWords: output });
 
-    navigate("/paystub");
+    if (isFLI) {
+      navigate("/Paystubfli");
+    } else {
+      navigate("/paystub");
+    }
   };
 
   return (
@@ -183,16 +190,7 @@ function Stubform() {
               <option value="Married">Married</option>
             </select>
           </label>
-          {/* <label className="paystubLabel">
-            Pay Date:
-            <input
-              type="text"
-              name="payDate"
-              value={Global.form.payDate}
-              onChange={handleChange}
-              required
-            />
-          </label> */}
+
           <label className="paystubLabel">
             Total Hours:
             <input
@@ -325,26 +323,32 @@ function Stubform() {
               required
             />
           </label>
-          {/* <label className="paystubLabel">
-            Employer Name :
-            <input
-              type="text"
-              name="employername"
-              value={Global.form.employername}
-              onChange={handleChange}
-              required
-            />
-          </label>
-          <label className="paystubLabel">
-            Employer Address :
-            <input
-              type="text"
-              name="employerAddress"
-              value={Global.form.employerAddress}
-              onChange={handleChange}
-              required
-            />
-          </label> */}
+          {isFLI && (
+            <>
+              <label className="paystubLabel">
+                FLI - Current:
+                <input
+                  type="text"
+                  name="FLICurrent"
+                  value={Global.form.FLICurrent || ""}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+
+              <label className="paystubLabel">
+                FLI - YTD:
+                <input
+                  type="text"
+                  name="FLIYTD"
+                  value={Global.form.FLIYTD || ""}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+            </>
+          )}
+
           <button type="submit" id="submitBtn">
             Submit
           </button>

@@ -11,6 +11,9 @@ function SdiStubform() {
     Global.setForm({ ...Global.form, [e.target.name]: e.target.value });
   };
 
+  const isFLI = localStorage.getItem("FLI_TYPE") === "FLI";
+  const isSDI = localStorage.getItem("PAYSTUB_TYPE") === "SDI";
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const lineLength = 150;
@@ -19,7 +22,14 @@ function SdiStubform() {
       "*".repeat(lineLength - Global.form.amountInWords.length);
     Global.setForm({ ...Global.form, amountInWords: output });
 
-    navigate("/Paystubsdi");
+    console.log(isFLI,isSDI);
+    
+
+    if (isFLI && isSDI) {
+      navigate("/Paystubsdifli");
+    } else {
+      navigate("/Paystubsdi");
+    }
   };
 
   return (
@@ -311,6 +321,32 @@ function SdiStubform() {
               required
             />
           </label>
+
+          {isFLI && (
+            <>
+              <label className="paystubLabel">
+                FLI - Current:
+                <input
+                  type="text"
+                  name="FLICurrent"
+                  value={Global.form.FLICurrent || ""}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+
+              <label className="paystubLabel">
+                FLI - YTD:
+                <input
+                  type="text"
+                  name="FLIYTD"
+                  value={Global.form.FLIYTD || ""}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+            </>
+          )}
 
           <button type="submit" id="submitBtn">
             Submit

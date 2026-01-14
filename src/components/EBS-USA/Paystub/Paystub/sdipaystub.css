@@ -781,8 +781,8 @@
   #sdi-imga {
     width: 670px;
     position: absolute;
-    top: 95%;
-    left: 0.0.1px;
+    top: 93.5%;
+   left: 1%;
   }
  
   .sdi-print-button {
@@ -810,6 +810,150 @@
       display: none; /* Hide the button when printing */
     }
   }
+
+
+   #sdi-tax4-s-f {
+    position: absolute;
+    top: 44%;
+    left: 5%;
+    font-size: 50%;
+  }
  
+  #sdi-tax4-1-s-f {
+    position: absolute;
+    top: 44%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-2-s-f {
+    position: absolute;
+    top: 44%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+ 
+#sdi-tax4s-s-f1 {
+    position: absolute;
+    top: 81%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-1s-s-f1 {
+    position: absolute;
+    top: 81%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax4-2s-s-f1 {
+    position: absolute;
+    top: 81%;
+    right: 51%;
+    font-size: 50%;
+  }
+
+   #sdi-line4-f {
+    position: absolute;
+    top: 46.8%;
+    left: 29%;
+    background-color: black;
+    height: 0.1px;
+    width: 142px;
+  }
+ 
+  #sdi-tax5-1-f {
+    position: absolute;
+    top: 46.5%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax5-2-f {
+    position: absolute;
+    top: 46.5%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6-f {
+    position: absolute;
+    top: 49%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6-1-f {
+    position: absolute;
+    top: 49%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6-2-f {
+    position: absolute;
+    top: 49%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-p-f {
+    position: absolute;
+    top: 54.5%;
+    left: 5%;
+    font-size: 50%;
+  }
 
 
+   #sdi-line4s-f {
+    position: absolute;
+    top: 83.9%;
+    left: 29%;
+    background-color: black;
+    height: 0.1px;
+    width: 142px;
+  }
+ 
+  #sdi-tax5-1s-f {
+    position: absolute;
+    top: 83.5%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax5-2s-f {
+    position: absolute;
+    top: 83.5%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6s-f {
+    position: absolute;
+    top: 86%;
+    left: 5%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6-1s-f {
+    position: absolute;
+    top: 86%;
+    right: 60%;
+    font-size: 50%;
+  }
+ 
+  #sdi-tax6-2s-f {
+    position: absolute;
+    top: 86%;
+    right: 51%;
+    font-size: 50%;
+  }
+ 
+  #sdi-ps-f {
+    position: absolute;
+    top: 91.5%;
+    left: 5%;
+    font-size: 50%;
+  }

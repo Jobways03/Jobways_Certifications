@@ -82,8 +82,10 @@ const AuthState = ({ children }) => {
     state: "",
     employername: "",
     employerAddress: "",
-    SDICurrent:"",
-    sdiYTD:""
+    SDICurrent: "",
+    sdiYTD: "",
+    FLICurrent: "",
+    FLIYTD: "",
   });
 
   const [w2form, setw2form] = useState({
