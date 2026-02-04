@@ -29,7 +29,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           displayed hard work and dedication.
         </p>
 
-        <p className="exp5ee">
+        <p className="exp5ee" style={{fontWeight:"bold"}}>
           Employee ID :
           <span className="bold" style={{ textTransform: "uppercase" }}>
             {" "}

@@ -82,7 +82,6 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           explicitly sanctioned in advance through a written agreement.
           <br />
           <br />
-          
         </p>
 
         <div className="ds11"></div>
@@ -131,13 +130,14 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           Employer's premises, they are required to provide a weekly report that
           includes the hours worked and tasks accomplished. The Employee must
           keep accurate timesheets for all off-site work and submit these to the
-          Employer weekly via email at timesheets@rpdhs.net or hr@rpdhs.net. For
-          any questions related to this reporting procedure, the Employee can
-          contact Amith Chidre at 567-703-6312 / amith@rpdhs.net
+          Employer weekly via email at timesheets@rpdhsinc.com or
+          hr@rpdhsinc.com. For any questions related to this reporting
+          procedure, the Employee can contact Amith Chidre at 567 703 6317 /
+          amith@rpdhsinc.com
         </p>
 
         <p className="us18 cm">
-          2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Conditions
+          2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAYMENT CONDITIONS
         </p>
 
         <p className="us19 cm">
@@ -165,7 +165,6 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           similarly positioned Employees within the company or the industry.
           <br />
           <br />
-         
         </p>
 
         <div className="ds11"></div>

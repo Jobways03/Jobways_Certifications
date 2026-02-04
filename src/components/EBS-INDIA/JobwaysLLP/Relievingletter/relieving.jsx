@@ -34,7 +34,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           We extend our best wishes to you for success and fulfillment in your
           future endeavors.
         </p>
-        <p className="rel6ear">
+        <p className="rel6ear" style={{ fontWeight: "bold" }}>
           Employee ID :
           <span className="bold" style={{ textTransform: "uppercase" }}>
             {" "}

@@ -32,7 +32,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           the company.
         </p>
 
-        <p className="rel55b">
+        <p className="rel55b" style={{ fontWeight: "bold" }}>
           Employee ID :
           <span className="bold" style={{ textTransform: "uppercase" }}>
             {" "}
@@ -45,11 +45,11 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="rel9b">Sincerely,</p>
         {sessionStorage.getItem("offerStamp") === "with_stamp" && (
-        <img
-          src="./images/Geniestamp.png"
-          alt="stamp"
-          className="genstampsss"
-        />
+          <img
+            src="./images/Geniestamp.png"
+            alt="stamp"
+            className="genstampsss"
+          />
         )}
         <p className="rel10b">Shiva Kumar</p>
         <p className="rel11b">HR Manager</p>

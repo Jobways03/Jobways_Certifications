@@ -254,7 +254,9 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
 
         <div className="ds11"></div>
         <img src="./images/SM_Letterhead.png" alt="ewded" className="i4" />
-        <p className="let29">9. DOCUMENTS:</p>
+        <p className="let29" style={{ fontWeight: "bold" }}>
+          9. DOCUMENTS:
+        </p>
         <p className="let30">
           You are requested to fulfill below mentioned joining formalities. Sign
           and date this job offer letter were indicated below. The following
@@ -286,7 +288,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
 
         {sessionStorage.getItem("offerStamp") === "with_stamp" && (
-          <img src="./images/SM_image.png" alt="stamp" className="lett38" />
+          <img src="./images/novalogo.png" alt="stamp" className="lett38" />
         )}
 
         <p className="let39">

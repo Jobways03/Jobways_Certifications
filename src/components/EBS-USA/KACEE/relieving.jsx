@@ -28,7 +28,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           best in all your future endeavors.
         </p>
         {Global.Relieve.empid.length !== 0 ? (
-          <p className="er4emp">
+          <p className="er4emp" style={{ fontWeight: "bold" }}>
             Employee ID :
             <span className="bold" style={{ textTransform: "uppercase" }}>
               {" "}
