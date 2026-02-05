@@ -20,11 +20,11 @@ function Stubform() {
 
   const handleDateChange = (e) => {
     const { name, value } = e.target;
-    if (name == "date") {
+    if (name === "date") {
       setdate(value);
-    } else if (name == "payPeriodFrom") {
+    } else if (name === "payPeriodFrom") {
       setdate2(value);
-    } else if (name == "payPeriodTo") {
+    } else if (name === "payPeriodTo") {
       setdate3(value);
     } else setdate4(value);
 

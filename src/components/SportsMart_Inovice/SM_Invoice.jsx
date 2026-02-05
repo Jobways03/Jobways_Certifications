@@ -190,9 +190,7 @@ const SM_Invoice = () => {
     content: () => componentRef.current,
   });
 
-  const handlePrintWithExtras = () => {
-    setShowExtras(!showExtras);
-  };
+ 
 
   return (
     <div>
@@ -200,9 +198,6 @@ const SM_Invoice = () => {
       <button onClick={handlePrint} className="print-button">
         Print Invoice
       </button>
-      {/* <button onClick={handlePrintWithExtras} className="print-button">
-        Toggle Transaction ID and Image
-      </button> */}
     </div>
   );
 };

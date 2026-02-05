@@ -3,7 +3,6 @@ import { useReactToPrint } from "react-to-print";
 import AuthContext from "../../../context/AuthContext";
 
 const ComponentToPrint = React.forwardRef((props, ref) => {
-  const Global = useContext(AuthContext);
 
   let head = localStorage.getItem("head");
   let text = localStorage.getItem("text");
