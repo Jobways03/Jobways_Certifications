@@ -5,7 +5,6 @@ import { useContext } from "react";
 
 const ProtectedRoute = ({ children }) => {
   const Global = useContext(AuthContext);
-  console.log(Global.user);
   
   if (!Global.user) {
     return <Navigate to="/login" replace />;

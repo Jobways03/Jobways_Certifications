@@ -8,7 +8,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <div className="pdf-offer">
-        <img src="./images/SM_Letterhead.png" alt="ewded" className="i4" />
+        <img src="./images/SM_Letterhead.jpg" alt="ewded" className="i4" />
 
         <p className="let1" style={{ fontWeight: "bolder", color: "black" }}>
           OFFER OF EMPLOYMENT

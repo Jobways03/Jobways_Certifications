@@ -58,7 +58,7 @@ const employees = [
     department: "Human Resource",
     designation: "Human Resource Analyst",
     location: "Hyderbad",
-    dateOfJoining: "12/01/2025",
+    dateOfJoining: "04/17/2024",
     gender: "FEMALE",
     bankName: "HDFC",
     accountNumber: "50100467023341",
@@ -181,7 +181,7 @@ const employees = [
     foodAllowance: "1250",
   },
   {
-    name: "Afreen NA",
+    name: "Afreen",
     employeeId: "JW20250616001",
     department: "Interview Supports",
     designation: "Mock Interviewer",

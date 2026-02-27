@@ -102,6 +102,11 @@ import Invoiceform_Genie_Paypal from "./components/CAREER-SERVICES/Invoice/Invoi
 import Invoice_Genie_paypal from "./components/CAREER-SERVICES/Invoice/Invoice_genie_paypal";
 import Paystubfli from "./components/EBS-USA/Paystub/Paystub/paystubfli";
 import Paystubsdifli from "./components/EBS-USA/Paystub/Paystub/paystubSDIFLI";
+import RESUME_MAIN from "./components/RESUME-MARKETING/Main/Resumebox";
+import Pre_Agreement_form from "./components/RESUME-MARKETING/PRE-AGREEMENT/Pre_Agreement_form";
+import Post_Agreement_form from "./components/RESUME-MARKETING/POST-AGREEMENT/Post_Agreement_form";
+import Pre_Agreement from "./components/RESUME-MARKETING/PRE-AGREEMENT/Pre_Agreement";
+import Post_Agreement from "./components/RESUME-MARKETING/POST-AGREEMENT/Post_Agreement";
 
 function App() {
   return (
@@ -311,6 +316,20 @@ function App() {
               path="/Invoice_Genie_paypal"
               element={<Invoice_Genie_paypal />}
             />
+
+            <Route path="/Resume_services" element={<RESUME_MAIN />} />
+            <Route
+              path="/Pre_Agreement_form"
+              element={<Pre_Agreement_form />}
+            />
+            <Route
+              path="/Post_Agreement_form"
+              element={<Post_Agreement_form />}
+            />
+
+            <Route path="/Pre_Agreement" element={<Pre_Agreement />} />
+
+            <Route path="/Post_Agreement" element={<Post_Agreement/>} />
           </Routes>
         </AuthState>
       </BrowserRouter>

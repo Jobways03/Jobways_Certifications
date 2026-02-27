@@ -8,7 +8,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <div className="pdf-offer">
-        <img src="./images/SM_Letterhead.png" alt="ewded" className="i3" />
+        <img src="./images/SM_Letterhead.jpg" alt="ewded" className="i3" />
         <h3 className="eded">EXPERIENCE LETTER</h3>
         <p className="expge1c">{Global.Experience.name}</p>
         <p className="expge2c">Date: {Global.Experience.date}</p>
@@ -30,7 +30,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
 
         {sessionStorage.getItem("offerStamp") === "with_stamp" && (
           <img
-            src="./images/SM_image.png"
+            src="./images/novalogo.png"
             alt="ewded"
             style={{ top: "45%" }}
             className="gesstampss"

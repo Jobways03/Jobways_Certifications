@@ -1,0 +1,455 @@
+/* =========================================
+   JobwaysPostAgreementStyle.css
+   3-page fixed-position print style
+   Unique prefix: jwrpps3_
+   ========================================= */
+
+.jwrpps3_pdf {
+  width: 794px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.jwrpps3_page {
+  position: relative;
+  width: 794px;
+  height: 1123px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.jwrpps3_bg {
+  width: 794px;
+  height: 1123px;
+  display: block;
+}
+
+.jwrpps3_gap {
+  height: 10px;
+  width: 100%;
+  background: transparent;
+}
+
+.jwrpps3_bold {
+  font-weight: 700;
+}
+
+.jwrpps3_print_btn {
+  display: block;
+  margin: 16px auto 30px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+[class^="jwrpps3_t"] {
+  box-sizing: border-box;
+}
+
+.jwrpps3_t1, .jwrpps3_t2, .jwrpps3_t3, .jwrpps3_t4, .jwrpps3_t5, .jwrpps3_t6, .jwrpps3_t7, .jwrpps3_t8, .jwrpps3_t9, .jwrpps3_t10,
+.jwrpps3_t11, .jwrpps3_t12, .jwrpps3_t13, .jwrpps3_t14, .jwrpps3_t15, .jwrpps3_t16, .jwrpps3_t17, .jwrpps3_t18, .jwrpps3_t19, .jwrpps3_t20,
+.jwrpps3_t21, .jwrpps3_t22, .jwrpps3_t23, .jwrpps3_t24, .jwrpps3_t25, .jwrpps3_t26, .jwrpps3_t27, .jwrpps3_t28, .jwrpps3_t29, .jwrpps3_t30,
+.jwrpps3_t31, .jwrpps3_t32, .jwrpps3_t33, .jwrpps3_t34, .jwrpps3_t36, .jwrpps3_t38, .jwrpps3_t39, .jwrpps3_t41, .jwrpps3_t42, .jwrpps3_t44,
+.jwrpps3_t46, .jwrpps3_t47, .jwrpps3_t49 {
+  position: absolute;
+  margin: 0;
+  color: #000;
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.28;
+  text-align: left;
+}
+
+.jwrpps3_l35, .jwrpps3_l37, .jwrpps3_l40, .jwrpps3_l43, .jwrpps3_l45, .jwrpps3_l48 {
+  position: absolute;
+  border-bottom: 1px solid #000;
+}
+
+/* ================= PAGE 1 ================= */
+
+.jwrpps3_t2 {
+  top: 8.8%;
+  left: 7%;
+  width: 86%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.jwrpps3_t3 {
+  top: 11%;
+  left: 7%;
+  width: 86%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.jwrpps3_t4 {
+  top: 15.1%;
+  left: 7%;
+  width: 86%;
+  text-align: justify;
+}
+
+.jwrpps3_t5 {
+  top: 25.2%;
+  left: 7%;
+  width: 86%;
+  text-align: justify;
+}
+
+.jwrpps3_t6 {
+  top: 36.8%;
+  left: 7%;
+  width: 86%;
+  font-size: 16px;
+}
+
+.jwrpps3_t7 {
+  top: 40.2%;
+  left: 7%;
+  width: 86%;
+  font-weight: 700;
+}
+
+.jwrpps3_t8 {
+  top: 43.9%;
+  left: 7%;
+  width: 86%;
+  text-align: justify;
+}
+
+.jwrpps3_t9 {
+  top: 51%;
+  left: 7%;
+  width: 86%;
+  font-weight: 700;
+}
+
+.jwrpps3_t10 {
+  top: 54.5%;
+  left: 7%;
+  width: 86%;
+  text-align: justify;
+}
+
+.jwrpps3_t11 {
+  top: 59.9%;
+  left: 7%;
+  width: 86%;
+  font-weight: 700;
+}
+
+.jwrpps3_t12 {
+  top: 63.5%;
+  left: 7%;
+  width: 86%;
+  text-align: justify;
+}
+
+.jwrpps3_t13 {
+  top: 66.8%;
+  left: 8.5%;
+  width: 84%;
+}
+
+.jwrpps3_t14 {
+  top: 68.9%;
+  left: 8.5%;
+  width: 84%;
+}
+
+.jwrpps3_t15 {
+  top: 70.9%;
+  left: 8.5%;
+  width: 84%;
+}
+
+.jwrpps3_t16 {
+  top: 77.2%;
+  left: 7%;
+  width: 86%;
+  font-weight: 700;
+}
+
+.jwrpps3_t17 {
+  top: 80.9%;
+  left: 7%;
+  width: 86%;
+  text-align: justify;
+}
+
+/* ================= PAGE 2 ================= */
+
+.jwrpps3_t18 {
+  top: 14.9%;
+  left: 7%;
+  width: 86%;
+  font-size: 16px;
+}
+
+.jwrpps3_t19 {
+  top: 19%;
+  left: 7%;
+  width: 86%;
+  font-weight: 700;
+}
+
+.jwrpps3_t20 {
+  top: 22.8%;
+  left: 7%;
+  width: 86%;
+  text-align: justify;
+}
+
+.jwrpps3_t21 {
+  top: 28.6%;
+  left: 8.5%;
+  width: 84%;
+  text-align: justify;
+}
+
+.jwrpps3_t22 {
+  top: 32%;
+  left: 8.5%;
+  width: 84%;
+  text-align: justify;
+}
+
+.jwrpps3_t23 {
+  top: 35.9%;
+  left: 8.5%;
+  width: 84%;
+  text-align: justify;
+}
+
+.jwrpps3_t24 {
+  top: 39.8%;
+  left: 7%;
+  width: 86%;
+  font-weight: 700;
+}
+
+.jwrpps3_t25 {
+  top: 43.5%;
+  left: 8.5%;
+  width: 84%;
+  text-align: justify;
+}
+
+.jwrpps3_t26 {
+  top: 47.1%;
+  left: 8.5%;
+  width: 84%;
+  text-align: justify;
+}
+
+.jwrpps3_t27 {
+  top: 53.6%;
+  left: 7%;
+  width: 86%;
+  font-size: 16px;
+}
+
+.jwrpps3_t28 {
+  top: 56.6%;
+  left: 8.5%;
+  width: 84%;
+  text-align: justify;
+}
+
+.jwrpps3_t29 {
+  top: 61.9%;
+  left: 8.5%;
+  width: 84%;
+  text-align: justify;
+}
+
+.jwrpps3_t30 {
+  top: 66.98%;
+  left: 8.5%;
+  width: 84%;
+  text-align: justify;
+}
+
+.jwrpps3_t31 {
+  top: 72.9%;
+  left: 7%;
+  width: 86%;
+  font-size: 16px;
+}
+
+.jwrpps3_t32 {
+  top: 76.6%;
+  left: 7%;
+  width: 86%;
+  text-align: justify;
+}
+
+/* ================= PAGE 3 ================= */
+
+.jwrpps3_t33 {
+  top: 11%;
+  left: 7%;
+  width: 86%;
+  font-size: 16px;
+}
+
+/* LEFT signature column */
+.jwrpps3_t34 {
+  top: 19.9%;
+  left: 7%;
+  width: 35%;
+  font-size: 16px;
+}
+
+.jwrpps3_l35 {
+  top: 19.3%;
+  left: 7%;
+  width: 35%;
+}
+
+.jwrpps3_t36 {
+  top: 27.9%;
+  left: 7%;
+  width: 35%;
+  font-size: 16px;
+}
+
+.jwrpps3_l37 {
+  top: 27.3%;
+  left: 7%;
+  width: 35%;
+}
+
+.jwrpps3_t38 {
+  top: 25.4%;
+  left: 7%;
+  width: 35%;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.jwrpps3_t39 {
+  top: 35.9%;
+  left: 7%;
+  width: 35%;
+  font-size: 16px;
+}
+
+.jwrpps3_l40 {
+  top: 35.3%;
+  left: 7%;
+  width: 35%;
+}
+
+.jwrpps3_t41 {
+  top: 32.9%;
+  left: 7%;
+  width: 35%;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* RIGHT signature column */
+.jwrpps3_t42 {
+  top: 19.9%;
+  left: 58%;
+  width: 35%;
+  font-size: 16px;
+}
+
+.jwrpps3_l43 {
+  top: 19.3%;
+  left: 58%;
+  width: 35%;
+}
+
+.jwrpps3_t44 {
+  top: 27.9%;
+  left: 58%;
+  width: 35%;
+  font-size: 16px;
+}
+
+.jwrpps3_l45 {
+  top: 27.3%;
+  left: 58%;
+  width: 35%;
+}
+
+.jwrpps3_t46 {
+  top: 25.4%;
+  left: 58%;
+  width: 35%;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.jwrpps3_t47 {
+  top: 35.9%;
+  left: 58%;
+  width: 35%;
+  font-size: 16px;
+}
+
+.jwrpps3_l48 {
+  top: 35.3%;
+  left: 58%;
+  width: 35%;
+}
+
+.jwrpps3_t49 {
+  top: 32.9%;
+  left: 58%;
+  width: 35%;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* ================= PRINT ================= */
+
+@media print {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .jwrpps3_pdf {
+    width: 210mm;
+    margin: 0;
+  }
+
+  .jwrpps3_page {
+    width: 210mm;
+    height: 297mm;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .jwrpps3_page:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .jwrpps3_bg {
+    width: 210mm;
+    height: 297mm;
+  }
+
+  .jwrpps3_gap,
+  .jwrpps3_print_btn {
+    display: none !important;
+  }
+}

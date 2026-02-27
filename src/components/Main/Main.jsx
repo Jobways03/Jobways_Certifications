@@ -35,6 +35,11 @@ const Main = () => {
       path: "/SM_Invoiceform",
       roles: ["ACCOUNTS"],
     },
+    {
+      label: "JOBWAYS RESUME MARKETING",
+      path: "/Resume_services",
+      roles: ["RMS"],
+    },
   ];
 
   return (

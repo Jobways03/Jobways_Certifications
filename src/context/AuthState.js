@@ -14,6 +14,11 @@ const USERS = [
     password: "Hr@jobways",
     role: "HR",
   },
+  {
+    email: "jobways.rmm003@gmail.com",
+    password: "Rms@jobways",
+    role: "RMS",
+  },
 ];
 
 const AuthState = ({ children }) => {
@@ -534,6 +539,32 @@ const [SM_FormData, setSM_FormData] = useState({
     employersaccountnumber:""
   });
 
+  const [ServiceFeeForm, setServiceFeeForm] = useState({
+    date: "", // "dd/mm/yyyy"
+    name: "",
+    ssnLast4: "",
+    role: "",
+    totalServiceFee: "",
+    totalAdvancePayment: "",
+    firstAdvancePayment: "",
+    secondAdvancePayment: "",
+    duePayments: "",
+  });
+
+  const [PaymentPlanForm, setPaymentPlanForm] = useState({
+    date: "",
+    name: "",
+    ssnLast4: "",
+    totalAdvancePayments: "",
+    duePayments: "",
+    months: "",
+    monthlyPayment: "",
+    dueDate: "",
+    location: "",
+  });
+
+
+
   return (
     <GlobalData.Provider
       value={{
@@ -586,6 +617,10 @@ const [SM_FormData, setSM_FormData] = useState({
         user,
         login,
         logout,
+        ServiceFeeForm,
+        setServiceFeeForm,
+        PaymentPlanForm,
+        setPaymentPlanForm,
       }}
     >
       {children}
