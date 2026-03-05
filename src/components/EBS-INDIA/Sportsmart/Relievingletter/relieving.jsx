@@ -8,7 +8,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <div className="pdf-offer">
-        <img src="./images/SM_Letterhead.jpg" alt="ewded" className="i3" />
+        <img src="./images/SM_Letterhead_HR.jpg" alt="ewded" className="i3" />
         <h3 className="heakss">RELIEVING LETTER</h3>
         <p className="rel1c">{Global.Relieve.name}</p>
         <p className="rel2c">Date: {Global.Relieve.date}</p>
@@ -49,8 +49,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         <p className="rel9c">Sincerely,</p>
         <p className="rel10c">Laayyee Ganeshwari</p>
         <p className="rel11c">HR Manager</p>
-        <p className="rel12c">hr@sportsmart.com</p>
-        <p className="rel13c">+91 – 6303170175</p>
+        <p className="rel12c">sportsmart.hr001@gmail.com</p>
+        <p className="rel13c">+91 – 63031 70175</p>
         <div className="ds1"></div>
       </div>
     </div>

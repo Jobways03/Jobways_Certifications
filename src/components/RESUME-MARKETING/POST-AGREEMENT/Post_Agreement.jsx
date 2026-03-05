@@ -7,7 +7,43 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
   const Global = useContext(AuthContext);
   const f = Global.PaymentPlanForm || {};
 
-  const dateText = f.date || "[Date]";
+  // ✅ Convert incoming date (often DDMMYYYY) -> MMDDYYYY
+  const formatToMMDDYYYY = (input) => {
+    if (!input) return "[Date]";
+
+    const raw = String(input).trim();
+
+    // If it's exactly 8 digits (ex: 02032026), treat it as DDMMYYYY and convert to MMDDYYYY
+    if (/^\d{8}$/.test(raw)) {
+      const dd = raw.slice(0, 2);
+      const mm = raw.slice(2, 4);
+      const yyyy = raw.slice(4, 8);
+      return `${mm}${dd}${yyyy}`;
+    }
+
+    // If it's dd-mm-yyyy or dd/mm/yyyy -> mm/dd/yyyy
+    const sepMatch = raw.match(/^(\d{2})[\/\-](\d{2})[\/\-](\d{4})$/);
+    if (sepMatch) {
+      const dd = sepMatch[1];
+      const mm = sepMatch[2];
+      const yyyy = sepMatch[3];
+      return `${mm}/${dd}/${yyyy}`;
+    }
+
+    // If it's already ISO (yyyy-mm-dd) -> mm/dd/yyyy
+    const isoMatch = raw.match(/^(\d{4})[\/\-](\d{2})[\/\-](\d{2})$/);
+    if (isoMatch) {
+      const yyyy = isoMatch[1];
+      const mm = isoMatch[2];
+      const dd = isoMatch[3];
+      return `${mm}/${dd}/${yyyy}`;
+    }
+
+    // Otherwise, leave as-is (so you don't break other formats)
+    return raw;
+  };
+
+  const dateText = formatToMMDDYYYY(f.date);
   const nameText = f.name || "[Name]";
   const locationText = f.location || "[Location]";
 
@@ -28,7 +64,6 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
             className="jwrpps3_bg"
           />
 
-         
           <p className="jwrpps3_t2">
             JOBWAYS RESUME MARKETING SERVICE AGREEMENT
           </p>
@@ -146,7 +181,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           </p>
 
           <p className="jwrpps3_t21">
-            • Support may include onboarding guidance, workflow assistance and performance support.
+            • Support may include onboarding guidance, workflow assistance and
+            performance support.
           </p>
           <p className="jwrpps3_t22">
             • Training or support allocation will be based on the Candidate’s
@@ -212,7 +248,9 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <p className="jwrpps3_t33">
             <span className="jwrpps3_bold">5. SIGNATURES</span>
           </p>
-
+          <div className="jwrmsppost_t51img">
+            <img src="./images/sign.jpg" alt="" />
+          </div>
           {/* LEFT - Employee */}
           <p className="jwrpps3_t34">
             <span className="jwrpps3_bold">Employee’s Signature</span>

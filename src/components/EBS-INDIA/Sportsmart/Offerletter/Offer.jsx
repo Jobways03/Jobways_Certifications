@@ -8,7 +8,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <div className="pdf-offer">
-        <img src="./images/SM_Letterhead.jpg" alt="ewded" className="i4" />
+        <img src="./images/SM_Letterhead_HR.jpg" alt="ewded" className="i4" />
 
         <p className="let1" style={{ fontWeight: "bolder", color: "black" }}>
           OFFER OF EMPLOYMENT
@@ -118,7 +118,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
 
         <div className="ds11"></div>
-        <img src="./images/SM_Letterhead.png" alt="ewded" className="i4" />
+        <img src="./images/SM_Letterhead_HR.jpg" alt="ewded" className="i4" />
         <p className="let12">
           <span className="bol">7. TERMINATION OF EMPLOYMENT : </span>If you
           don’t abide by the rules and regulations that are mentioned in the
@@ -194,7 +194,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
 
         <div className="ds11"></div>
-        <img src="./images/SM_Letterhead.png" alt="ewded" className="i4" />
+        <img src="./images/SM_Letterhead_HR.jpg" alt="ewded" className="i4" />
         <p className="let22">
           iii) During your service with the Company, you are expected to devote
           your whole time and Attention to the Company’s affairs and refrain
@@ -253,7 +253,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
 
         <div className="ds11"></div>
-        <img src="./images/SM_Letterhead.png" alt="ewded" className="i4" />
+        <img src="./images/SM_Letterhead_HR.jpg" alt="ewded" className="i4" />
         <p className="let29" style={{ fontWeight: "bold" }}>
           9. DOCUMENTS:
         </p>
@@ -303,12 +303,12 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="let41">
           <span className="bol" style={{ fontSize: "15px" }}>
-            hr@sportsmart.com
+            sportsmart.hr001@gmail.com
           </span>
         </p>
         <p className="let42">
           <span className="bol" style={{ fontSize: "15px" }}>
-            +91- 6303170175
+            +91- 63031 70175
           </span>
         </p>
         <p className="let43">

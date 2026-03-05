@@ -7,7 +7,43 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
   const Global = useContext(AuthContext);
   const f = Global.ServiceFeeForm || {};
 
-  const dateText = f.date || "[Date]";
+  // ✅ Convert incoming date (often DDMMYYYY) -> MMDDYYYY
+  const formatToMMDDYYYY = (input) => {
+    if (!input) return "[Date]";
+
+    const raw = String(input).trim();
+
+    // If it's exactly 8 digits (ex: 02032026), treat it as DDMMYYYY and convert to MMDDYYYY
+    if (/^\d{8}$/.test(raw)) {
+      const dd = raw.slice(0, 2);
+      const mm = raw.slice(2, 4);
+      const yyyy = raw.slice(4, 8);
+      return `${mm}${dd}${yyyy}`;
+    }
+
+    // If it's dd-mm-yyyy or dd/mm/yyyy -> mm/dd/yyyy
+    const sepMatch = raw.match(/^(\d{2})[\/\-](\d{2})[\/\-](\d{4})$/);
+    if (sepMatch) {
+      const dd = sepMatch[1];
+      const mm = sepMatch[2];
+      const yyyy = sepMatch[3];
+      return `${mm}/${dd}/${yyyy}`;
+    }
+
+    // If it's already ISO (yyyy-mm-dd) -> mm/dd/yyyy
+    const isoMatch = raw.match(/^(\d{4})[\/\-](\d{2})[\/\-](\d{2})$/);
+    if (isoMatch) {
+      const yyyy = isoMatch[1];
+      const mm = isoMatch[2];
+      const dd = isoMatch[3];
+      return `${mm}/${dd}/${yyyy}`;
+    }
+
+    // Otherwise, leave as-is
+    return raw;
+  };
+
+  const dateText = formatToMMDDYYYY(f.date);
   const nameText = f.name || "[Name]";
   const ssnText = f.ssnLast4 ? `XXX-XX-${f.ssnLast4}` : "XXX-XX-[XXXX]";
   const roleText = f.role || "[Title]";
@@ -277,6 +313,10 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           </p>
           <div className="jwrmsp_l50"></div>
           <p className="jwrmsp_t51">{dateText}</p>
+
+          <div className="jwrmsp_t51img">
+            <img src="./images/sign.jpg" alt="" />
+          </div>
 
           {/* RIGHT */}
           <p className="jwrmsp_t52">
