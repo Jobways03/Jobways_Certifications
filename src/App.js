@@ -107,6 +107,7 @@ import Pre_Agreement_form from "./components/RESUME-MARKETING/PRE-AGREEMENT/Pre_
 import Post_Agreement_form from "./components/RESUME-MARKETING/POST-AGREEMENT/Post_Agreement_form";
 import Pre_Agreement from "./components/RESUME-MARKETING/PRE-AGREEMENT/Pre_Agreement";
 import Post_Agreement from "./components/RESUME-MARKETING/POST-AGREEMENT/Post_Agreement";
+import Invoice_GenieLamp_Stripe from "./components/CAREER-SERVICES/Invoice/invoice_genie_stripe";
 
 function App() {
   return (
@@ -316,7 +317,6 @@ function App() {
               path="/Invoice_Genie_paypal"
               element={<Invoice_Genie_paypal />}
             />
-
             <Route path="/Resume_services" element={<RESUME_MAIN />} />
             <Route
               path="/Pre_Agreement_form"
@@ -326,10 +326,12 @@ function App() {
               path="/Post_Agreement_form"
               element={<Post_Agreement_form />}
             />
-
             <Route path="/Pre_Agreement" element={<Pre_Agreement />} />
-
-            <Route path="/Post_Agreement" element={<Post_Agreement/>} />
+            <Route path="/Post_Agreement" element={<Post_Agreement />} />
+            <Route
+              path="/invoice_genie_stripe"
+              element={<Invoice_GenieLamp_Stripe />}
+            />
           </Routes>
         </AuthState>
       </BrowserRouter>

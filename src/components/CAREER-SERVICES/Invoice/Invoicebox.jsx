@@ -13,10 +13,20 @@ const Invoicebox = () => {
         <div
           className="card payroll"
           onClick={() => {
+            localStorage.setItem("AS", "JOBWAYS");
             navigate("/invoiceform");
           }}
         >
-          <h2>All Services - Stripe</h2>
+          <h2>All Services - Stripe - Jobways</h2>
+        </div>
+        <div
+          className="card payroll"
+          onClick={() => {
+            localStorage.setItem("AS", "GENIELAMP");
+            navigate("/invoiceform");
+          }}
+        >
+          <h2>All Services - Stripe - Genielamp</h2>
         </div>
         <div
           className="card payroll"

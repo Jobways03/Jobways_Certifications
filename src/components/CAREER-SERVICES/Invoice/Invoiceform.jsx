@@ -30,7 +30,12 @@ const Invoiceform = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/invoice");
+    if (localStorage.getItem("AS") === "GENIELAMP") {
+      localStorage.removeItem("AS");
+      navigate("/invoice_genie_stripe");
+    } else {
+      navigate("/invoice");
+    }
   };
 
   return (
@@ -182,7 +187,9 @@ const Invoiceform = () => {
           />
         </div>
         <div className="form-group">
-          <label>Stripe Fee</label>
+          <label>
+            {localStorage.getItem("AS") === "GENIELAMP" ? "Paypal Fee" : "Stripe Fee"}
+          </label>
           <input
             type="text"
             name="stripeFee"

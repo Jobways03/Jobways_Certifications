@@ -3,6 +3,13 @@ import { useReactToPrint } from "react-to-print";
 import "./jobpay.css";
 import AuthContext from "../../../../context/AuthContext";
 
+const formatDate = (dateStr) => {
+  if (!dateStr) return "";
+  const [month, day, year] = dateStr.split("/");
+  if (!month || !day || !year) return dateStr;
+  return `${day}/${month}/${year}`;
+};
+
 const ComponentToPrint = React.forwardRef((props, ref) => {
   const Global = useContext(AuthContext);
   const total =
@@ -72,7 +79,9 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         <p className="job12">: {Global.jobwaysPayslip.department}</p>
         <p className="job13">: {Global.jobwaysPayslip.designation}</p>
         <p className="job14">: {Global.jobwaysPayslip.location}</p>
-        <p className="job15">: {Global.jobwaysPayslip.dateOfJoining}</p>
+        <p className="job15">
+          : {formatDate(Global.jobwaysPayslip.dateOfJoining)}
+        </p>
         <p className="job16">: {Global.jobwaysPayslip.gender}</p>
         <p className="job17">: {Global.jobwaysPayslip.bankName}</p>
         <p className="job18">: {Global.jobwaysPayslip.accountNumber}</p>

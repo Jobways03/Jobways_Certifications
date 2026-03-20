@@ -77,7 +77,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
             Green, STE R, Dover, DE 19901 (hereinafter referred to as the
             “Service Provider” or “Employer”), and{" "}
             <span className="jwrmsp_bold">{nameText}</span> with Social
-            Insurance Number: <span className="jwrmsp_bold">{ssnText}</span>.
+            Security Number: <span className="jwrmsp_bold">{ssnText}</span>.
           </p>
 
           <p className="jwrmsp_t4">
