@@ -26,13 +26,89 @@ const W2Form = () => {
     navigate("/w2");
   };
 
-  return (
-    <div className="employee-form-container">
-      <form className="employee-form" onSubmit={handleSubmit}>
-        <h2>Employee Information Form</h2>
+  const formPageStyle = {
+    minHeight: '100vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '40px 20px',
+    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  };
 
-        <div className="form-group">
-          <label htmlFor="year">Year</label>
+  const formCardStyle = {
+    background: '#ffffff',
+    borderRadius: '20px',
+    padding: '40px 36px',
+    maxWidth: '600px',
+    width: '100%',
+    boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
+  };
+
+  const formTitleStyle = {
+    fontSize: '26px',
+    fontWeight: '700',
+    color: '#1a1a2e',
+    marginBottom: '32px',
+    textAlign: 'center',
+    paddingBottom: '16px',
+    borderBottom: '3px solid #667eea',
+  };
+
+  const formGroupStyle = {
+    marginBottom: '20px',
+  };
+
+  const labelStyle = {
+    display: 'block',
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#374151',
+    marginBottom: '6px',
+  };
+
+  const inputStyle = {
+    width: '100%',
+    padding: '11px 14px',
+    fontSize: '14px',
+    border: '1.5px solid #d1d5db',
+    borderRadius: '10px',
+    outline: 'none',
+    boxSizing: 'border-box',
+    backgroundColor: '#f9fafb',
+    transition: 'border-color 0.2s',
+  };
+
+  const buttonStyle = {
+    width: '100%',
+    padding: '14px',
+    fontSize: '16px',
+    fontWeight: '700',
+    color: '#ffffff',
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    border: 'none',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    marginTop: '12px',
+    letterSpacing: '1px',
+    textTransform: 'uppercase',
+    boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+  };
+
+  const checkboxContainerStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    marginBottom: '20px',
+  };
+
+  return (
+    <div style={formPageStyle}>
+      <form style={formCardStyle} onSubmit={handleSubmit}>
+        <h2 style={formTitleStyle}>Employee Information Form</h2>
+
+        <div style={formGroupStyle}>
+          <label htmlFor="year" style={labelStyle}>Year</label>
           <input
             id="year"
             type="text"
@@ -40,11 +116,12 @@ const W2Form = () => {
             value={Global.w2form.year}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
 
-        <div className="paystubLabel">
-          <label htmlFor="date">Date</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="date" style={labelStyle}>Date</label>
           <input
             id="dates"
             type="date"
@@ -62,11 +139,12 @@ const W2Form = () => {
               });
             }}
             required
+            style={inputStyle}
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="ssn">Employee's SSN</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="ssn" style={labelStyle}>Employee's SSN</label>
           <input
             id="ssnn"
             type="text"
@@ -74,6 +152,7 @@ const W2Form = () => {
             value={Global.w2form.ssn}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
 
@@ -82,9 +161,9 @@ const W2Form = () => {
           "employeeNameAddressLine2",
           "employeeNameAddressLine3",
         ].map((field, index) => (
-          <div className="form-group" key={index}>
-            <label htmlFor={field}>
-              Employee’s Name, Address, and ZIP Code (Line {index + 1})
+          <div style={formGroupStyle} key={index}>
+            <label htmlFor={field} style={labelStyle}>
+              Employee's Name, Address, and ZIP Code (Line {index + 1})
             </label>
             <input
               id={field}
@@ -93,13 +172,14 @@ const W2Form = () => {
               value={Global.w2form[field]}
               onChange={handleChange}
               required
+              style={inputStyle}
             />
           </div>
         ))}
 
         {/* Financial Fields */}
-        <div className="form-group">
-          <label htmlFor="wages">Wages</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="wages" style={labelStyle}>Wages</label>
           <input
             id="wages"
             type="text"
@@ -107,10 +187,11 @@ const W2Form = () => {
             value={Global.w2form.wages}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="federalIncomeTax">Federal Income Tax</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="federalIncomeTax" style={labelStyle}>Federal Income Tax</label>
           <input
             id="federalIncomeTax"
             type="text"
@@ -118,10 +199,11 @@ const W2Form = () => {
             value={Global.w2form.federalIncomeTax}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="socialSecurityWages">Social Security Wages</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="socialSecurityWages" style={labelStyle}>Social Security Wages</label>
           <input
             id="socialSecurityWages"
             type="text"
@@ -129,11 +211,12 @@ const W2Form = () => {
             value={Global.w2form.socialSecurityWages}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="socialSecurityTax">Social Security Tax</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="socialSecurityTax" style={labelStyle}>Social Security Tax</label>
           <input
             id="socialSecurityTax"
             type="text"
@@ -141,11 +224,12 @@ const W2Form = () => {
             value={Global.w2form.socialSecurityTax}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="medicareWages">Medicare Wages</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="medicareWages" style={labelStyle}>Medicare Wages</label>
           <input
             id="medicareWages"
             type="text"
@@ -153,11 +237,12 @@ const W2Form = () => {
             value={Global.w2form.medicareWages}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="medicareTax">Medicare Tax</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="medicareTax" style={labelStyle}>Medicare Tax</label>
           <input
             id="medicareTax"
             type="text"
@@ -165,11 +250,12 @@ const W2Form = () => {
             value={Global.w2form.medicareTax}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="state">State</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="state" style={labelStyle}>State</label>
           <input
             id="state"
             type="text"
@@ -177,11 +263,12 @@ const W2Form = () => {
             value={Global.w2form.state}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="stateWages">State Wages, Tips, etc.</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="stateWages" style={labelStyle}>State Wages, Tips, etc.</label>
           <input
             id="stateWages"
             type="text"
@@ -189,11 +276,12 @@ const W2Form = () => {
             value={Global.w2form.stateWages}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="stateIncomeTax">State Income Tax</label>
+        <div style={formGroupStyle}>
+          <label htmlFor="stateIncomeTax" style={labelStyle}>State Income Tax</label>
           <input
             id="stateIncomeTax"
             type="text"
@@ -201,62 +289,63 @@ const W2Form = () => {
             value={Global.w2form.stateIncomeTax}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
 
-        <div className="checkbox-container">
-          <label className="checkbox-label">
-            <input
-              type="checkbox"
-              checked={isChecked}
-              onChange={handleCheckboxChange}
-              className="styled-checkbox"
-            />
-            INCLUDE SDI
-          </label>
-
-          {isChecked && (
-            <div>
-              <div className="form-group">
-                <label htmlFor="localWages">Local Wages, Tips, etc.</label>
-                <input
-                  id="localWages"
-                  type="text"
-                  name="localWages"
-                  value={Global.w2form.localWages}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="localIncomeTax">Local Income Tax</label>
-                <input
-                  id="localIncomeTax"
-                  type="text"
-                  name="localIncomeTax"
-                  value={Global.w2form.localIncomeTax}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="localityName">Locality Name</label>
-                <input
-                  id="localityName"
-                  type="text"
-                  name="localityName"
-                  value={Global.w2form.localityName}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-          )}
+        <div style={checkboxContainerStyle}>
+          <input
+            type="checkbox"
+            checked={isChecked}
+            onChange={handleCheckboxChange}
+          />
+          <label style={labelStyle}>INCLUDE SDI</label>
         </div>
 
-        <button type="submit" className="submit-button">
+        {isChecked && (
+          <div>
+            <div style={formGroupStyle}>
+              <label htmlFor="localWages" style={labelStyle}>Local Wages, Tips, etc.</label>
+              <input
+                id="localWages"
+                type="text"
+                name="localWages"
+                value={Global.w2form.localWages}
+                onChange={handleChange}
+                required
+                style={inputStyle}
+              />
+            </div>
+
+            <div style={formGroupStyle}>
+              <label htmlFor="localIncomeTax" style={labelStyle}>Local Income Tax</label>
+              <input
+                id="localIncomeTax"
+                type="text"
+                name="localIncomeTax"
+                value={Global.w2form.localIncomeTax}
+                onChange={handleChange}
+                required
+                style={inputStyle}
+              />
+            </div>
+
+            <div style={formGroupStyle}>
+              <label htmlFor="localityName" style={labelStyle}>Locality Name</label>
+              <input
+                id="localityName"
+                type="text"
+                name="localityName"
+                value={Global.w2form.localityName}
+                onChange={handleChange}
+                required
+                style={inputStyle}
+              />
+            </div>
+          </div>
+        )}
+
+        <button type="submit" style={buttonStyle}>
           Submit
         </button>
       </form>

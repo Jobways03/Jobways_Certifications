@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../../../../context/AuthContext";
 
-// ✅ Dummy data (MM/DD/YYYY format for all dates)
+// Dummy data (MM/DD/YYYY format for all dates)
 const employees = [
   {
     name: "Sudheer Panyam",
@@ -375,7 +375,7 @@ const emptyPayslip = {
   amountInWords: "",
 };
 
-// ✅ helpers for MM/DD/YYYY <-> YYYY-MM-DD
+// helpers for MM/DD/YYYY <-> YYYY-MM-DD
 const pad2 = (n) => String(n).padStart(2, "0");
 
 const toISOFromMDY = (mdy) => {
@@ -397,6 +397,87 @@ const fromISOToMDY = (iso) => {
 const JobwaysPayslipform = () => {
   const Global = useContext(AuthContext);
   const navigate = useNavigate();
+
+  const formPageStyle = {
+    minHeight: '100vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '40px 20px',
+    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  };
+
+  const formCardStyle = {
+    background: '#ffffff',
+    borderRadius: '20px',
+    padding: '40px 36px',
+    maxWidth: '600px',
+    width: '100%',
+    boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
+  };
+
+  const formTitleStyle = {
+    fontSize: '26px',
+    fontWeight: '700',
+    color: '#1a1a2e',
+    marginBottom: '32px',
+    textAlign: 'center',
+    paddingBottom: '16px',
+    borderBottom: '3px solid #667eea',
+  };
+
+  const formGroupStyle = {
+    marginBottom: '20px',
+  };
+
+  const labelStyle = {
+    display: 'block',
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#374151',
+    marginBottom: '6px',
+  };
+
+  const inputStyle = {
+    width: '100%',
+    padding: '11px 14px',
+    fontSize: '14px',
+    border: '1.5px solid #d1d5db',
+    borderRadius: '10px',
+    outline: 'none',
+    boxSizing: 'border-box',
+    backgroundColor: '#f9fafb',
+    transition: 'border-color 0.2s',
+  };
+
+  const selectStyle = {
+    width: '100%',
+    padding: '11px 14px',
+    fontSize: '14px',
+    border: '1.5px solid #d1d5db',
+    borderRadius: '10px',
+    outline: 'none',
+    boxSizing: 'border-box',
+    backgroundColor: '#f9fafb',
+    transition: 'border-color 0.2s',
+  };
+
+  const buttonStyle = {
+    width: '100%',
+    padding: '14px',
+    fontSize: '16px',
+    fontWeight: '700',
+    color: '#ffffff',
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    border: 'none',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    marginTop: '12px',
+    letterSpacing: '1px',
+    textTransform: 'uppercase',
+    boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+  };
 
   const [mode, setMode] = useState("EXISTING"); // "EXISTING" | "NEW"
   const payslip = Global.jobwaysPayslip || emptyPayslip;
@@ -487,407 +568,429 @@ const JobwaysPayslipform = () => {
   };
 
   const lock = mode === "EXISTING";
-  const dateValue = toISOFromMDY(payslip.dateOfJoining); // ✅ correct for MM/DD/YYYY
+  const dateValue = toISOFromMDY(payslip.dateOfJoining);
 
   return (
-    <div>
-      <div className="employee-form-container">
-        <form onSubmit={handleSubmit} className="invoice-form">
-          <h1>Payslip form</h1>
+    <div style={formPageStyle}>
+      <form onSubmit={handleSubmit} style={formCardStyle}>
+        <h1 style={formTitleStyle}>Payslip form</h1>
 
-          <div className="form-group" style={{ display: "flex", gap: 12 }}>
-            <button
-              type="button"
-              onClick={() => handleModeChange("EXISTING")}
-              style={{
-                padding: "8px 12px",
-                borderRadius: 8,
-                border: "1px solid #ddd",
-                background: mode === "EXISTING" ? "#111" : "#fff",
-                color: mode === "EXISTING" ? "#fff" : "#111",
-                cursor: "pointer",
-              }}
-            >
-              Select Existing
-            </button>
+        <div style={{...formGroupStyle, display: "flex", gap: 12}}>
+          <button
+            type="button"
+            onClick={() => handleModeChange("EXISTING")}
+            style={{
+              padding: '10px 24px',
+              fontSize: '14px',
+              fontWeight: '600',
+              border: 'none',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              background: mode === "EXISTING" ? '#667eea' : '#e5e7eb',
+              color: mode === "EXISTING" ? '#fff' : '#374151',
+            }}
+          >
+            Select Existing
+          </button>
 
-            <button
-              type="button"
-              onClick={() => handleModeChange("NEW")}
-              style={{
-                padding: "8px 12px",
-                borderRadius: 8,
-                border: "1px solid #ddd",
-                background: mode === "NEW" ? "#111" : "#fff",
-                color: mode === "NEW" ? "#fff" : "#111",
-                cursor: "pointer",
-              }}
-            >
-              Add New
-            </button>
+          <button
+            type="button"
+            onClick={() => handleModeChange("NEW")}
+            style={{
+              padding: '10px 24px',
+              fontSize: '14px',
+              fontWeight: '600',
+              border: 'none',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              background: mode === "NEW" ? '#667eea' : '#e5e7eb',
+              color: mode === "NEW" ? '#fff' : '#374151',
+            }}
+          >
+            Add New
+          </button>
 
-            <button
-              type="button"
-              onClick={handleClear}
-              style={{
-                padding: "8px 12px",
-                borderRadius: 8,
-                border: "1px solid #ddd",
-                background: "#fff",
-                color: "#111",
-                cursor: "pointer",
-                marginLeft: "auto",
-              }}
-            >
-              Clear
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={handleClear}
+            style={{
+              padding: '10px 24px',
+              fontSize: '14px',
+              fontWeight: '600',
+              border: 'none',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              background: '#e5e7eb',
+              color: '#374151',
+              marginLeft: "auto",
+            }}
+          >
+            Clear
+          </button>
+        </div>
 
-          {/* NAME */}
-          <div className="form-group">
-            <label>Name:</label>
-            {mode === "EXISTING" ? (
-              <select
-                name="name"
-                value={payslip.name}
-                onChange={handleExistingSelect}
-                required
-              >
-                <option value="">Select employee</option>
-                {employees.map((e) => (
-                  <option key={`${e.employeeId}-${e.name}`} value={e.name}>
-                    {e.name}
-                  </option>
-                ))}
-              </select>
-            ) : (
-              <input
-                type="text"
-                name="name"
-                value={payslip.name}
-                onChange={handleChange}
-                placeholder="Enter employee name"
-                required
-              />
-            )}
-          </div>
-
-          {/* MONTH */}
-          <div className="form-group">
-            <label>Month:</label>
-            <input
-              type="text"
-              name="month"
-              value={payslip.month}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* YEAR */}
-          <div className="form-group">
-            <label>Year:</label>
-            <input
-              type="text"
-              name="year"
-              value={payslip.year}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* EMPLOYEE ID */}
-          <div className="form-group">
-            <label>Employee ID:</label>
-            <input
-              type="text"
-              name="employeeId"
-              value={payslip.employeeId}
-              onChange={handleChange}
-              required
-              readOnly={lock}
-            />
-          </div>
-
-          {/* DEPARTMENT */}
-          <div className="form-group">
-            <label>Department:</label>
-            <input
-              type="text"
-              name="department"
-              value={payslip.department}
-              onChange={handleChange}
-              required
-              readOnly={lock}
-            />
-          </div>
-
-          {/* DESIGNATION */}
-          <div className="form-group">
-            <label>Designation:</label>
-            <input
-              type="text"
-              name="designation"
-              value={payslip.designation}
-              onChange={handleChange}
-              required
-              readOnly={lock}
-            />
-          </div>
-
-          {/* LOCATION */}
-          <div className="form-group">
-            <label>Location:</label>
-            <input
-              type="text"
-              name="location"
-              value={payslip.location}
-              onChange={handleChange}
-              required
-              readOnly={lock}
-            />
-          </div>
-
-          {/* DATE OF JOINING */}
-          <div className="form-group">
-            <label>Date of Joining:</label>
-            <input
-              type="date"
-              name="dateOfJoining"
-              value={dateValue}
-              onChange={handleDateChange}
-              required
-              disabled={lock} // ✅ better than readOnly for date inputs
-              style={{
-                width: "100%",
-                padding: "8px",
-                borderRadius: "6px",
-                border: "1px solid #ddd",
-                boxSizing: "border-box",
-                marginBottom: "15px",
-              }}
-            />
-          </div>
-
-          {/* GENDER */}
-          <div className="form-group">
-            <label>Gender:</label>
+        {/* NAME */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Name:</label>
+          {mode === "EXISTING" ? (
             <select
-              name="gender"
-              value={payslip.gender}
-              onChange={handleChange}
+              name="name"
+              value={payslip.name}
+              onChange={handleExistingSelect}
               required
-              disabled={lock}
+              style={selectStyle}
             >
-              <option value="">Select</option>
-              <option value="MALE">Male</option>
-              <option value="FEMALE">Female</option>
-              <option value="OTHER">Other</option>
+              <option value="">Select employee</option>
+              {employees.map((e) => (
+                <option key={`${e.employeeId}-${e.name}`} value={e.name}>
+                  {e.name}
+                </option>
+              ))}
             </select>
-          </div>
-
-          {/* BANK NAME */}
-          <div className="form-group">
-            <label>Bank Name:</label>
+          ) : (
             <input
               type="text"
-              name="bankName"
-              value={payslip.bankName}
+              name="name"
+              value={payslip.name}
               onChange={handleChange}
+              placeholder="Enter employee name"
               required
-              readOnly={lock}
+              style={inputStyle}
             />
-          </div>
+          )}
+        </div>
 
-          {/* ACCOUNT NUMBER */}
-          <div className="form-group">
-            <label>Account Number:</label>
-            <input
-              type="text"
-              name="accountNumber"
-              value={payslip.accountNumber}
-              onChange={handleChange}
-              required
-              readOnly={lock}
-            />
-          </div>
+        {/* MONTH */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Month:</label>
+          <input
+            type="text"
+            name="month"
+            value={payslip.month}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
 
-          {/* IFSC */}
-          <div className="form-group">
-            <label>IFSC Code:</label>
-            <input
-              type="text"
-              name="ifscCode"
-              value={payslip.ifscCode}
-              onChange={handleChange}
-              required
-              readOnly={lock}
-            />
-          </div>
+        {/* YEAR */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Year:</label>
+          <input
+            type="text"
+            name="year"
+            value={payslip.year}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
 
-          {/* PAN */}
-          <div className="form-group">
-            <label>PAN:</label>
-            <input
-              type="text"
-              name="pan"
-              value={payslip.pan}
-              onChange={handleChange}
-              required
-              readOnly={lock}
-            />
-          </div>
+        {/* EMPLOYEE ID */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Employee ID:</label>
+          <input
+            type="text"
+            name="employeeId"
+            value={payslip.employeeId}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
 
-          {/* WORKING DAYS */}
-          <div className="form-group">
-            <label>Working Days:</label>
-            <input
-              type="text"
-              name="workingDays"
-              value={payslip.workingDays}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        {/* DEPARTMENT */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Department:</label>
+          <input
+            type="text"
+            name="department"
+            value={payslip.department}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
 
-          {/* LOSS OF PAY */}
-          <div className="form-group">
-            <label>Loss of Pay Days:</label>
-            <input
-              type="text"
-              name="lossOfPayDays"
-              value={payslip.lossOfPayDays}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        {/* DESIGNATION */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Designation:</label>
+          <input
+            type="text"
+            name="designation"
+            value={payslip.designation}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
 
-          {/* PAID DAYS */}
-          <div className="form-group">
-            <label>Paid Days:</label>
-            <input
-              type="text"
-              name="paidDays"
-              value={payslip.paidDays}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        {/* LOCATION */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Location:</label>
+          <input
+            type="text"
+            name="location"
+            value={payslip.location}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
 
-          {/* BASIC */}
-          <div className="form-group">
-            <label>Basic:</label>
-            <input
-              type="text"
-              name="basic"
-              value={payslip.basic}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        {/* DATE OF JOINING */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Date of Joining:</label>
+          <input
+            type="date"
+            name="dateOfJoining"
+            value={dateValue}
+            onChange={handleDateChange}
+            required
+            disabled={lock}
+            style={inputStyle}
+          />
+        </div>
 
-          {/* HRA */}
-          <div className="form-group">
-            <label>HRA:</label>
-            <input
-              type="text"
-              name="hra"
-              value={payslip.hra}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        {/* GENDER */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Gender:</label>
+          <select
+            name="gender"
+            value={payslip.gender}
+            onChange={handleChange}
+            required
+            disabled={lock}
+            style={selectStyle}
+          >
+            <option value="">Select</option>
+            <option value="MALE">Male</option>
+            <option value="FEMALE">Female</option>
+            <option value="OTHER">Other</option>
+          </select>
+        </div>
 
-          {/* CONVEYANCE */}
-          <div className="form-group">
-            <label>Conveyance:</label>
-            <input
-              type="text"
-              name="conveyance"
-              value={payslip.conveyance}
-              onChange={handleChange}
-              required
-              readOnly={lock}
-            />
-          </div>
+        {/* BANK NAME */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Bank Name:</label>
+          <input
+            type="text"
+            name="bankName"
+            value={payslip.bankName}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
 
-          {/* MEDICAL */}
-          <div className="form-group">
-            <label>Medical:</label>
-            <input
-              type="text"
-              name="medical"
-              value={payslip.medical}
-              onChange={handleChange}
-              required
-              readOnly={lock}
-            />
-          </div>
+        {/* ACCOUNT NUMBER */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Account Number:</label>
+          <input
+            type="text"
+            name="accountNumber"
+            value={payslip.accountNumber}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
 
-          {/* FOOD */}
-          <div className="form-group">
-            <label>Food Allowance:</label>
-            <input
-              type="text"
-              name="foodAllowance"
-              value={payslip.foodAllowance}
-              onChange={handleChange}
-              required
-              readOnly={lock}
-            />
-          </div>
+        {/* IFSC */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>IFSC Code:</label>
+          <input
+            type="text"
+            name="ifscCode"
+            value={payslip.ifscCode}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
 
-          {/* INCENTIVE */}
-          <div className="form-group">
-            <label>Incentives:</label>
-            <input
-              type="text"
-              name="incentive"
-              value={payslip.incentive}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        {/* PAN */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>PAN:</label>
+          <input
+            type="text"
+            name="pan"
+            value={payslip.pan}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
 
-          {/* OTHER ALLOWANCES */}
-          <div className="form-group">
-            <label>Other Allowances:</label>
-            <input
-              type="text"
-              name="otherAllowances"
-              value={payslip.otherAllowances}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        {/* WORKING DAYS */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Working Days:</label>
+          <input
+            type="text"
+            name="workingDays"
+            value={payslip.workingDays}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
 
-          {/* PROFESSIONAL TAX */}
-          <div className="form-group">
-            <label>Professional Tax:</label>
-            <input
-              type="text"
-              name="professionalTax"
-              value={payslip.professionalTax}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        {/* LOSS OF PAY */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Loss of Pay Days:</label>
+          <input
+            type="text"
+            name="lossOfPayDays"
+            value={payslip.lossOfPayDays}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
 
-          {/* AMOUNT IN WORDS */}
-          <div className="form-group">
-            <label>Amount in Words:</label>
-            <input
-              type="text"
-              name="amountInWords"
-              value={payslip.amountInWords}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        {/* PAID DAYS */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Paid Days:</label>
+          <input
+            type="text"
+            name="paidDays"
+            value={payslip.paidDays}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
 
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+        {/* BASIC */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Basic:</label>
+          <input
+            type="text"
+            name="basic"
+            value={payslip.basic}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
+
+        {/* HRA */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>HRA:</label>
+          <input
+            type="text"
+            name="hra"
+            value={payslip.hra}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
+
+        {/* CONVEYANCE */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Conveyance:</label>
+          <input
+            type="text"
+            name="conveyance"
+            value={payslip.conveyance}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
+
+        {/* MEDICAL */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Medical:</label>
+          <input
+            type="text"
+            name="medical"
+            value={payslip.medical}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
+
+        {/* FOOD */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Food Allowance:</label>
+          <input
+            type="text"
+            name="foodAllowance"
+            value={payslip.foodAllowance}
+            onChange={handleChange}
+            required
+            readOnly={lock}
+            style={inputStyle}
+          />
+        </div>
+
+        {/* INCENTIVE */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Incentives:</label>
+          <input
+            type="text"
+            name="incentive"
+            value={payslip.incentive}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
+
+        {/* OTHER ALLOWANCES */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Other Allowances:</label>
+          <input
+            type="text"
+            name="otherAllowances"
+            value={payslip.otherAllowances}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
+
+        {/* PROFESSIONAL TAX */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Professional Tax:</label>
+          <input
+            type="text"
+            name="professionalTax"
+            value={payslip.professionalTax}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
+
+        {/* AMOUNT IN WORDS */}
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Amount in Words:</label>
+          <input
+            type="text"
+            name="amountInWords"
+            value={payslip.amountInWords}
+            onChange={handleChange}
+            required
+            style={inputStyle}
+          />
+        </div>
+
+        <button type="submit" style={buttonStyle}>Submit</button>
+      </form>
     </div>
   );
 };

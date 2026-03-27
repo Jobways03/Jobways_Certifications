@@ -66,86 +66,155 @@ const GenieEditform = () => {
     sessionStorage.setItem("offerStamp", value);
   };
 
+  const formPageStyle = {
+    minHeight: '100vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '40px 20px',
+    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  };
+
+  const formCardStyle = {
+    background: '#ffffff',
+    borderRadius: '20px',
+    padding: '40px 36px',
+    maxWidth: '600px',
+    width: '100%',
+    boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
+  };
+
+  const formGroupStyle = {
+    marginBottom: '20px',
+  };
+
+  const labelStyle = {
+    display: 'block',
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#374151',
+    marginBottom: '6px',
+  };
+
+  const inputStyle = {
+    width: '100%',
+    padding: '11px 14px',
+    fontSize: '14px',
+    border: '1.5px solid #d1d5db',
+    borderRadius: '10px',
+    outline: 'none',
+    boxSizing: 'border-box',
+    backgroundColor: '#f9fafb',
+    transition: 'border-color 0.2s',
+  };
+
+  const selectStyle = {
+    width: '100%',
+    padding: '11px 14px',
+    fontSize: '14px',
+    border: '1.5px solid #d1d5db',
+    borderRadius: '10px',
+    outline: 'none',
+    boxSizing: 'border-box',
+    backgroundColor: '#f9fafb',
+    transition: 'border-color 0.2s',
+  };
+
+  const buttonStyle = {
+    width: '100%',
+    padding: '14px',
+    fontSize: '16px',
+    fontWeight: '700',
+    color: '#ffffff',
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    border: 'none',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    marginTop: '12px',
+    letterSpacing: '1px',
+    textTransform: 'uppercase',
+    boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+  };
+
   return (
-    <div className="form-container">
-      <label htmlFor="head">Heading:</label>
-      <input
-        type="text"
-        id="head"
-        value={head}
-        onChange={(e) => setHead(e.target.value)}
-        placeholder="Enter your heading here..."
-        className="heading-input"
-      />
+    <div style={formPageStyle}>
+      <div style={formCardStyle}>
+        <div style={formGroupStyle}>
+          <label htmlFor="head" style={labelStyle}>Heading:</label>
+          <input
+            type="text"
+            id="head"
+            value={head}
+            onChange={(e) => setHead(e.target.value)}
+            placeholder="Enter your heading here..."
+            style={inputStyle}
+          />
+        </div>
 
-      <label htmlFor="name">Name:</label>
-      <input
-        type="text"
-        id="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Enter your name..."
-        className="heading-input"
-      />
+        <div style={formGroupStyle}>
+          <label htmlFor="name" style={labelStyle}>Name:</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Enter your name..."
+            style={inputStyle}
+          />
+        </div>
 
-      <label htmlFor="date">Date:</label>
-      <input
-        type="date"
-        value={date}
-        onChange={(e) => setDate(e.target.value)}
-        style={{
-          width: "100%",
-          padding: "8px",
-          borderRadius: "6px",
-          border: "1px solid #ddd",
-          boxSizing: "border-box",
-          marginBottom: "15px",
-        }}
-      />
+        <div style={formGroupStyle}>
+          <label htmlFor="date" style={labelStyle}>Date:</label>
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            style={inputStyle}
+          />
+        </div>
 
-      <h3 className="form-label">Enter your text:</h3>
-      <textarea
-        rows="4"
-        cols="50"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        className="text-area"
-      />
+        <div style={formGroupStyle}>
+          <h3 style={labelStyle}>Enter your text:</h3>
+          <textarea
+            rows="4"
+            cols="50"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            style={{...inputStyle, minHeight: '150px', resize: 'vertical'}}
+          />
+        </div>
 
-      <h3 className="form-label">Enter words to bold (comma separated):</h3>
-      <input
-        type="text"
-        value={wordsToBold}
-        onChange={(e) => setWordsToBold(e.target.value)}
-        className="bold-input"
-      />
+        <div style={formGroupStyle}>
+          <h3 style={labelStyle}>Enter words to bold (comma separated):</h3>
+          <input
+            type="text"
+            value={wordsToBold}
+            onChange={(e) => setWordsToBold(e.target.value)}
+            style={inputStyle}
+          />
+        </div>
 
-      <div className="form-group">
-        <label>Stamp Requirement</label>
-        <select
-          name="stampRequirement"
-          onChange={handleStampChange}
-          style={{
-            width: "700px",
-            padding: "8px",
-            borderRadius: "6px",
-            border: "1px solid #ddd",
-            boxSizing: "border-box",
-            marginBottom: "15px",
-          }}
-          defaultValue=""
-        >
-          <option value="" disabled>
-            Select an option
-          </option>
-          <option value="with_stamp">With Stamp</option>
-          <option value="without_stamp">Without Stamp</option>
-        </select>
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Stamp Requirement</label>
+          <select
+            name="stampRequirement"
+            onChange={handleStampChange}
+            style={selectStyle}
+            defaultValue=""
+          >
+            <option value="" disabled>
+              Select an option
+            </option>
+            <option value="with_stamp">With Stamp</option>
+            <option value="without_stamp">Without Stamp</option>
+          </select>
+        </div>
+
+        <button onClick={handleSubmit} style={buttonStyle}>
+          SUBMIT
+        </button>
       </div>
-
-      <button onClick={handleSubmit} className="submit-button">
-        SUBMIT
-      </button>
     </div>
   );
 };

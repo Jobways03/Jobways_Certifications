@@ -40,879 +40,240 @@ const Coiform = () => {
     navigate("/coi");
   };
 
+  const formPageStyle = {
+    minHeight: '100vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '40px 20px',
+    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  };
+
+  const formCardStyle = {
+    background: '#ffffff',
+    borderRadius: '20px',
+    padding: '40px 36px',
+    maxWidth: '900px',
+    width: '100%',
+    boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
+  };
+
+  const formTitleStyle = {
+    fontSize: '26px',
+    fontWeight: '700',
+    color: '#1a1a2e',
+    marginBottom: '32px',
+    textAlign: 'center',
+    paddingBottom: '16px',
+    borderBottom: '3px solid #667eea',
+  };
+
+  const formGroupStyle = {
+    marginBottom: '20px',
+  };
+
+  const labelStyle = {
+    display: 'block',
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#374151',
+    marginBottom: '6px',
+  };
+
+  const inputStyle = {
+    width: '100%',
+    padding: '11px 14px',
+    fontSize: '14px',
+    border: '1.5px solid #d1d5db',
+    borderRadius: '10px',
+    outline: 'none',
+    boxSizing: 'border-box',
+    backgroundColor: '#f9fafb',
+    transition: 'border-color 0.2s',
+  };
+
+  const buttonStyle = {
+    width: '100%',
+    padding: '14px',
+    fontSize: '16px',
+    fontWeight: '700',
+    color: '#ffffff',
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    border: 'none',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    marginTop: '12px',
+    letterSpacing: '1px',
+    textTransform: 'uppercase',
+    boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+  };
+
+  const sectionHeadingStyle = {
+    fontSize: '18px',
+    fontWeight: '600',
+    color: '#1a1a2e',
+    marginTop: '24px',
+    marginBottom: '16px',
+    borderBottom: '2px solid #e5e7eb',
+    paddingBottom: '8px',
+  };
+
+  // Build text input fields (co1-co65, co71-co96)
+  const textFields = [];
+  for (let i = 1; i <= 65; i++) {
+    textFields.push(`co${i}`);
+  }
+  for (let i = 71; i <= 96; i++) {
+    textFields.push(`co${i}`);
+  }
+
+  // Checkbox fields (co97-co119)
+  const checkboxFields = [];
+  for (let i = 97; i <= 119; i++) {
+    checkboxFields.push(`co${i}`);
+  }
+
   return (
-    <>
-      <div className="pdf-offerd">
-        <img src="./images/sm.jpg" alt="ewded" className="i3" />
-        <input
-          type="text"
-          className="inp coi1 cor"
-          name="co1"
-          value={Global.COIData.co1}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi2 cor"
-          name="co2"
-          value={Global.COIData.co2}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi3 cor"
-          name="co3"
-          value={Global.COIData.co3}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi4 cor"
-          name="co4"
-          value={Global.COIData.co4}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi5 cor"
-          name="co5"
-          value={Global.COIData.co5}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi6 cor"
-          name="co6"
-          value={Global.COIData.co6}
-          onChange={handleChange}
-        />{" "}
-        <input
-          type="text"
-          className="inp coi7 cor"
-          name="co7"
-          value={Global.COIData.co7}
-          onChange={handleChange}
-        />{" "}
-        <input
-          type="text"
-          className="inp coi8 cor"
-          name="co8"
-          value={Global.COIData.co8}
-          onChange={handleChange}
-        />{" "}
-        <input
-          type="text"
-          className="inp coi9 cor"
-          name="co9"
-          value={Global.COIData.co9}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi10 cor"
-          name="co10"
-          value={Global.COIData.co10}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi11 cor"
-          name="co11"
-          value={Global.COIData.co11}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi12 cor"
-          name="co12"
-          value={Global.COIData.co12}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi13 cor"
-          name="co13"
-          value={Global.COIData.co13}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi14 cor"
-          name="co14"
-          value={Global.COIData.co14}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi15 cor"
-          name="co15"
-          value={Global.COIData.co15}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi16 cor"
-          name="co16"
-          value={Global.COIData.co16}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi17 cor"
-          name="co17"
-          value={Global.COIData.co17}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi18 cor"
-          name="co18"
-          value={Global.COIData.co18}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi19 cor"
-          name="co19"
-          value={Global.COIData.co19}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi20 cor"
-          name="co20"
-          value={Global.COIData.co20}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi21 cor"
-          name="co21"
-          value={Global.COIData.co21}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi22 cor"
-          name="co22"
-          value={Global.COIData.co22}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi23 cor"
-          name="co23"
-          value={Global.COIData.co23}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi24 cor"
-          name="co24"
-          value={Global.COIData.co24}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi25 cor"
-          name="co25"
-          value={Global.COIData.co25}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi26 cor"
-          name="co26"
-          value={Global.COIData.co26}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi27 cor"
-          name="co27"
-          value={Global.COIData.co27}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi28 cor"
-          name="co28"
-          value={Global.COIData.co28}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi29 cor"
-          name="co29"
-          value={Global.COIData.co29}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi30 cor"
-          name="co30"
-          value={Global.COIData.co30}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi31 cor"
-          name="co31"
-          value={Global.COIData.co31}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi32 cor"
-          name="co32"
-          value={Global.COIData.co32}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi33 cor"
-          name="co33"
-          value={Global.COIData.co33}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi34 cor"
-          name="co34"
-          value={Global.COIData.co34}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi35 cor"
-          name="co35"
-          value={Global.COIData.co35}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi36 cor"
-          name="co36"
-          value={Global.COIData.co36}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi37 cor"
-          name="co37"
-          value={Global.COIData.co37}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi38 cor"
-          name="co38"
-          value={Global.COIData.co38}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi39 cor"
-          name="co39"
-          value={Global.COIData.co39}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi40 cor"
-          name="co40"
-          value={Global.COIData.co40}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi41 cor"
-          name="co41"
-          value={Global.COIData.co41}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi42 cor"
-          name="co42"
-          value={Global.COIData.co42}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi43 cor"
-          name="co43"
-          value={Global.COIData.co43}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi44 cor"
-          name="co44"
-          value={Global.COIData.co44}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi45 cor"
-          name="co45"
-          value={Global.COIData.co45}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi46 cor"
-          name="co46"
-          value={Global.COIData.co46}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi47 cor"
-          name="co47"
-          value={Global.COIData.co47}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi48 cor"
-          name="co48"
-          value={Global.COIData.co48}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi49 cor"
-          name="co49"
-          value={Global.COIData.co49}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi50 cor"
-          name="co50"
-          value={Global.COIData.co50}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi51 cor"
-          name="co51"
-          value={Global.COIData.co51}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi52 cor"
-          name="co52"
-          value={Global.COIData.co52}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi53 cor"
-          name="co53"
-          value={Global.COIData.co53}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi54 cor"
-          name="co54"
-          value={Global.COIData.co54}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi55 cor"
-          name="co55"
-          value={Global.COIData.co55}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi56 cor"
-          name="co56"
-          value={Global.COIData.co56}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi57 cor"
-          name="co57"
-          value={Global.COIData.co57}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi58 cor"
-          name="co58"
-          value={Global.COIData.co58}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi59 cor"
-          name="co59"
-          value={Global.COIData.co59}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi60 cor"
-          name="co60"
-          value={Global.COIData.co60}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi61 cor"
-          name="co61"
-          value={Global.COIData.co61}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi62 cor"
-          name="co62"
-          value={Global.COIData.co62}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi63 cor"
-          name="co63"
-          value={Global.COIData.co63}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi64 cor"
-          name="co64"
-          value={Global.COIData.co64}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi65 cor"
-          name="co65"
-          value={Global.COIData.co65}
-          onChange={handleChange}
-        />
-        <textarea
-          type="text"
-          className="inp coi66 cor"
-          name="co66"
-          value={Global.COIData.co66}
-          style={{ resize: "none" }}
-          onChange={handleChange}
-        />
-        <textarea
-          type="text"
-          className="inp coi67 cor"
-          name="co67"
-          value={Global.COIData.co67}
-          style={{ resize: "none" }}
-          onChange={handleChange}
-        />
-        <textarea
-          type="text"
-          className="inp coi68 cor"
-          name="co68"
-          value={Global.COIData.co68}
-          style={{ resize: "none" }}
-          onChange={handleChange}
-        />
-        <textarea
-          type="text"
-          className="inp coi69 cor"
-          name="co69"
-          value={Global.COIData.co69}
-          style={{ resize: "none" }}
-          onChange={handleChange}
-        />
-        <textarea
-          type="text"
-          className="inp coi70 cor"
-          name="co70"
-          value={Global.COIData.co70}
-          style={{ resize: "none" }}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi71 cor"
-          name="co71"
-          value={Global.COIData.co71}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi72 cor"
-          name="co72"
-          value={Global.COIData.co72}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi73 cor"
-          name="co73"
-          value={Global.COIData.co73}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi74 cor"
-          name="co74"
-          value={Global.COIData.co74}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi75 cor"
-          name="co75"
-          value={Global.COIData.co75}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi76 cor"
-          name="co76"
-          value={Global.COIData.co76}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi77 cor"
-          name="co77"
-          value={Global.COIData.co77}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi78 cor"
-          name="co78"
-          value={Global.COIData.co78}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi79 cor"
-          name="co79"
-          value={Global.COIData.co79}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi80 cor"
-          name="co80"
-          value={Global.COIData.co80}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi81 cor"
-          name="co81"
-          value={Global.COIData.co81}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi82 cor"
-          name="co82"
-          value={Global.COIData.co82}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi83 cor"
-          name="co83"
-          value={Global.COIData.co83}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi84 cor"
-          name="co84"
-          value={Global.COIData.co84}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi85 cor"
-          name="co85"
-          value={Global.COIData.co85}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi86 cor"
-          name="co86"
-          value={Global.COIData.co86}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi87 cor"
-          name="co87"
-          value={Global.COIData.co87}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi88 cor"
-          name="co88"
-          value={Global.COIData.co88}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi89 cor"
-          name="co89"
-          value={Global.COIData.co89}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi90 cor"
-          name="co90"
-          value={Global.COIData.co90}
-          onChange={handleChange}
-        />
-        <textarea
-          type="text"
-          className="inp coi91 cor"
-          name="co91"
-          value={Global.COIData.co91}
-          onChange={handleChange}
-          style={{ resize: "none" }}
-        />
-        <textarea
-          type="text"
-          className="inp coi92 cor"
-          name="co92"
-          value={Global.COIData.co92}
-          style={{ resize: "none" }}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi93 cor"
-          name="co93"
-          value={Global.COIData.co93}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi94 cor"
-          name="co94"
-          value={Global.COIData.co94}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi95 cor"
-          name="co95"
-          value={Global.COIData.co95}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          className="inp coi96 cor"
-          name="co96"
-          value={Global.COIData.co96}
-          onChange={handleChange}
-        />
-        <input
-          type="checkbox"
-          className="inp coi97 cor"
-          name="co97"
-          checked={Global.COIData.co97}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi98 cor"
-          name="co98"
-          checked={Global.COIData.co98}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi99 cor"
-          name="co99"
-          checked={Global.COIData.co99}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi100 cor"
-          name="co100"
-          checked={Global.COIData.co100}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi101 cor"
-          name="co101"
-          checked={Global.COIData.co101}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi102 cor"
-          name="co102"
-          checked={Global.COIData.co102}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi103 cor"
-          name="co103"
-          checked={Global.COIData.co103}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi104 cor"
-          name="co104"
-          checked={Global.COIData.co104}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi105 cor"
-          name="co105"
-          checked={Global.COIData.co105}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi106 cor"
-          name="co106"
-          checked={Global.COIData.co106}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi107 cor"
-          name="co107"
-          checked={Global.COIData.co107}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi108 cor"
-          name="co108"
-          checked={Global.COIData.co108}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi109 cor"
-          name="co109"
-          checked={Global.COIData.co109}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi110 cor"
-          name="co110"
-          checked={Global.COIData.co110}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi111 cor"
-          name="co111"
-          checked={Global.COIData.co111}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi112 cor"
-          name="co112"
-          checked={Global.COIData.co112}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi113 cor"
-          name="co113"
-          checked={Global.COIData.co113}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi114 cor"
-          name="co114"
-          checked={Global.COIData.co114}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi115 cor"
-          name="co115"
-          checked={Global.COIData.co115}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi116 cor"
-          name="co116"
-          checked={Global.COIData.co116}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi117 cor"
-          name="co117"
-          checked={Global.COIData.co117}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi118 cor"
-          name="co118"
-          checked={Global.COIData.co118}
-          onChange={handlecheck}
-        />
-        <input
-          type="checkbox"
-          className="inp coi119 cor"
-          name="co119"
-          checked={Global.COIData.co119}
-          onChange={handlecheck}
-        />
-        <input
-          type="file"
-          className="inp coi120 cor"
-          name=""
-          id=""
-          onChange={getfile}
-        />
-        <div className="ds111"></div>
-      </div>
-      <br />
-      <h2>
-        *
-        <a
-          href="https://pixelixe.com/image-cropper-online/crop-image.html"
-          target="_blank"
-          rel="noreferrer"
+    <div style={formPageStyle}>
+      <div style={formCardStyle}>
+        <h1 style={formTitleStyle}>Certificate of Insurance Form</h1>
+
+        <h3 style={sectionHeadingStyle}>Text Fields (co1 - co65)</h3>
+        {textFields.filter(f => {
+          const num = parseInt(f.replace('co', ''));
+          return num >= 1 && num <= 65;
+        }).map((field) => (
+          <div style={formGroupStyle} key={field}>
+            <label style={labelStyle}>{field}</label>
+            <input
+              type="text"
+              className={`inp ${field.replace('co', 'coi')} cor`}
+              name={field}
+              value={Global.COIData[field]}
+              onChange={handleChange}
+              style={inputStyle}
+            />
+          </div>
+        ))}
+
+        <h3 style={sectionHeadingStyle}>Textarea Fields (co66 - co70)</h3>
+        {['co66', 'co67', 'co68', 'co69', 'co70'].map((field) => (
+          <div style={formGroupStyle} key={field}>
+            <label style={labelStyle}>{field}</label>
+            <textarea
+              type="text"
+              className={`inp ${field.replace('co', 'coi')} cor`}
+              name={field}
+              value={Global.COIData[field]}
+              onChange={handleChange}
+              style={{...inputStyle, minHeight: '120px', resize: 'vertical'}}
+            />
+          </div>
+        ))}
+
+        <h3 style={sectionHeadingStyle}>Text Fields (co71 - co90)</h3>
+        {textFields.filter(f => {
+          const num = parseInt(f.replace('co', ''));
+          return num >= 71 && num <= 90;
+        }).map((field) => (
+          <div style={formGroupStyle} key={field}>
+            <label style={labelStyle}>{field}</label>
+            <input
+              type="text"
+              className={`inp ${field.replace('co', 'coi')} cor`}
+              name={field}
+              value={Global.COIData[field]}
+              onChange={handleChange}
+              style={inputStyle}
+            />
+          </div>
+        ))}
+
+        <h3 style={sectionHeadingStyle}>Textarea Fields (co91 - co92)</h3>
+        {['co91', 'co92'].map((field) => (
+          <div style={formGroupStyle} key={field}>
+            <label style={labelStyle}>{field}</label>
+            <textarea
+              type="text"
+              className={`inp ${field.replace('co', 'coi')} cor`}
+              name={field}
+              value={Global.COIData[field]}
+              onChange={handleChange}
+              style={{...inputStyle, minHeight: '120px', resize: 'vertical'}}
+            />
+          </div>
+        ))}
+
+        <h3 style={sectionHeadingStyle}>Text Fields (co93 - co96)</h3>
+        {textFields.filter(f => {
+          const num = parseInt(f.replace('co', ''));
+          return num >= 93 && num <= 96;
+        }).map((field) => (
+          <div style={formGroupStyle} key={field}>
+            <label style={labelStyle}>{field}</label>
+            <input
+              type="text"
+              className={`inp ${field.replace('co', 'coi')} cor`}
+              name={field}
+              value={Global.COIData[field]}
+              onChange={handleChange}
+              style={inputStyle}
+            />
+          </div>
+        ))}
+
+        <h3 style={sectionHeadingStyle}>Checkbox Fields (co97 - co119)</h3>
+        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '12px', marginBottom: '20px'}}>
+          {checkboxFields.map((field) => (
+            <div key={field} style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
+              <input
+                type="checkbox"
+                className={`inp ${field.replace('co', 'coi')} cor`}
+                name={field}
+                checked={Global.COIData[field]}
+                onChange={handlecheck}
+              />
+              <label style={{fontSize: '14px', fontWeight: '600', color: '#374151'}}>{field}</label>
+            </div>
+          ))}
+        </div>
+
+        <h3 style={sectionHeadingStyle}>Signature Upload</h3>
+        <div style={formGroupStyle}>
+          <label style={labelStyle}>Upload Signature Image (co120)</label>
+          <input
+            type="file"
+            className="inp coi120 cor"
+            name=""
+            id=""
+            onChange={getfile}
+            style={{...inputStyle, padding: '8px'}}
+          />
+        </div>
+
+        <br />
+        <h2 style={sectionHeadingStyle}>
+          *
+          <a
+            href="https://pixelixe.com/image-cropper-online/crop-image.html"
+            target="_blank"
+            rel="noreferrer"
+            style={{color: '#667eea', textDecoration: 'underline'}}
+          >
+            Click here
+          </a>{" "}
+          to crop the image for Signature
+        </h2>
+        <br />
+        <button
+          onClick={handlesubmit}
+          style={buttonStyle}
         >
-          Click here
-        </a>{" "}
-        to crop the image for Signature
-      </h2>
-      <br />
-      <button
-        onClick={handlesubmit}
-        style={{ margin: "10px", padding: "10px 20px" }}
-      >
-        SUBMIT
-      </button>
-    </>
+          SUBMIT
+        </button>
+      </div>
+    </div>
   );
 };
 

@@ -1,12 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
+const pageStyle = {
+  minHeight: '100vh',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  padding: '40px 20px',
+  background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+  fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+};
+
+const titleStyle = {
+  fontSize: '32px',
+  fontWeight: '700',
+  color: '#ffffff',
+  marginBottom: '50px',
+  textAlign: 'center',
+  letterSpacing: '2px',
+  textTransform: 'uppercase',
+  textShadow: '0 2px 10px rgba(0,0,0,0.3)',
+};
+
+const gridStyle = {
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: '24px',
+  justifyContent: 'center',
+  maxWidth: '1000px',
+  width: '100%',
+};
+
+const cardStyle = {
+  background: 'rgba(255, 255, 255, 0.95)',
+  borderRadius: '16px',
+  padding: '32px 40px',
+  minWidth: '240px',
+  maxWidth: '300px',
+  cursor: 'pointer',
+  boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
+  transition: 'all 0.3s ease',
+  textAlign: 'center',
+  border: '1px solid rgba(255,255,255,0.1)',
+  flex: '1 1 240px',
+};
+
+const cardHoverStyle = {
+  ...cardStyle,
+  transform: 'translateY(-6px)',
+  boxShadow: '0 12px 35px rgba(0,0,0,0.25)',
+  background: '#ffffff',
+};
+
+const cardTextStyle = {
+  fontSize: '17px',
+  fontWeight: '700',
+  color: '#1a1a2e',
+  margin: 0,
+  letterSpacing: '0.5px',
+};
 
 const Paystubsubbox = () => {
   const navigate = useNavigate();
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const goToForm = (type, fliType) => {
-    localStorage.setItem("PAYSTUB_TYPE", type); // SDI | NON_SDI
-    localStorage.setItem("FLI_TYPE", fliType); // FLI | NON_FLI
+    localStorage.setItem("PAYSTUB_TYPE", type);
+    localStorage.setItem("FLI_TYPE", fliType);
 
     if (type === "SDI") {
       navigate("/SdiStubform");
@@ -15,37 +76,28 @@ const Paystubsubbox = () => {
     }
   };
 
+  const cards = [
+    { label: 'SDI + FLI', onClick: () => goToForm('SDI', 'FLI') },
+    { label: 'SDI + NON-FLI', onClick: () => goToForm('SDI', 'NON_FLI') },
+    { label: 'NON-SDI + FLI', onClick: () => goToForm('NON_SDI', 'FLI') },
+    { label: 'NON-SDI + NON-FLI', onClick: () => goToForm('NON_SDI', 'NON_FLI') },
+  ];
+
   return (
-    <div className="container">
-      <div className="payrolls-container">
-        {/* SDI + FLI */}
-        <div className="card payroll" onClick={() => goToForm("SDI", "FLI")}>
-          <h2>SDI + FLI</h2>
-        </div>
-
-        {/* SDI + NON FLI */}
-        <div
-          className="card payroll"
-          onClick={() => goToForm("SDI", "NON_FLI")}
-        >
-          <h2>SDI + NON-FLI</h2>
-        </div>
-
-        {/* NON SDI + FLI */}
-        <div
-          className="card payroll"
-          onClick={() => goToForm("NON_SDI", "FLI")}
-        >
-          <h2>NON-SDI + FLI</h2>
-        </div>
-
-        {/* NON SDI + NON FLI */}
-        <div
-          className="card payroll"
-          onClick={() => goToForm("NON_SDI", "NON_FLI")}
-        >
-          <h2>NON-SDI + NON-FLI</h2>
-        </div>
+    <div style={pageStyle}>
+      <h1 style={titleStyle}>SELECT PAYSTUB TYPE</h1>
+      <div style={gridStyle}>
+        {cards.map((card, index) => (
+          <div
+            key={card.label}
+            style={hoveredIndex === index ? cardHoverStyle : cardStyle}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+            onClick={card.onClick}
+          >
+            <p style={cardTextStyle}>{card.label}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
