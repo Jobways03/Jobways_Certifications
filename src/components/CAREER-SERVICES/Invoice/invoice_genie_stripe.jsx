@@ -15,7 +15,7 @@ const ComponentToPrint = React.forwardRef(({ showExtras }, ref) => {
     <div ref={ref}>
       <div className="pdf-invoice">
         <img src="./images/genie_paypal.jpg" alt="...Loading" className="i3" />
-        <p className="eadd1">43, Shramik Nagar, Vinayak Nagar</p>
+        <p className="eadd1">Plot - 43, Shramik Nagar, Vinayak Nagar</p>
         <p className="eadd2">Hyderabad, Telangana, India – 500047</p>
         <p className="eadd3">Phone: +91 63004 82790</p>
         <p className="eadd4">Email: hr@agenielamp.com</p>
@@ -112,7 +112,7 @@ const ComponentToPrint = React.forwardRef(({ showExtras }, ref) => {
         <p className="last3">hr@agenielamp.com</p>
         <p className="last4">https://agenielamp.com</p>
         <p className="last5">
-          43, Shramik Nagar, Vinayak Nagar, Hyderabad, Telangana, India – 500047
+          Plot - 43, Shramik Nagar, Vinayak Nagar, Hyderabad, Telangana, India – 500047
         </p>
         {showExtras && (
           <>
