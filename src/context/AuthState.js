@@ -91,6 +91,8 @@ const AuthState = ({ children }) => {
     sdiYTD: "",
     FLICurrent: "",
     FLIYTD: "",
+    suiTax: "",
+
   });
 
   const [w2form, setw2form] = useState({
@@ -116,6 +118,8 @@ const AuthState = ({ children }) => {
     localWages: "",
     localIncomeTax: "",
     localityName: "",
+    suiTax: "",
+    pmflTax:"",
   });
 
   const [formData, setFormData] = useState({
@@ -138,6 +142,7 @@ const AuthState = ({ children }) => {
     stripeFee: "",
     TransactionID: "",
     uploadedImage: null,
+    
   });
 
 const [SM_FormData, setSM_FormData] = useState({

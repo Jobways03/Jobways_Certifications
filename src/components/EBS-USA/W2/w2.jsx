@@ -92,6 +92,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <p className="r76">Local income tax</p>
           <p className="r77">Locality name</p>
           <p className="SE">Statutory employee</p>
+          <p className="SUI">SUI tax</p>
+          <p className="PMFL">PMFL tax</p>
           <p className="RP">Retirement plan</p>
           <p className="TP">Third-party sick pay</p>
           <p className="form">Form</p>
@@ -161,6 +163,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <p className="font8">{Global.w2form.socialSecurityWages}</p>
           <p className="font9">{Global.w2form.socialSecurityTax}</p>
           <p className="font10">{Global.w2form.medicareWages}</p>
+          <p className="font10SUI">{Global.w2form.suiTax}</p>
+          <p className="font10PMFL">{Global.w2form.pmflTax}</p>
           <p className="font11">{Global.w2form.medicareTax}</p>
           <p className="TX">{Global.w2form.state}</p>
           <p className="font12">
@@ -289,6 +293,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <p className="r76">Local income tax</p>
           <p className="r77">Locality name</p>
           <p className="SE">Statutory employee</p>
+            <p className="SUI">SUI tax</p>
+            <p className="PMFL">PMFL tax</p>
           <p className="RP">Retirement plan</p>
           <p className="TP">Third-party sick pay</p>
           <p className="form">Form</p>
@@ -355,6 +361,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <p className="font8">{Global.w2form.socialSecurityWages}</p>
           <p className="font9">{Global.w2form.socialSecurityTax}</p>
           <p className="font10">{Global.w2form.medicareWages}</p>
+           <p className="font10SUI">{Global.w2form.suiTax}</p>
+           <p className="font10PMFL">{Global.w2form.pmflTax}</p>
           <p className="font11">{Global.w2form.medicareTax}</p>
           <p className="TX">{Global.w2form.state}</p>
           <p className="font12">
@@ -492,6 +500,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <p className="r76">Local income tax</p>
           <p className="r77">Locality name</p>
           <p className="SE">Statutory employee</p>
+            <p className="SUI">SUI tax</p>
+            <p className="PMFL">PMFL tax</p>
           <p className="RP">Retirement plan</p>
           <p className="TP">Third-party sick pay</p>
           <p className="form" style={{ top: "18%" }}>
@@ -567,6 +577,8 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           <p className="font8n">{Global.w2form.socialSecurityWages}</p>
           <p className="font9n">{Global.w2form.socialSecurityTax}</p>
           <p className="font10n">{Global.w2form.medicareWages}</p>
+           <p className="font10SUI">{Global.w2form.suiTax}</p>
+           <p className="font10PMFL">{Global.w2form.pmflTax}</p>
           <p className="font11n">{Global.w2form.medicareTax}</p>
           <p className="TX">{Global.w2form.state}</p>
           <p className="font12">

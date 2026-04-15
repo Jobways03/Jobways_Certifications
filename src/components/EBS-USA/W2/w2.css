@@ -714,6 +714,24 @@
   font-weight: 500;
 }
 
+.SUI {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 57.5%;
+  left: 56%;
+  font-weight: 500;
+}
+
+.PMFL {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 66.5%;
+  left: 56%;
+  font-weight: 500;
+}
+
 .RP {
   position: absolute;
   font-size: 6px;
@@ -945,6 +963,26 @@
   position: absolute;
   right: 30.5%;
   top: 23%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font10SUI {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 30.5%;
+  top: 56%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font10PMFL {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 30.5%;
+  top: 65%;
   margin: 0;
   font-weight: 600;
 }

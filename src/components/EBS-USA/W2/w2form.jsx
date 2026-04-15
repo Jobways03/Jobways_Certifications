@@ -1,13 +1,23 @@
 import React, { useContext, useState } from "react";
-import "./w2form.css"; // Import the CSS file
+import "./w2form.css";
 import AuthContext from "../../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 const W2Form = () => {
   const [isChecked, setIsChecked] = useState(false);
+  const [isSuiChecked, setIsSuiChecked] = useState(false);
+  const [isPmflChecked, setIsPmflChecked] = useState(false);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
+  };
+
+  const handleSuiCheckboxChange = () => {
+    setIsSuiChecked(!isSuiChecked);
+  };
+
+  const handlePmflCheckboxChange = () => {
+    setIsPmflChecked(!isPmflChecked);
   };
 
   const Global = useContext(AuthContext);
@@ -27,79 +37,79 @@ const W2Form = () => {
   };
 
   const formPageStyle = {
-    minHeight: '100vh',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '40px 20px',
-    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+    minHeight: "100vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "40px 20px",
+    background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   };
 
   const formCardStyle = {
-    background: '#ffffff',
-    borderRadius: '20px',
-    padding: '40px 36px',
-    maxWidth: '600px',
-    width: '100%',
-    boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
+    background: "#ffffff",
+    borderRadius: "20px",
+    padding: "40px 36px",
+    maxWidth: "600px",
+    width: "100%",
+    boxShadow: "0 20px 60px rgba(0,0,0,0.15)",
   };
 
   const formTitleStyle = {
-    fontSize: '26px',
-    fontWeight: '700',
-    color: '#1a1a2e',
-    marginBottom: '32px',
-    textAlign: 'center',
-    paddingBottom: '16px',
-    borderBottom: '3px solid #667eea',
+    fontSize: "26px",
+    fontWeight: "700",
+    color: "#1a1a2e",
+    marginBottom: "32px",
+    textAlign: "center",
+    paddingBottom: "16px",
+    borderBottom: "3px solid #667eea",
   };
 
   const formGroupStyle = {
-    marginBottom: '20px',
+    marginBottom: "20px",
   };
 
   const labelStyle = {
-    display: 'block',
-    fontSize: '14px',
-    fontWeight: '600',
-    color: '#374151',
-    marginBottom: '6px',
+    display: "block",
+    fontSize: "14px",
+    fontWeight: "600",
+    color: "#374151",
+    marginBottom: "6px",
   };
 
   const inputStyle = {
-    width: '100%',
-    padding: '11px 14px',
-    fontSize: '14px',
-    border: '1.5px solid #d1d5db',
-    borderRadius: '10px',
-    outline: 'none',
-    boxSizing: 'border-box',
-    backgroundColor: '#f9fafb',
-    transition: 'border-color 0.2s',
+    width: "100%",
+    padding: "11px 14px",
+    fontSize: "14px",
+    border: "1.5px solid #d1d5db",
+    borderRadius: "10px",
+    outline: "none",
+    boxSizing: "border-box",
+    backgroundColor: "#f9fafb",
+    transition: "border-color 0.2s",
   };
 
   const buttonStyle = {
-    width: '100%',
-    padding: '14px',
-    fontSize: '16px',
-    fontWeight: '700',
-    color: '#ffffff',
-    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    border: 'none',
-    borderRadius: '10px',
-    cursor: 'pointer',
-    marginTop: '12px',
-    letterSpacing: '1px',
-    textTransform: 'uppercase',
-    boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+    width: "100%",
+    padding: "14px",
+    fontSize: "16px",
+    fontWeight: "700",
+    color: "#ffffff",
+    background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    border: "none",
+    borderRadius: "10px",
+    cursor: "pointer",
+    marginTop: "12px",
+    letterSpacing: "1px",
+    textTransform: "uppercase",
+    boxShadow: "0 4px 15px rgba(102, 126, 234, 0.4)",
   };
 
   const checkboxContainerStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-    marginBottom: '20px',
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+    marginBottom: "20px",
   };
 
   return (
@@ -177,7 +187,6 @@ const W2Form = () => {
           </div>
         ))}
 
-        {/* Financial Fields */}
         <div style={formGroupStyle}>
           <label htmlFor="wages" style={labelStyle}>Wages</label>
           <input
@@ -190,6 +199,7 @@ const W2Form = () => {
             style={inputStyle}
           />
         </div>
+
         <div style={formGroupStyle}>
           <label htmlFor="federalIncomeTax" style={labelStyle}>Federal Income Tax</label>
           <input
@@ -202,6 +212,7 @@ const W2Form = () => {
             style={inputStyle}
           />
         </div>
+
         <div style={formGroupStyle}>
           <label htmlFor="socialSecurityWages" style={labelStyle}>Social Security Wages</label>
           <input
@@ -293,6 +304,7 @@ const W2Form = () => {
           />
         </div>
 
+        {/* SDI Checkbox */}
         <div style={checkboxContainerStyle}>
           <input
             type="checkbox"
@@ -342,6 +354,56 @@ const W2Form = () => {
                 style={inputStyle}
               />
             </div>
+          </div>
+        )}
+
+        {/* SUI Checkbox */}
+        <div style={checkboxContainerStyle}>
+          <input
+            type="checkbox"
+            checked={isSuiChecked}
+            onChange={handleSuiCheckboxChange}
+          />
+          <label style={labelStyle}>INCLUDE SUI TAX</label>
+        </div>
+
+        {isSuiChecked && (
+          <div style={formGroupStyle}>
+            <label htmlFor="suiTax" style={labelStyle}>SUI Tax</label>
+            <input
+              id="suiTax"
+              type="text"
+              name="suiTax"
+              value={Global.w2form.suiTax || ""}
+              onChange={handleChange}
+              required
+              style={inputStyle}
+            />
+          </div>
+        )}
+
+        {/* PMFL Checkbox */}
+        <div style={checkboxContainerStyle}>
+          <input
+            type="checkbox"
+            checked={isPmflChecked}
+            onChange={handlePmflCheckboxChange}
+          />
+          <label style={labelStyle}>INCLUDE PMFL TAX</label>
+        </div>
+
+        {isPmflChecked && (
+          <div style={formGroupStyle}>
+            <label htmlFor="pmflTax" style={labelStyle}>PMFL Tax</label>
+            <input
+              id="pmflTax"
+              type="text"
+              name="pmflTax"
+              value={Global.w2form.pmflTax || ""}
+              onChange={handleChange}
+              required
+              style={inputStyle}
+            />
           </div>
         )}
 
