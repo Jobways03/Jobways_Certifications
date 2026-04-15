@@ -91,8 +91,15 @@ const AuthState = ({ children }) => {
     sdiYTD: "",
     FLICurrent: "",
     FLIYTD: "",
+    SUICurrent: "",
+    suiYTD: "",
+    PMFLCurrent: "",
+    pmflYTD: "",
     suiTax: "",
-
+    includeSDI: false,
+    includeFLI: false,
+    includeSUI: false,
+    includePMFL: false,
   });
 
   const [w2form, setw2form] = useState({

@@ -84,9 +84,6 @@ import KACEEEdit from "./components/EBS-USA/KACEE/Ediatble";
 import RapidEdit from "./components/EBS-USA/Rapidhiring/Editable";
 import MercuryInvoice from "./components/CAREER-SERVICES/Invoice/MercuryInvoice";
 import MercuryInvoiceform from "./components/CAREER-SERVICES/Invoice/MercuryInvoiceForm";
-import Paystubsubbox from "./components/EBS-USA/Paystub/paystubsubbox";
-import SdiStubform from "./components/EBS-USA/Paystub/Paystub/paystubsdiform";
-import Paystubsdi from "./components/EBS-USA/Paystub/Paystub/paystubsdi";
 import T4form from "./components/EBS-CANADA/T4/T4form";
 import T4 from "./components/EBS-CANADA/T4/T4";
 import Canada_Main from "./components/EBS-CANADA/Main/Canada_Main";
@@ -100,8 +97,6 @@ import Invoiceform_Paypal from "./components/CAREER-SERVICES/Invoice/Invoiceform
 import Invoice_paypal from "./components/CAREER-SERVICES/Invoice/Invoice_paypal";
 import Invoiceform_Genie_Paypal from "./components/CAREER-SERVICES/Invoice/Invoiceform_genie_paypal";
 import Invoice_Genie_paypal from "./components/CAREER-SERVICES/Invoice/Invoice_genie_paypal";
-import Paystubfli from "./components/EBS-USA/Paystub/Paystub/paystubfli";
-import Paystubsdifli from "./components/EBS-USA/Paystub/Paystub/paystubSDIFLI";
 import RESUME_MAIN from "./components/RESUME-MARKETING/Main/Resumebox";
 import Pre_Agreement_form from "./components/RESUME-MARKETING/PRE-AGREEMENT/Pre_Agreement_form";
 import Post_Agreement_form from "./components/RESUME-MARKETING/POST-AGREEMENT/Post_Agreement_form";
@@ -300,11 +295,6 @@ function App() {
               path="/MercuryInvoiceform"
               element={<MercuryInvoiceform />}
             />
-            <Route path="/Paystubsubbox" element={<Paystubsubbox />} />
-            <Route path="/SdiStubform" element={<SdiStubform />} />
-            <Route path="/Paystubsdi" element={<Paystubsdi />} />
-            <Route path="/Paystubfli" element={<Paystubfli />} />
-            <Route path="/Paystubsdifli" element={<Paystubsdifli />} />
             <Route path="/t4" element={<T4 />} />
             <Route path="/t4form" element={<T4form />} />
             <Route path="/SM_Invoice" element={<SM_Invoice />} />

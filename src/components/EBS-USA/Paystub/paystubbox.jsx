@@ -67,7 +67,9 @@ const Paystubbox = () => {
 
   const handle = (company) => {
     localStorage.setItem("Paycompany", company);
-    navigate("/Paystubsubbox");
+    localStorage.removeItem("PAYSTUB_TYPE");
+    localStorage.removeItem("FLI_TYPE");
+    navigate("/paystubform");
   };
 
   const cards = [
