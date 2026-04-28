@@ -354,7 +354,7 @@ const Pre_Agreement = () => {
   return (
     <div>
       <ComponentToPrint ref={componentRef} />
-      <button onClick={handlePrint} className="jwrmsp_print_btn">
+      <button onClick={handlePrint} className="jwrmsp_print_btn" style={{ margin: "120px" , color: "#fff", backgroundColor: "#007bff", border: "none", padding: "10px 20px", borderRadius: "5px", cursor: "pointer" }}>
         Print this out!
       </button>
     </div>
