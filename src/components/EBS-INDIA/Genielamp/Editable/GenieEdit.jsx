@@ -57,7 +57,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
             <p className="ttt3 mar">Shiva Kumar</p>
             <p className="ttt3 mar">HR Manager</p>
             <p className="ttt3 mar">hr@agenielamp.com</p>
-            <p className="ttt3 mar">+91- 63004 02669</p>
+            <p className="ttt3 mar">+91 63004 02669</p>
           </div>
         </div>
 

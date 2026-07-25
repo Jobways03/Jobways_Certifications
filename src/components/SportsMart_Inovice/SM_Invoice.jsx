@@ -13,7 +13,7 @@ console.log(Global.SM_FormData.paymentType);
         <img src="./images/SM_Invoice.png" alt="...Loading" className="SM_i3" />
         <p className="SM_eadd1">Yamjal, Hyderabad</p>
         <p className="SM_eadd2">Telangana</p>
-        <p className="SM_eadd3">Phone: +91 9059445503</p>
+        <p className="SM_eadd3">Phone: +91 90594 45503</p>
         <p className="SM_eadd4">Email: shopnow@sportsmart.com</p>
         <p className="SM_eadd5">Website: www.sportsmart.com</p>
         <p className="SM_bill">BILL TO</p>

@@ -121,7 +121,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           maintain timesheets of worked performed at other premises and will
           provide the timesheets to Employer on weekly basis to
           timesheets@jobways.com / hr@jobways.com. Employer contact for such
-          reporting is : Sudheer – 240-525-0547 / sudheer@jobways.com 
+          reporting is : Sudheer – +1 (240) 525-0547 / sudheer@jobways.com
         </p>
 
         <p className="us18 cm">
@@ -412,7 +412,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         <p className="us57 cm"> Sudheer Panyam </p>
         <p className="us58 cm">HR Manager</p>
         <p className="us59 cm"> hr@jobways.com</p>
-        <p className="us60 cm">Ph : 240 525 0547</p>
+        <p className="us60 cm">Ph : +1 (240) 525-0547</p>
         <p className="us61 cm"> Candidate Declaration :</p>
         <p className="us62 cm">
           {" "}

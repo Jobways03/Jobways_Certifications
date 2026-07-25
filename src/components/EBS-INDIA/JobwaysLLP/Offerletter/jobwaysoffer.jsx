@@ -289,7 +289,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="let42">
           <span className="bol" style={{ fontSize: "15px" }}>
-            +91- 88010 91975
+            +91 88010 91975
           </span>
         </p>
         <p className="let43">

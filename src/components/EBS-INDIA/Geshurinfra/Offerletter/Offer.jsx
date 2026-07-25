@@ -355,7 +355,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         <p className="gio105">Ashwini Chinta</p>
         <p className="gio106">HR Manager</p>
         <p className="gio107">HR@geshurinfra.com</p>
-        <p className="gio108">+91 – 93989 73635</p>
+        <p className="gio108">+91 93989 73635</p>
         <p className="gio109">Human Resources</p>
         <p className="gio110">Employee Acknowledgement</p>
         <p className="gio111">

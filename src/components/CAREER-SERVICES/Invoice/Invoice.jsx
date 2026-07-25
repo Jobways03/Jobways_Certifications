@@ -18,7 +18,7 @@ const ComponentToPrint = React.forwardRef(({showExtras}, ref) => {
         <img src="./images/jj.png" alt="...Loading" className="i3" />
         <p className="eadd1">8 THE GREEN STE R</p>
         <p className="eadd2">Dover, Delaware - 19901</p>
-        <p className="eadd3">Phone: +1 240 745 6327</p>
+        <p className="eadd3">Phone: +1 (240) 745-6327</p>
         <p className="eadd4">Email: Hr@Jobways.com</p>
         <p className="eadd5">Website: www.jobways.com</p>
         <p className="bill">BILL TO</p>
@@ -109,7 +109,7 @@ const ComponentToPrint = React.forwardRef(({showExtras}, ref) => {
         <p className="mac1">Jobways LLC</p>
         <p className="tyf">Thank You for Your Business!</p>
         <p className="last1">JOBWAYS LLC</p>
-        <p className="last2">+1 240 558 8717</p>
+        <p className="last2">+1 (240) 558-8717</p>
         <p className="last3">accounts@jobways.com</p>
         <p className="last4">www.jobways.com</p>
         <p className="last5">8 The Green, STE R DOVER, DE 19901, USA</p>

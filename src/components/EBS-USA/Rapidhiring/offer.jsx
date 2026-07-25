@@ -132,7 +132,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           keep accurate timesheets for all off-site work and submit these to the
           Employer weekly via email at timesheets@rpdhsinc.com or
           hr@rpdhsinc.com. For any questions related to this reporting
-          procedure, the Employee can contact Amith Chidre at 567 703 6317 /
+          procedure, the Employee can contact Amith Chidre at +1 (567) 703-6317 /
           amith@rpdhsinc.com
         </p>
 
@@ -443,7 +443,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         <p className="us57 cm"> Amith Chidre </p>
         <p className="us58 cm">HR Manager</p>
         <p className="us59 cm"> hr@rpdhsinc.com</p>
-        <p className="us60 cm">Ph : 567 703 6317</p>
+        <p className="us60 cm">Ph : +1 (567) 703-6317</p>
         <p className="us61 cm"> Candidate Declaration :</p>
         <p className="us62 cm">
           {" "}

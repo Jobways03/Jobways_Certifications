@@ -296,7 +296,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         </p>
         <p className="gene42">
           <span className="bol" style={{ fontSize: "15px" }}>
-            +91- 9652 59 79 29
+            +91 96525 97929
           </span>
         </p>
         <p className="gene43">

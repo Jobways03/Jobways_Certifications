@@ -133,7 +133,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
           </span>{" "}
           by <span className="bb">{Global.USOffer.startDate}</span>, or pay
           specified damages. Violating policies may lead to immediate
-          termination and harm Rapid Hiring Solutions’ client relations.
+          termination and harm Kacee Technologies Inc client relations.
           Penalties include 30% of the billing amount if engaging with another
           vendor for the same client, and $10,000 if withdrawing before project
           confirmation or marketing the resume to multiple Employers
@@ -315,7 +315,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => {
         <p className="usk57 cm">Akbar Khan</p>
         <p className="usk58 cm">HR Manager</p>
         <p className="usk59 cm">hr@kaceetek.com</p>
-        <p className="usk60 cm">Ph : (530) 712-3815</p>
+        <p className="usk60 cm">Ph : +1 (530) 712-3815</p>
 
         <p className="usk61 cm"> Candidate Declaration :</p>
         <p className="usk62 cm">

@@ -127,6 +127,7 @@ const AuthState = ({ children }) => {
     localityName: "",
     suiTax: "",
     pmflTax:"",
+    fliTax:"",
   });
 
   const [formData, setFormData] = useState({

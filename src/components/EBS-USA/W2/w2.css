@@ -732,6 +732,15 @@
   font-weight: 500;
 }
 
+.FLI {
+  position: absolute;
+  font-size: 6px;
+  margin: 0;
+  top: 75.5%;
+  left: 56%;
+  font-weight: 500;
+}
+
 .RP {
   position: absolute;
   font-size: 6px;
@@ -983,6 +992,16 @@
   position: absolute;
   right: 30.5%;
   top: 65%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.font10FLI {
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  position: absolute;
+  right: 30.5%;
+  top: 74%;
   margin: 0;
   font-weight: 600;
 }

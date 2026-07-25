@@ -7,6 +7,7 @@ const W2Form = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [isSuiChecked, setIsSuiChecked] = useState(false);
   const [isPmflChecked, setIsPmflChecked] = useState(false);
+  const [isFliChecked, setIsFliChecked] = useState(false);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
@@ -18,6 +19,10 @@ const W2Form = () => {
 
   const handlePmflCheckboxChange = () => {
     setIsPmflChecked(!isPmflChecked);
+  };
+
+  const handleFliCheckboxChange = () => {
+    setIsFliChecked(!isFliChecked);
   };
 
   const Global = useContext(AuthContext);
@@ -400,6 +405,31 @@ const W2Form = () => {
               type="text"
               name="pmflTax"
               value={Global.w2form.pmflTax || ""}
+              onChange={handleChange}
+              required
+              style={inputStyle}
+            />
+          </div>
+        )}
+
+        {/* FLI Checkbox */}
+        <div style={checkboxContainerStyle}>
+          <input
+            type="checkbox"
+            checked={isFliChecked}
+            onChange={handleFliCheckboxChange}
+          />
+          <label style={labelStyle}>INCLUDE FLI TAX</label>
+        </div>
+
+        {isFliChecked && (
+          <div style={formGroupStyle}>
+            <label htmlFor="fliTax" style={labelStyle}>FLI Tax</label>
+            <input
+              id="fliTax"
+              type="text"
+              name="fliTax"
+              value={Global.w2form.fliTax || ""}
               onChange={handleChange}
               required
               style={inputStyle}
